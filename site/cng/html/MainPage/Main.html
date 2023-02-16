@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>(주)C&G TECH</title>
+  <!-------------------------- 구글아이콘 -------------------------->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+  <!-- 폰트 -->
+  <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/font.css">
+
+
+  <!--swiper 스와이퍼 css & js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!--tailwind.css -->
+  <link rel="stylesheet" href="../../css/index.min.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/common.css">
+  <link rel="stylesheet" href="../../css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+</head>
+<body>
+<header class="">
+  <nav class="flex w-full items-center container justify-between">
+    <a class="logo px-[50px] h-[60px]">
+      <img src="../../img/logo_d_e.svg" class="h-full block logo_d_e">
+      <img src="../../img/logo_l_e.svg" class="h-full hidden logo_l_e">
+    </a>
+    <ol class="flex justify-center items-center self-stretch flex-grow gap-20">
+      <li><a href=""class="">기업소개</a></li>
+      <li><a href=""class="">제품소개</a></li>
+      <li><a href=""class="">문의하기</a></li>
+    </ol>
+    <a href=""class=" button_bg">문의 바로가기 <span class="material-icons-round">chevron_right</span></a>
+  </nav>
+</header>
+<div class="index">
+
+  <section class="pb-[60px] swiper mySwiper">
+    <ul class="swiper-wrapper">
+      <li class="w-full swiper-slide" style="background: url(../../img/main/main_banner_bg.png)no-repeat 0 0 /cover;">
+        <div class="flex items-center self-stretch h-[915px] overflow-hidden container ">
+          <div class="flex flex-col gap-6 ">
+            <p class=" text-7xl font-bold  text-white">C&G Technology<br>새로운 가치의 창조</p>
+            <p class=" text-3xl font-medium  text-white">환경분야 기술을 선도하는 특화된 기술력으로<br>고객의 가치를 최우선으로 지향합니다.</p>
+          </div>
+        </div>
+      </li>
+      <li class="w-full swiper-slide" style="background: url(../../img/main/main_banner_bg2.png)no-repeat 0 0 /cover;">
+        <div class="flex items-center self-stretch h-[915px] overflow-hidden container ">
+          <div class="flex flex-col gap-6 ">
+            <p class=" text-7xl font-bold  text-white">C&G Technology<br>새로운 가치의 창조</p>
+            <p class=" text-3xl font-medium  text-white">특화된 기술력으로 고객가치를<br>실현하는 C&G TECH</p>
+          </div>
+        </div>
+      </li>
+      <li class="container"><div class="swiper-pagination !bottom-[20%]"></div></li>
+    </ul>
+
+    <div class="flex flex-col justify-center items-center  h-[400px] max-w-[1300px]  gap-2.5 p-9 rounded-lg bg-white shadow-3 self-stretch m-auto relative z-10 !mt-[-100px]">
+      <div class="flex flex-col justify-center items-center  gap-6">
+        <p class="text-[40px] font-bold text-center gradient1 text_clip">특화된 기술력으로 고객가치를<br>실현하는 C&G TECH</p>
+        <img src="../../img/main/smile.png">
+        <p class="  text-xl font-medium text-center ">암롤박스의 특화된 기술력으로 깨끗하고 쾌적한 환경을 만들기 위해<br>그 어떤 종류의 폐기물도 처리가능한 C&G TEC 만의 제작 기술력을 제공합니다.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // autoplay: {
+      //   delay: 3500,
+      //   disableOnInteraction: false,
+      // },
+    });
+  </script>
+  <!-- 1 -->
+
+  <section class="py-20 overflow-hidden" style="background: url(../../img/main/business_area_bg.png)no-repeat 0 0 /contain;">
+    <div class="flex gap-[200px] justify-center container 2xl:px-20 ">
+      <h3 class="">A COLLECTION OF<br><strong class="text-primary" style="background: url(../../img/after_stroke.svg)no-repeat 0 100%/contain;">ECO-FRIENDLY</strong><br>TECHNOLOGIES</h3>
+      <div class="flex flex-col gap-[18px]">
+        <p class="flex flex-col gap-3 text-xl font-bold  text-primary">Business<br>Area<span class="w-[100px] h-[5px] bg-primary"></span></p>
+        <p class=" text-lg font-medium  text-paragraph">국내 암롤박스 업계 최고의 기술력과 축적된 경험을 바탕으로<br>더욱 간편하고 깨끗한 환경 조성과 함께 고객가치 실현</p>
+        <a href="" class="btn_circle"><div class=" ">More View</div></a>
+      </div>
+    </div>
+    <ul class="flex flex-col flex-grow gap-20 container py-20 2xl:px-20 ">
+      <li>
+        <a href="#!" class="flex items-center relative group h-[400px] justify-end">
+          <img src="../../img/main/product2.png" class=" absolute top-0 right-[calc(50%+80px)]">
+          <div class="flex flex-col justify-end  self-stretch flex-grow gap-9 px-[25px] col-6">
+            <div class="flex flex-col gap-3.5">
+              <h3 class="flex flex-col gap-2.5">
+              <div class="flex items-center  gap-2.5">
+              <i class="tag bg-point1">Hot</i>
+              <i class="tag">New</i>
+              </div>
+              중고 암롤박스
+              </h3>
+              <p class="text-lg font-medium  text-paragraph">다량의 산업/건설 폐기물 처리 및 맞춤형 제작</p>
+            </div>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="flex items-center relative group h-[400px]">
+          <div class="flex flex-col justify-end  self-stretch flex-grow gap-9 px-[25px] col-6">
+            <div class="flex flex-col gap-3.5">
+              <h3 class="flex flex-col gap-2.5">
+              <div class="flex items-center  gap-2.5">
+              <i class="tag bg-point1">Hot</i>
+              <i class="tag">New</i>
+              </div>
+              스크랩박스
+              </h3>
+              <p class="text-lg font-medium  text-paragraph">다량의 산업/건설 폐기물 처리 및 맞춤형 제작</p>
+            </div>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+          <img src="../../img/main/product1.png" class=" absolute top-0 right-[calc(-50%+80px)]" style="right: calc(-50% + 80px);">
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="flex items-center relative group h-[400px] justify-end">
+          <img src="../../img/main/product13.png" class=" absolute top-0 right-[calc(50%+80px)]">
+          <div class="flex flex-col justify-end  self-stretch flex-grow gap-9 px-[25px] col-6">
+            <div class="flex flex-col gap-3.5">
+              <h3 class="flex flex-col gap-2.5">
+              <div class="flex items-center  gap-2.5">
+              <i class="tag bg-point1">Hot</i>
+              <i class="tag bg-point3">Trending</i>
+              </div>
+              중고 암롤박스
+              </h3>
+              <p class="text-lg font-medium  text-paragraph">다량의 산업/건설 폐기물 처리 및 맞춤형 제작</p>
+            </div>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="flex items-center relative group h-[400px]">
+          <div class="flex flex-col justify-end  self-stretch flex-grow gap-9 px-[25px] col-6">
+            <div class="flex flex-col gap-3.5">
+              <h3 class="flex flex-col gap-2.5">
+                <div class="flex items-center  gap-2.5">
+                <i class="tag bg-point1">Hot</i>
+                <i class="tag">New</i>
+                </div>
+                박스수리
+              </h3>
+              <p class="text-lg font-medium  text-paragraph">다량의 산업/건설 폐기물 처리 및 맞춤형 제작</p>
+            </div>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+          <img src="../../img/main/product4.png" class=" absolute top-0 right-[calc(-50%+80px)]" >
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- 2 -->
+
+  <section class="pt-[60px] pb-[100px] bg-white relative">
+    <div class="w-[1350px] h-[460px] rounded-tl-full rounded-bl-full bg-surfaceMid absolute right-0 top-0"></div><!-- 배경 -->
+    <img src="../../img/main/about_us_bg.png" class=" absolute top-10 mix-blend-multiply right-0 w-full"><!-- 배경 -->
+    <main class="container flex justify-end self-stretch gap-20">
+      <img src="../../img/main/product2.png" class=" absolute top-0 right-[calc(50%+80px)]">
+      <div class="flex flex-grow gap-[30px] col-6">
+        <ul class="flex flex-col justify-center  self-stretch  gap-9 py-10">
+          <li class="flex flex-col gap-3">
+            <p class=" text-xl font-bold  text-primary">About Us</p>
+            <span class="w-[100px] h-[5px] bg-primary"></span>
+          </li>
+          <li class="flex flex-col gap-3">
+            <h3>실시간 제품현황</h3>
+            <span class="text-lg font-medium text-paragraph">즉시 출고를 위한<br>실시간 제품 현황을 안내하여<br>긴급 상황에 유연하게 대처 가능합니다.</span>
+          </li>
+        </ul>
+        <ol class="flex flex-col justify-center  self-stretch flex-grow gap-[15px]">
+          <li class="flex  items-center self-stretch  gap-4">
+            <p class="rounded-full text-[40px] font-bold w-24 h-24 flex items-center  justify-center bg-white shadow-1"><i class="gradient2 text_clip">21</i></p>
+            <div class="flex flex-col justify-center items-center flex-grow gap-2">
+              <img src="../../img/main/about_us_checkbox.png">
+              <p class=" text-lg font-medium  ">즉시 출고 가능</p>
+            </div>
+          </li>
+          <li class="flex  items-center self-stretch  gap-4">
+            <p class="rounded-full text-[40px] font-bold w-24 h-24 flex items-center  justify-center bg-white shadow-1"><i class="gradient2 text_clip">27</i></p>
+            <div class="flex flex-col justify-center items-center flex-grow gap-2">
+              <img src="../../img/main/about_us_checkbox.png">
+              <p class=" text-lg font-medium  ">렌탈가능</p>
+            </div>
+          </li>
+          <li class="flex  items-center self-stretch  gap-4">
+            <p class="rounded-full text-[40px] font-bold w-24 h-24 flex items-center  justify-center bg-white shadow-1"><i class="gradient2 text_clip">11</i></p>
+            <div class="flex flex-col justify-center items-center flex-grow gap-2">
+              <img src="../../img/main/about_us_checkbox.png">
+              <p class=" text-lg font-medium  ">즉시 중고 가능</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <!-- <div class="w-16 h-16 rounded-full bg-surfaceLow absolute right-0 top-1/2 mix-blend-multiply"></div> -->
+  </section>
+  <!-- 3 -->
+
+  <section class="py-20">
+    <main class="container relative">
+      <div class="absolute right-0 h-1/2 bottom-0 w-[300px] bg-gradient-to-r from-transparent to-white z-10"></div>
+      <div class="absolute left-0 h-1/2 bottom-0 w-[300px] bg-gradient-to-l from-transparent to-white z-10"></div>
+      <div class="flex flex-col justify-center gap-3 py-10 pb-8 items-center">
+        <p class="flex flex-col gap-3 text-xl font-bold  text-primary text-center">Partner<span class="w-[100px] h-[5px] bg-primary"></span></p>
+        <h2 class="flex flex-col gap-4 text-center" style="background: url(../../img/after_stroke.svg)no-repeat 0 25%/contain;">Our Partner<span class="text-lg font-medium text-paragraph">100여개의 다양한 기업들의 선택으로 제품에 대한 <br>기술력과 신뢰도를 보여줍니다.</span></h2>
+      </div>
+      <ol class="flex flex-col justify-center  self-stretch flex-grow gap-9 partner py-10 overflow-hidden">
+        <li class="flex  items-center self-stretch  gap-12">
+          <img src="../../img/main/partner/1.png">
+          <img src="../../img/main/partner/2.png">
+          <img src="../../img/main/partner/3.png">
+          <img src="../../img/main/partner/4.png">
+          <img src="../../img/main/partner/5.png">
+          <img src="../../img/main/partner/6.png">
+          <img src="../../img/main/partner/7.png">
+          <img src="../../img/main/partner/8.png">
+          <img src="../../img/main/partner/9.png">
+          <img src="../../img/main/partner/10.png">
+          <img src="../../img/main/partner/11.png">
+          <img src="../../img/main/partner/12.png">
+          <img src="../../img/main/partner/13.png">
+          
+        </li>
+        <li class="flex  items-center self-stretch  gap-12">
+          <img src="../../img/main/partner/14.png">
+          <img src="../../img/main/partner/15.png">
+          <img src="../../img/main/partner/16.png">
+          <img src="../../img/main/partner/17.png">
+          <img src="../../img/main/partner/18.png">
+          <img src="../../img/main/partner/19.png">
+          <img src="../../img/main/partner/20.png">
+          <img src="../../img/main/partner/21.png">
+          <img src="../../img/main/partner/22.png">
+          <img src="../../img/main/partner/23.png">
+          <img src="../../img/main/partner/24.png">
+          <img src="../../img/main/partner/25.png">
+          <img src="../../img/main/partner/26.png">
+          <img src="../../img/main/partner/27.png">
+          <img src="../../img/main/partner/28.png">
+          <img src="../../img/main/partner/29.png">
+        </li>
+      </ol>
+    </main>
+    <!-- <div class="w-16 h-16 rounded-full bg-surfaceLow absolute right-0 top-1/2 mix-blend-multiply"></div> -->
+  </section>
+  <!-- 4 -->
+
+  <a class="block py-[60px] shadow-3 text-white mt-[100px]" style="background: url(../../img/main/ask_bg.png)no-repeat 0% 35% /cover">
+    <div class="flex flex-col gap-20 container">
+      <div class="flex flex-col gap-8">
+        <p class=" text-[55px] font-bold">견적 문의하기</p>
+        <p class="text-2xl !font-light ">문의사항을 남겨주시면 빠르고 상세하게 답변 드리겠습니다.</p>
+      </div>
+      <div class="flex flex-col gap-16 w-[360px]">
+        <h5 class=" ">Call: 010-5403-7768</h5>
+        <p class="text-xl font-medium flex items-center pb-5 border-b border-solid justify-between">문의하기 <span class=" text-3xl text-right  material-icons-round">add</span></p>
+      </div>
+    </div>
+  </a>
+  <!-- 5 -->
+</div>
+<footer class="w-full lg:py-[150px] border-t-[3px] border-primary border-solid ">
+  <div class="container flex justify-between">
+    <a class="logo px-[50px] h-[60px]"><img src="../../img/logo_l_e.svg" class="h-full"></a>
+    <ul class="flex gap-14">
+      <li class="">
+        <h5>CONTACT</h5>
+        <ol class="flex gap-6 text-xl font-medium flex-col pt-9">
+          <li><strong class="">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong>Tel</strong>031-668-8386</li>
+          <li><strong>Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong>Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        </ol>
+      </li>
+      <li>
+        <h5>About</h5>
+        <ol class="flex gap-6 text-xl font-medium flex-col pt-9">
+          <li><a href="">Home</a></li>
+          <li><a href="">기업소개</a></li>
+          <li><a href="">제품소개</a></li>
+          <li><a href="">견적문의</a></li>
+        </ol>
+      </li>
+      <li class="flex gap-6 text-xl font-medium flex-col">
+        <h5>Family Site</h5>
+        <select class="border border-text2 p-4">
+          <option>크리샤</option>
+          <!-- <span class="material-icons-round">expand_less</span> -->
+        </select>
+      </li>
+    </ul>
+  
+  </div>
+  <div class="container pt-[60px]">
+    <ul class="pb-9 border-b flex border-solid">
+      <li><a href="">개인정보처리방침 | </a></li>
+      <li><a href="">개인정보처리방침</a></li>
+    </ul>
+    <div class="flex justify-between pt-9">
+      <p>Copyright © 2022 C&G tech. All Rights Reserved.</p>
+      <ul class="flex gap-4">
+        <li><a href=""><img src="../../img/icon/Instagtam.svg"></a></li>
+        <li><a href=""><img src="../../img/icon/Youtube.svg"></a></li>
+        <li><a href=""><img src="../../img/icon/Naver.svg"></a></li>
+        <li><a href=""><img src="../../img/icon/Facebook.svg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!--커스텀 js--->
+<script src="../../js/tailwind.config.js"></script>
+
+<!-- Tailwind JS -->
+<script type="text/javascript" src="../../js/index.min.js"></script>
+
+<!-- Custom scripts -->
+<script type="text/javascript" src="../../js/main.js"></script>
+<script>
+$(function () {
+  $("#top_btn").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, '500');
+    return false;
+  });
+  // #top_btn
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#top_btn').fadeIn('slow');
+    } else {
+      $('#top_btn').fadeOut('slow');
+    }
+  });
+
+  // header 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('header').addClass('on');
+    } else {
+      $('header').removeClass('on');
+    }
+  });
+
+});
+</script>
+
+
+</body>
+</html>

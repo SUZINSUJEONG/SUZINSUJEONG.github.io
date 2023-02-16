@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-paragraph, footer, header{
+  font-family: "Pretendard";
+}
+
+@layer base {
+  header{@apply flex w-full fixed top-0 py-5 items-center z-[999] text-white text-lg font-medium transition-all;}
+  header.on{@apply text-text1 bg-white py-2.5;}
+  header.on a.logo{@apply h-[50px];}
+  header.on .logo_l_e{@apply block;}
+  header.on .logo_d_e{@apply hidden;}
+
+  h1,h2,h3,h4,h5,h6{@apply !font-bold;}
+  h1,.h1{@apply !text-6xl;} 
+  h2,.h2{@apply !text-5xl;}
+  h3,.h3{@apply !text-4xl;}
+  h4,.h4{@apply !text-3xl;}
+  h5,.h5{@apply !text-2xl;}
+  h6,.h6{@apply !text-xl;}
+
+.tag{@apply flex  items-center px-3 py-1 rounded-[3px] bg-primary2 font-bold text-center text-white shadow-dropdown !text-sm;}
+
+.border{@apply border-solid;}
+
+/* footer */
+footer ol li strong{@apply min-w-[70px] mr-3;}
+}
+
+.gradient1{@apply bg-gradient-to-b from-[#05CD82] to-[#000EFF]; }
+.gradient2{@apply bg-gradient-to-b from-[#A259FF] to-[#000EFF]; }
+
+.button{
+  @apply flex justify-center items-center  w-44 h-12 gap-1.5 rounded-md text-lg font-medium  py-1 transition-all group-hover:shadow-button;
+}
+.button_bg{@apply button bg-primary text-white;}
+.button_stroke{@apply button text-primary border-primary border-solid border;}
+.btn_circle{@apply w-[140px] h-[140px] flex justify-center items-center gap-1 text-sm font-medium text-center text-white bg-primary rounded-full border-solid border-[10px] border-[#BBE4D8] hover:shadow-button transition-all;}
+.btn_circle div{@apply border w-24 h-24 border-white rounded-full leading-[96px];}
+
+/* main page*/
+.partner img{@apply drop-shadow-default-button;}
+
+
+
