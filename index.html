@@ -1,12 +1,996 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="imagetoolbar" content="no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>지속가능한 디자인,하수정 포트폴리오</title>
+  <!-------------------------- 구글아이콘 -------------------------->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+  <!-- 폰트 -->
+  <link rel="stylesheet" href="css/font.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!--swiper 스와이퍼 css & js-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!--tailwind.css -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+
 </head>
-<body>
-    수정이는 암퇘지인가1
+
+<body class="overflow-x-hidden body_wrap">
+  <div class=" popup_close">
+    <div class="container">
+      <div class="flex flex-col  relative sm:p-[50px] p-5 rounded-[50px] rounded-tr-none bg-white  shadow-default-button max-w-[550px] m-auto">
+        <p class="absolute left-0 w-full text-xs text-center text-neutral-50 sm:-top-8 -top-5 sm:text-base pretendard ">※ 본 사이트는 해상도 1920x1080 의 웹화면에 최적화되어 있습니다.</p>
+        <a href="#!"><span class="absolute text-4xl font-bold material-icons-round text-primary2 right-3 top-3">close</span></a>
+        <div class="flex flex-col items-center gap-8 ">
+          <p class="text-center h4 comma">포트폴리오에<br>오신 것을 환영합니다!</p>
+          <img src="./img/comma.png">
+          <div class="flex flex-col items-center pb-3 gap-7">
+            <div class="flex flex-col  items-center gap-2.5">
+              <p class=" text-sm text-center text-[#04826c] comma">지속가능한 창의적 디자인을 추구하는</p>
+              <h5 class="text-center text-[#04826c] pretendard">웹디자이너 하수정입니다.</h5>
+            </div>
+            <a href="#!"class=" w-[250px] h-[50px] rounded-[10px] bg-primary2 shadow-default-button text-xl text-center text-[#fcf4e4] py-3">THE COMMA ,</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".popup_close").on("click",function(){
+        $(this).hide();
+      });
+    </script>
+  </div>
+  <section id="intro" class="h-[100vh] relative"style="">
+    <img src="./img/bg3_1.png" class="absolute bottom-[-25%] z-[1000] right-0 w-[15.5vw] 2xl:block hidden">
+    <img src="./img/bg3_2.png" class="absolute bottom-[-25%] z-[1000] left-0 w-[15.5vw]  hidden 2xl:block">
+    <header class="">
+      <nav class="w-full h-full">
+        <div class="container flex justify-between w-full h-full xl:hidden">
+          <a href="/" class="p-2"><img src="./img/comma_mini2.png" class="h-full"></a>
+          <button type="button" class=" h-full w-[80px] float-right btn_menu_btn"><span class="menu_icon"></span></button>
+        </div>
+        <ul class="menu">
+          <li class="gnb"><a class=""href="#section_1">WEBSITE CINEMA </a></li>
+          <li class="gnb"><a class=""href="#section_2">GRAPHIC DESIGN SHOW</a></li>
+          <li class="gnb"><a class=""href="#section_3"> PROPOSAL PICNIC </a></li>
+          <li class="gnb"><a class=""href="#section_4">FINE ART FOREST</a></li>
+          <li class="gnb"><a class=""href="#section_5">FLIM DESIGN</a></li>
+          <li class="gnb"><a class=""href="#section_6">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+
+      $(".btn_menu_btn").click(function() { 
+
+        $(".menu").toggleClass("on");
+        $(this).toggleClass("on");
+      });
+
+    </script>
+
+    <main class="lg:py-[230px] container h-full flex items-center">
+      <h4 class="flex flex-col items-center w-full gap-3 text-center text-white comma" style="">
+        <div class="md:py-4 h2 text-yellow">아무것도 안 해도 쉴 수 있는 공간</div>
+        <span class="md:py-3 h3">여기는 지속가능한 쉼터,</span>
+        <br>
+        <span class="relative txt-type text-[72px] min-h-[100px] min-w-[142px] leading-none inline" data-wait="3000"data-words="[&quot;쉼표&quot;, &quot;쉼표&quot;, &quot;쉼표&quot;]">
+        <span class="txt ">쉼표 ,</span>
+        </span>
+        <span class="h3 title">입니다.</span>
+        <span class="text-[18px] font-semibold text-surfacegreen pretendard sm:block hidden"><i class="mr-1 align-middle material-icons-round text-yellow">place</i>콤마 포레스트</span>
+      </h4>
+
+      <script>
+        // 타이핑 스크립트
+        class TypeWriter {
+          constructor(txtElement, words, wait = 3000) {
+            this.txtElement = txtElement;
+            this.words = words;
+            this.txt = "";
+            this.wordIndex = 0;
+            this.wait = parseInt(wait, 10);
+            this.type();
+            this.isDeleting = false;
+          }
+
+          type() {
+            // Current index of word
+            const current = this.wordIndex % this.words.length;
+            // Get full text of current word
+            const fullTxt = this.words[current];
+
+            // Check if deleting
+            if (this.isDeleting) {
+              // Remove char
+              this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+              // Add char
+              this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            // Insert txt into element
+            this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+            // Initial Type Speed
+            let typeSpeed = 300;
+
+            if (this.isDeleting) {
+              typeSpeed /= 2;
+            }
+
+            // If word is complete
+            if (!this.isDeleting && this.txt === fullTxt) {
+              // Make pause at end
+              typeSpeed = this.wait;
+              // Set delete to true
+              this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === "") {
+              this.isDeleting = false;
+              // Move to next word
+              this.wordIndex++;
+              // Pause before start typing
+              typeSpeed = 500;
+            }
+
+            setTimeout(() => this.type(), typeSpeed);
+          }
+        }
+
+        // Init On DOM Load
+        document.addEventListener("DOMContentLoaded", init);
+
+        // Init App
+        function init() {
+          const txtElement = document.querySelector(".txt-type");
+          const words = JSON.parse(txtElement.getAttribute("data-words"));
+          const wait = txtElement.getAttribute("data-wait");
+          // Init TypeWriter
+          new TypeWriter(txtElement, words, wait);
+        }
+
+      </script>
+    </main>
+  </section>
+  <!-- intro -->
+
+  <section class="" id="section_0">
+    <div class="container md:pb-[5.2vw] pb-[50px]">
+      <div class="flex flex-col items-center md:py-[5.2vw] py-[50px] gap-1">
+        <img src="./img/Vector.svg">
+        <h1 class="text-center comma text-7xl text-surfacegreen pb-7">Preview Picnic</h1>
+        <p class="font-semibold text-center h4 text-surfacegreen pretendard">프리뷰 피크닉에서 미리 맛보고 충전하자!</p>
+      </div>
+      <div class="swiper mySwiper xl:w-[1100px] w-auto">
+        <ul class="swiper-wrapper h-[350px] ">
+          <li class="swiper-slide ">
+            <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview1.jpg)no-repeat 0 0 /cover"></div>
+            <p>웹사이트 시네마</p>
+          </li>
+          <li class="swiper-slide">
+            <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview2.jpg)no-repeat 0 0 /cover"></div>
+            <p>그래픽 디자인 쇼</p>
+          </li>
+          <li class="swiper-slide">
+             <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview3.jpg)no-repeat 0 0 /cover"></div>
+            <p>기획서 피크닉</p>
+          </li>
+          <li class="swiper-slide">
+             <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview4.jpg)no-repeat 0 0 /cover"></div>
+            <p>파인아트 포레스트</p>
+          </li>
+          <li class="swiper-slide">
+             <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview5.jpg)no-repeat 0 0 /cover"></div>
+            <p>필름 디자인</p>
+          </li>
+          <li class="swiper-slide">
+             <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview6.jpg)no-repeat 0 0 /cover"></div>
+            <p>연락처</p>
+          </li>
+          
+        </ul>
+        <div class="swiper-button-next after:hidden text-[0] w-14 "><img src="./img/slide_arrow.svg"></div>
+        <div class="swiper-button-prev after:hidden text-[0]  w-14 -rotate-180"><img src="./img/slide_arrow.svg"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          centeredSlides: true,
+          spaceBetween: 0,
+          loop: true,
+          // freeMode: true,
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          breakpoints: {
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 0,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+            },
+            1600: {
+              slidesPerView: 4,
+              spaceBetween: 0,
+            },
+          },
+        });
+      </script>
+    </div>
+  </section>
+  <!-- 0 -->
+
+  <section id="section_1" class=" md:py-[5.2vw] py-[50px] bg-surfaceLow">
+    <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center text-surfacegreen container">
+      <img src="./img/title.svg">
+      <h1 class="text-[50px] comma text-center"> 01. WEBSITE CINEMA</h1>
+      한여름 밤처럼 열대야를 잊게해줄 최근작업을 확인하세요!
+      <span class="inline-block md:w-[760px] w-full h-[3px] bg-surfacegreen"></span>
+    </div>
+    <ul class="flex justify-center items-center self-stretch lg:gap-[50px] gap-[36px] container flex-wrap">
+      <li class=" xl:px-[1.5vw] px-2">
+        <a href="http://www.npas.co.kr/Home/NonprofitMain" target="_blank" class="go_site group">
+          <img class="w-full" src="img/main_page/1.png">
+          <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+        </a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주
+          <p class="pt-2 pb-2 text-lg comma">&lt; NPAS: 엔파스 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+        </div>
+        <a href="./npas.html" target="_blank" class="button_bg">작업과정 보기</a>
+      </li>
+      <li class=" xl:px-[1.5vw] px-2">
+        <a href="#!" class="go_site group">
+          <img class="w-full" src="img/main_page/2.png">
+          <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+        </a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; SNS MAKER: SNS메이커 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+
+        </div>
+        <a href="./snsmaker.html" target="_blank" class="button_bg">작업과정 보기</a>
+      </li>
+      <li class=" xl:px-[1.5vw] px-2">
+        <a href="#!" class="go_site group"><img class="w-full" src="img/main_page/3.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 전국공무원노동조합 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+        </div>
+        <a href="./kpou.html" target="_blank" class="button_bg">작업과정 보기</a>
+      </li>
+      <li class=" xl:px-[25px] px-2">
+        <a href="#!" class="go_site group"><img class="w-full" src="img/main_page/4.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 동두천에너지협동조합 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
+        </div>
+        <a href="./ddc.html" target="_blank" class="button_bg">작업과정 보기</a>
+      </li>
+      <li class=" xl:px-[25px] px-2">
+        <a href="#!" class="go_site group"><img class="w-full" src="img/main_page/5.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; C&G: 씨엔쥐 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+        </div>
+        <a href="./cng.html" target="_blank" class="button_bg">작업과정 보기</a>
+      </li>
+      <li class=" xl:px-[25px] px-2">
+        <a href="https://webpub.dothome.co.kr/04/hsj/naturerepublic" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 네이쳐리퍼블릭 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
+        </div>
+        <a href="https://webpub.dothome.co.kr/04/hsj/naturerepublic" target="_blank" class="button_bg">사이트바로가기</a>
+      </li>
+      <li class=" xl:px-[25px] px-2">
+        <a href="https://webpub.dothome.co.kr/04/hsj/collect" class="go_site group"><img class="w-full" src="img/main_page/7.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 콜렉트 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
+        </div>
+        <a href="https://webpub.dothome.co.kr/04/hsj/collect" target="_blank" class="button_bg">사이트바로가기</a>
+      </li>
+      <li class=" xl:px-[25px] px-2">
+        <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" class="go_site group"><img class="w-full" src="img/main_page/8.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <div class="py-6 font-medium text-center sm:px-12 pretendard">
+          제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 브랜디 &gt;</p>
+          <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
+        </div>
+        <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" target="_blank" class="button_bg">사이트바로가기</a>
+      </li>
+    </ul>
+
+  </section>
+  <!-- 1 -->
+
+  <section id="section_2" class=" md:py-[5.2vw] py-[50px] bg-[#FFF5DF]">
+    <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center text-surfacegreen container">
+      <img src="./img/title.svg">
+      <h1 class="text-[50px] comma text-center">02. GRAPHIC DESIGN</h1>
+      하단의 상자를 클릭해 자세한 그래픽 디자인을 확인하세요!
+      <span class="inline-block md:w-[760px] w-full h-[3px] bg-surfacegreen"></span>
+    </div>
+    <div class="h5 px-[46px] py-5 rounded-full bg-primary2 font-semibold text-center text-white mt-[0.5vw] mx-auto w-fit font-['pretendard']">그래픽 라인업</div>
+    <div class="container graghic">
+      <!-- 왼쪽 -->
+      <div class="lg:flex justify-center w-full graphic lg:col-6 hidden">
+        <ul class="flex flex-col gap-[57px] col-6 items-center"> 
+          <li class="">
+            <a href="#img1"  class="tab_all on">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              상세페이지
+            </a>
+            <div class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="img1_1">
+              <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+              <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+                <img src="img/popup/img1.jpg" alt="모달컨텐츠1">
+              </div>
+            </div>
+          </li>
+          <!-- 1 -->
+          <li class="">
+            <a href="#img2"class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              포스터디자인 
+            </a>
+          </li>
+          <!-- 2 -->
+          <li class="">
+            <a href="#img3"  class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              카드뉴스 
+            </a>
+          </li>
+          <!-- 3 -->
+          
+        </ul>
+        <ul class="flex flex-col gap-[57px] col-6 items-center">
+          <li class="">
+            <a href="#img4"class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              광고배너
+            </a>
+          </li>
+          <!-- 4 -->
+          <li class="">
+            <a href="#img5"  class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              대시보드디자인
+            </a>
+          </li>
+          <!-- 5 -->
+          <li class="">
+            <a href="#img6"class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              로고디자인
+            </a>
+          </li>
+          <!-- 6 -->
+          <!-- <li class="">
+            <a href="#img7"  class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              카드뉴스 
+            </a>
+          </li> -->
+          <!-- 7 -->
+          <!-- <li class="">
+            <a href="#img8"class="tab_all">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              광고배너
+            </a>
+          </li> -->
+          <!-- 8 -->
+        </ul>
+      </div>
+
+      <!-- 오른쪽 -->
+      <ul class="lg:flex flex-col gap-8 xl:col-5 col-6 rounded-[10px] bg-surfacegreen relative xl:p-10 p-5 items-center overflow-hidden hidden">
+        <li id="img1" class="block ">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">상세페이지</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">동두천자연에너지협동조합 ‘에너지절약 상세페이지’</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded">
+            <img class="w-full" src="img/popup/1.jpg">
+          </div>
+          <a href="#modal1"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 1 -->
+        <li id="img2" class="hidden">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">포스터디자인</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">브랜디 ‘홍보 포스터디자인’</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded">
+            <img class="w-full" src="img/popup/2.jpg">
+          </div>
+          <a href="#modal2"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 2 -->
+        <li id="img3" class="hidden">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">카드뉴스</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">브랜디 ‘홍보 카드뉴스’</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded">
+            <img class="w-full" src="img/popup/3.jpg">
+          </div>
+          <a href="#modal3"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 3 -->
+        <li id="img4" class="hidden">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">광고배너</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">비영리 단체 전문 회계프로그램 ‘NPAS 광고배너</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded contents">
+            <img class="w-full" src="img/popup/4.jpg">
+          </div>
+          <a href="#modal4"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 4 -->
+        <li id="img5" class="hidden">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">대시보드디자인</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">비영리 단체 전문 회계프로그램 ‘NPAS 대시보드’</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded contents">
+            <img class="w-full" src="img/popup/5.jpg">
+          </div>
+          <a href="#modal5"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 5 -->
+        <li id="img6" class="hidden">
+          <div class="flex flex-col py-px pb-8 text-center text-white">
+            <span class="text-[26px] pb-2">로고디자인</span>
+            <p class="text-sm font-['pretendard'] border-b-2 border-[#ffc439] border-solid py-1">시엔지 ‘CI&BI’</p>
+          </div>
+          <div class="max-w-[520px] h-[620px] overflow-hidden  rounded contents">
+            <img class="w-full" src="img/popup/6.jpg">
+          </div>
+          <a href="#modal6"class="zoom_btn modal_all"><img  src="img/zoom_in.svg"></a>
+        </li>
+        <!-- 6 -->
+      </ul>
+
+      <!-- 모달 pc-->
+      <ol class="content">
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal1">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img1.jpg" alt="모달컨텐츠1">
+          </div>
+        </li>
+        <!-- 1 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal2">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img2.png" alt="모달컨텐츠2">
+          </div>
+        </li>
+        <!-- 2 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal3">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img3.jpg" alt="모달컨텐츠3">
+          </div>
+        </li>
+        <!-- 3 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal4">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img4.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 4 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal5">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img5.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 5 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content" id="modal6">
+          <a href="#!" class="absolute top-0 right-0 block p-8 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close"><span>close</span></a>
+          <div class="container h-[90%] my-12 overflow-y-scroll px-0">
+            <img src="img/popup/img6.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 5 -->
+      </ol>
+
+      <!-- 모달 mobile-->
+      <div class="flex justify-center w-full graphic lg:col-6 lg:hidden">
+        <ul class="flex flex-col gap-[57px] col-6 items-center"> 
+          <li class="">
+            <a href="#img1_m"  class="tab_all_m on">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              상세페이지
+            </a>
+         
+          </li>
+          <!-- 1 -->
+          <li class="">
+            <a href="#img2_m"class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              포스터디자인 
+            </a>
+          </li>
+          <!-- 2 -->
+          <li class="">
+            <a href="#img3_m"  class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              카드뉴스 
+            </a>
+          </li>
+          <!-- 3 -->
+          <li class="">
+            <a href="#img4_m"class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              광고배너
+            </a>
+          </li>
+          <!-- 4 -->
+        </ul>
+        <ul class="flex flex-col gap-[57px] col-6 items-center">
+          <li class="">
+            <a href="#img5_m"  class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              대시보드디자인
+            </a>
+          </li>
+          <!-- 5 -->
+          <li class="">
+            <a href="#img6_m"class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              로고디자인
+            </a>
+          </li>
+          <!-- 6 -->
+          <li class="">
+            <a href="#img7_m"  class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              카드뉴스 
+            </a>
+          </li>
+          <!-- 7 -->
+          <li class="">
+            <a href="#img8_m"class="tab_all_m">
+              <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
+              <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
+              광고배너
+            </a>
+          </li>
+          <!-- 8 -->
+        </ul>
+      </div>
+      <ol class="content_mobile lg:hidden block">
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m" id="img1_m" >
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img1.jpg" alt="모달컨텐츠1">
+          </div>
+        </li>
+        <!-- 1 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img2_m">
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img2.png" alt="모달컨텐츠2">
+          </div>
+        </li>
+        <!-- 2 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img3_m">
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img3.jpg" alt="모달컨텐츠3">
+          </div>
+        </li>
+        <!-- 3 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img4_m">
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img4.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 4 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img5_m">
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img5.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 5 -->
+        <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img6_m">
+          <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
+          <div class="container h-full overflow-y-scroll px-0">
+            <img src="img/popup/img6.jpg" alt="모달컨텐츠4">
+          </div>
+        </li>
+        <!-- 5 -->
+      </ol>
+
+      <script>
+        
+        //section_2 pc
+        $(".tab_all").click(function (e) {
+          e.preventDefault();
+          let modalid = $(this).attr("href");
+          $(".tab_all").removeClass('on');
+          $(this).addClass('on');
+         // $(this).parent().siblings().children().removeClass('on');
+          $(modalid).fadeIn(300);
+          $(modalid).siblings().hide();
+       });
+
+       //section_2 m
+       $(".tab_all_m").click(function (e) {
+          e.preventDefault();
+          let modalid = $(this).attr("href");
+          $(".tab_all_m").removeClass('on');
+          $(this).addClass('on');
+         // $(this).parent().siblings().children().removeClass('on');
+          $(modalid).fadeIn(300);
+          $(modalid).siblings().hide();
+       });
+       $(".modal_content_m").click(function(e){
+          e.preventDefault();
+          $(this).fadeOut(300);
+          //$(".modal_close,.close-back").fadeOut(0)
+         // $(".main-character").show()
+          $("html,body").removeClass("not_scroll");
+         // poseY = $(window).scrollTop(poseY);
+        });
+
+
+
+       // 모달컨텐츠(롤케이크모달)//
+       let poseY;
+        $(".modal_all").click(function (e) {
+          e.preventDefault();
+          let modalid = $(this).attr("href");
+         $(modalid).fadeIn(300);
+         $(".modal-close,.close-back").fadeIn(300);
+          poseY = $(window).scrollTop();
+          $("html,body").addClass("not_scroll")
+          $(".body_wrap").css({top: -poseY})
+       });
+        $(".modal_close,.modal_content").click(function(e){
+          e.preventDefault();
+          $(".modal_content").fadeOut(300);
+          //$(".modal_close,.close-back").fadeOut(0)
+         // $(".main-character").show()
+          $("html,body").removeClass("not_scroll");
+          poseY = $(window).scrollTop(poseY);
+        });
+
+      //모바일
+      function toggleModal() {
+        document.getElementById('modal').classList.toggle('hidden')
+      }
+
+      </script>
+    </div>
+    
+  </section>
+  <!-- 2 -->
+  
+  <section id="section_3" class=" md:py-[5.2vw] py-[50px] bg-surfacegreen">
+    <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center container text-white">
+      <img src="./img/title_w.svg">
+      <h1 class="text-[50px] comma text-center text-white">03. PROPOSAL PICNIC</h1>
+      하단의 상자를 클릭해 자세한 기획서을 확인하세요!
+      <span class="inline-block md:w-[760px] w-full h-[3px] bg-white"></span>
+    </div>
+    <div class="container pt-8">
+      <ul class="flex flex-col sm:flex-row  sm:gap-0 gap-[57px]"> 
+        <li class="w-full sm:pr-4 sm:col-4 xl:pr-0">
+          <a  href="./img/pdf/company.pdf"target="_blank" class="relative group">
+            <img src="./img/03_book.png" class="m-auto transition-all group-hover:-rotate-6">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pr-16 text-center sm:pl-3 sm:pr-12 xl:pl-0 pretendrd"><h5 class="pb-3 md:pb-7 comma">NPAS 소개서</h5>회사소개 및 회사제품소개서</div>
+          </a>
+        </li>
+        <li class="w-full sm:pr-4 sm:col-4 xl:pr-0">
+          <a href="./img/pdf/logo.pdf"target="_blank" class="relative group">
+            <img src="./img/03_book.png" class="m-auto transition-all group-hover:-rotate-6">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pr-16 text-center sm:pl-3 sm:pr-12 xl:pl-0 pretendrd"><h5 class="pb-3 md:pb-7 comma">NPAS CI & BI</h5>NPAS CI 및 기업정체성 설명서</div>
+          </a>
+        </li>
+        <li class="w-full sm:pr-4 sm:col-4 xl:pr-0">
+          <a href="http://webpub.dothome.co.kr/04/hsj/brandi/doc.pdf" target="_blank" class="relative group">
+            <img src="./img/03_book.png" class="m-auto transition-all group-hover:-rotate-6">
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pr-16 text-center sm:pl-3 sm:pr-12 xl:pl-0 pretendrd"><h5 class="pb-3 md:pb-7 comma">BRANDI 기획서</h5>BRANDI 리뉴얼 프로젝트 기획서</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+  </section>
+  <!-- 3 -->
+
+  <section id="section_4" class=" md:py-[5.2vw] py-[50px] bg-surfacegreen">
+    <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center container text-white">
+      <img src="./img/title_w.svg">
+      <h1 class="text-[50px] comma text-center text-white"> 04. FINE ART FOREST</h1>
+      지친 감성에 신선한 자극을 줄 다양한 파인아트작품전시!
+      <span class="inline-block md:w-[760px] w-full h-[3px] bg-white"></span>
+    </div>
+    <div class="container pt-8 pb-32 swiper fineArt_Swiper">
+      <ul class="h-auto swiper-wrapper">
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/1.jpg) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf2.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;내일의 일기></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/2.jpg) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;금지구역></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/3.jpg) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf2.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;Untitled></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/4.png) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;Untitled></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/5.png) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf2.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;양면></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/6.jpg) 50% / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;양면2></p>
+        </li>
+        <li class="swiper-slide w-[400px] " >
+          <a href="./img/pdf/fineart.pdf" target="_blank" class="go_site !w-full rounded" style="background: url(./img/fineArt/7.jpg) 100% 0px / cover no-repeat;">
+           <button class="button bg-[#FFC439]">자세히보기</button>
+           <span class="block w-[104%] rounded-full h-[15px] bg-[#804F22] absolute bottom-0 left-[-2%] z-10"><img class="absolute right-0 -bottom-7" src="img/04_leaf2.svg"></span>
+          </a>
+          <p class="text-[22px] text-center text-white pt-7">&#x3C;Untitled></p>
+        </li>
+      </ul>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination "></div>
+    </div>
+    <script>
+      var swiper = new Swiper(".fineArt_Swiper", {
+        slidesPerView: 1,
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          960: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1600: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </section>
+  <!-- 4 -->
+
+  <section id="section_5" class=" md:py-[5.2vw] py-[50px]">
+    <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center text-surfacegreen container clear">
+      <img src="./img/title.svg">
+      <h1 class="text-[50px] comma text-center"> 05. FILM DESIGN</h1>
+      <div class="flex flex-col items-center w-full gap-5 sm:flex-row h4 sm:w-fit">한여름밤의 
+        <span class="h3 block border-[7px] border-point1 px-8 py-5 border-solid rounded-full items-center comma text-point1 font-thin -rotate-3 w-full"># 
+        <strong class="cinema1">씨엔지</strong>
+        <strong class="hidden cinema2">동두천에너지협동조합</strong>
+        </span>시네마
+      </div>
+      <div class="w-full">
+        <ul class="flex justify-center sm:gap-16 section5_top_btn flex-col sm:flex-row">
+          <li><a href="#cng"class="text-lg px-9 py-3 rounded-full bg-primary2 font-semibold text-center text-white mb-[30px] mx-auto sm:w-fit w-full font-['pretendard'] block cng">씨엔지</a></li>
+          <li><a href="#ddc" class="text-lg px-9 py-3 rounded-full bg-primary2 font-semibold text-center text-white mb-[30px] mx-auto sm:w-fit w-full font-['pretendard'] block ddc">동두천에너지협동조합</a></li>
+        </ul>
+        <span class="inline-block md:w-[760px] w-full h-[3px] bg-surfacegreen"></span>
+      </div>
+    </div>
+
+    <div class="container md:pt-14">
+      <ul class="md:p-6 sm:p-[3.125vw] m-auto bg-surfacegreen lg:w-fit rounded-xl section5_box_wrap">
+        <li id="cng" class="lg:h-[550px] h-[360px] lg:w-[900px] mx-auto section5_box">
+          <iframe src="https://www.youtube-nocookie.com/embed/L_5k-n76Z4k?controls=0autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allow="accelerometer;" allowfullscreen ></iframe>
+        </li>
+        <li id="ddc" class="md:h-lg50px] h-[360px] lg:w-[900px] mx-auto section5_box hidden">
+          <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/cGmiX6QxX-Q?autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script>
+    //section_5
+	    $(".section5_box").eq(0).show();
+		  $(".section5_top_btn a").click(function(e){
+			e.preventDefault();
+			  $(".section5_top_btn a").removeClass("on2");
+			  $(this).addClass("on2");
+			  $(".section5_box").hide();
+			  let tapid=$(this).attr("href");
+			  $(tapid).show();
+		  });
+
+      $(".section5_top_btn .cng").click(function(){
+            $(".cinema1").show();
+            $(".cinema2").hide();
+      });
+      $(".section5_top_btn .ddc").click(function(){
+            $(".cinema2").show();
+            $(".cinema1").hide();
+      });
+
+
+  </script>
+  <!-- 5 -->
+
+  <footer class="overflow-hidden">
+    <div class="container relative z-10">
+      <div class="flex flex-col lg:flex-row items-center justify-center p-[24px] lg:p-20 rounded-[15px] bg-white container z-10 shadow-default-button -mb-14  gap-[35px] max-w-[1030px]">
+        <div class="lg:col-6 w-full">
+          <h3 class="comma text-text1 leading-normal pb-[5.2vw] text-center lg:text-left">아무것도 안해도 돼.<br>
+          그냥,<i class="text-primary2">'쉼표'</i>에 오셔서<br>잠시 쉬어가세요.</h3>
+          <div class="flex gap-4 flex-col lg:flex-row">
+          <!-- <a href="" class="button_stroke comma !rounded-full !border-2 !w-full">제작과정 보러가기</a> -->
+          <a href="cv.docx" download class="button_stroke comma !rounded-full !border-2 !w-full">이력서 다운받기</a>
+          </div>
+        </div>
+
+        <ul class="flex flex-col gap-3 lg:col-6 w-full">
+          <li class="flex  items-center gap-[13px] p-6  bg-white shadow-default3 rounded-3xl" style="">
+            <!-- <div class="flex  gap-2.5 p-3  bg-surfaceLow text-primary rounded-full"><span class="w-6 h-6 material-icons-round">place</span></div> -->
+            <img src="./img/kakao.png" class="w-[48px] h-auto">
+            <div class="relative flex flex-col gap-1">
+              <p class="text-sm comma">Kakao ID:</p>
+              <p class="font-medium pretendard text-text2">wow1472</p>
+            </div>
+          </li>
+          <li class="flex  items-center gap-[13px] p-6  bg-white shadow-default3 rounded-3xl" style="">
+            <div class="flex  gap-2.5 p-3  bg-surfaceLow text-primary rounded-full"><span class="w-6 h-6 material-icons-round">email</span></div>
+            <div class="relative flex flex-col gap-1">
+              <p class="text-sm comma">My Email:</p>
+              <p class="font-medium pretendard text-text2">rnlduadl177@gmail.com</p>
+            </div>
+          </li>
+          <li class="flex  items-center gap-[13px] p-6  bg-white shadow-default3 rounded-3xl" style="">
+            <div class="flex  gap-2.5 p-3  bg-surfaceLow text-primary rounded-full"><span class="w-6 h-6 material-icons-round">smartphone</span></div>
+            <div class="relative flex flex-col gap-1">
+              <p class="text-sm comma">Call:</p>
+              <p class="font-medium pretendard text-text2">010-2696-6690</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class=" pt-[150px] pb-[45px] rounded-t-[5.2vw] bg-primary2 max-h-64 relative">
+      <ul class="flex overflow-hidden gap-24 absolute moveforever animate-[moveforever_30s_linear_infinite]">
+        <li class="flex gap-24 text-white h1 comma ">
+          <span>HI THERE!</span><span>JUST</span>
+          <span>RELEX</span><span>HERE,</span>
+          <span>COMMA</span><span>FOREST</span>
+        </li>
+        <li class="flex gap-24 text-white h1 comma ">
+          <span>HI THERE!</span><span>JUST</span>
+          <span>RELEX</span><span>HERE,</span>
+          <span>COMMA</span><span>FOREST</span>
+        </li>
+      </ul>
+      
+    </div>
+
+  </footer>
+
+
+
+  <!--버튼 --->
+  <button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop"class="top_btn" style="display: none;"><i class="material-icons-round sm:text-7xl">arrow_upward</i></button>
+  <!--버튼 --->
+
+
+  <!--tailwind js--->
+  <script src="tailwind.config.js"></script>
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script>
+    $(function () {
+      $("#top_btn").on("click", function () {
+        $("html, body").animate({ scrollTop: 0 }, '500');
+        return false;
+      });
+      // #top_btn
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#top_btn').fadeIn('slow');
+        } else {
+          $('#top_btn').fadeOut('slow');
+        }
+      });
+
+      // header 
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > $("#intro").height()) {
+          $('header').addClass('on');
+        } else {
+          $('header').removeClass('on');
+        }
+      });
+
+    });
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,132 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-paragraph, footer, header{
+  font-family: "pretendard";
+}
+
+@layer base {
+.not_scroll{@apply overflow-hidden;}
+/* 폰트 */
+.pretendard{@apply font-['pretendard'];}
+.comma{@apply font-['comma'];}
+.col-auto { @apply max-w-[100%] flex-[0_0_auto];}
+.col-1 { @apply max-w-[8.33333%] flex-[0_0_8.33333%];}
+.col-2 { @apply max-w-[16.66667%] flex-[0_0_16.66667%];}
+.col-3 { @apply max-w-[25%] flex-[0_0_25%];}
+.col-4 { @apply max-w-[33.33333%] flex-[0_0_33.33333%];}
+.col-5 { @apply max-w-[41.66667%] flex-[0_0_41.66667%];}
+.col-6 { @apply max-w-[50%] flex-[0_0_50%];}
+.col-7 { @apply max-w-[58%] flex-[0_0_58%];}
+.col-8 { @apply max-w-[66.7%] flex-[0_0_66.7%];}
+.col-9 { @apply max-w-[75%] flex-[0_0_75%];}
+.col-10 { @apply max-w-[83.33%] flex-[0_0_83.33%];}
+.col-11 { @apply max-w-[891.6%] flex-[0_0_91.6%];}
+.col-12 { @apply max-w-[100%] flex-[0_0_100%];}
+/* 헤더 */
+header{@apply flex w-full absolute bottom-0  items-center z-[999] text-white bg-[#03594E] h-[80px] transition ease-in-out duration-700;}
+header.on{@apply fixed top-0 bottom-auto;}
+header.on a.logo{@apply h-[50px];}
+header.on .logo_l_e{@apply block;}
+header.on .logo_d_e{@apply hidden;}
+
+nav ul{@apply xl:flex flex-col xl:flex-row justify-between h-full !px-0  max-w-[1300px] m-auto hidden;}
+nav ul.on{@apply flex;}
+nav .gnb{@apply flex-grow text-center h-full leading-[73px] xl:col-2 border-b-[3px] border-yellow border-solid bg-[#03594E];}
+nav .gnb a{@apply block h-full font-bold lg:border-l border-white border-solid hover:bg-[#00C3D1] transition-all;}
+nav .gnb:last-child a{@apply lg:border-r;}
+
+/* 타이틀 */
+h1,h2,h3,h4,h5,h6{@apply font-bold font-["comma"];}
+h1[class*="comma"],h2[class*="comma"],h3[class*="comma"],h4[class*="comma"],h5[class*="comma"],h6[class*="comma"]{@apply !font-normal;}
+h1,.h1{@apply text-6xl leading-[150%];} 
+h2,.h2{@apply text-5xl leading-[150%];}
+h3,.h3{@apply text-4xl leading-[150%];}
+h4,.h4{@apply text-3xl leading-[150%];}
+h5,.h5{@apply text-2xl leading-[150%];}
+h6,.h6{@apply text-xl leading-[150%];}
+  
+@media (max-width: 1300px) {
+  h1, .h1 {
+    font-size: calc(3rem + 0.5vw) !important;
+  }
+  h2, .h2 {
+    font-size: calc(2.25rem + 0.5vw) !important;
+  }
+  h3, .h3 {
+    font-size: calc(1.875rem + 0.5vw) !important;
+  }
+  h4, .h4 {
+    font-size: calc(1.5rem + 0.5vw) !important;
+  }
+  h5, .h5 {
+    font-size: calc(1.25rem + 0.5vw) !important;
+  }
+  }
+
+/* 
+.gradient1{@apply bg-gradient-to-b from-[#05CD82] to-[#000EFF]; }
+.gradient2{@apply bg-gradient-to-b from-[#A259FF] to-[#000EFF]; } */
+
+/* 버튼 */
+
+.top_btn{@apply fixed z-10 hidden p-2 text-4xl bg-white rounded-full shadow-lg sm:w-24 sm:h-24 text-primary2 sm:right-10 right-4 bottom-10;}
+.button{@apply block py-5 rounded-md text-xl text-center w-[200px] mx-auto transition-all;}
+.button_bg{@apply text-white transition-all button bg-primary2 hover:shadow-button hover:-rotate-12;}
+.button_stroke{@apply transition-all border border-solid button text-primary2 border-primary2 hover:shadow-button hover:-rotate-12 group-hover:shadow-button group-hover:-rotate-12;}
+a.button_stroke.comma:after{@apply transition-all h-[15px] absolute block bottom-[15px] left-[10px] w-0 bg-[#ffc439] z-0 content-[''] mix-blend-multiply rounded-3xl;}
+.zoom_btn{@apply absolute bottom-0 p-10 transition-all rounded-full -right-5 bg-surfacegreen hover:scale-110;}
+a.button_stroke.comma:hover:after{@apply w-[90%];}
+/* 햄버거 바 */
+.menu_icon{@apply inline-block h-[3px] w-[40px] leading-[80px] text-[50px] relative bg-white rounded-xl;}
+.menu_icon:before{@apply inline-block h-[3px] w-[40px] absolute -top-3 left-0 content-[''] bg-white transition-all rounded-xl;}
+.menu_icon:after{@apply inline-block h-[3px]  w-[40px] absolute -bottom-3 left-0 content-[''] bg-white transition-all rounded-xl;}
+.btn_menu_btn.on .menu_icon{@apply bg-[#03594E];}
+.btn_menu_btn.on .menu_icon:before{@apply rotate-45 top-0;}
+.btn_menu_btn.on .menu_icon:after{@apply -rotate-45 bottom-0;}
+/* 섹션0 */
+#section_0{@apply bg-gradient-to-t to-[#36ac695e] from-[#fff];}
+#section_0 .swiper-slide{@apply overflow-visible text-sm font-semibold text-center text-white w-[300px] h-full flex items-end justify-center pb-3;}
+#section_0 .swiper-slide p{@apply font-['pretendard'];}
+
+/* 섹션2 */
+#section_2 >.container.graghic{@apply sm:flex justify-center items-center self-stretch py-[50px] sm:mt-9 gap-[2.5vw];} 
+#section_2 .container .graphic ul:first-child li{@apply mr-4 sm:mr-0 ;}
+#section_2 .container .graphic ul li{@apply w-full ;}
+#section_2 .container .graphic ul li a{@apply h-[120px] sm:w-[200px] w-full rounded-[20px] bg-white border-[10px] border-[#046f61]  sm:text-[22px] text-xl text-[#046f61] text-center relative border-solid flex items-center justify-center hover:shadow-default-button hover:-rotate-12 transition-all m-auto;}
+
+.go_site{@apply sm:w-[400px] h-[450px] overflow-hidden rounded-[3px] shadow-sm relative inline-block ;}
+.go_site::after{@apply w-full h-full absolute top-0 left-0 bg-black/80 content-[''] opacity-0 transition-all;}
+.go_site .button_stroke, .go_site .button{@apply absolute top-[calc(50%-35px)] left-[calc(50%-100px)] hidden z-10 transition-all opacity-0;}
+.go_site:hover::after, .go_site:hover .button{@apply block opacity-100;}
+.go_site > img{@apply transition-all;}
+.go_site:hover > img{@apply scale-110;}
+
+
+.fineArt_Swiper .go_site{@apply overflow-visible;}
+
+/* 푸터 */
+.moveforever {@apply left-0 w-max bottom-8;}
+}
+
+@keyframes moveforever {
+  from {transform: translateX(0%);}
+  to {transform: translateX(-50%);}
+}
+
+
+/* 커스텀 스와이퍼 */
+.swiper-pagination-bullet{@apply w-[15px] h-[15px] bg-[#f4f4f4] opacity-100 mx-2;}
+.swiper-pagination-bullet-active{@apply bg-primary2;}
+
+/* popup_close */
+.popup_close{@apply fixed top-0 left-0 w-full h-screen bg-black/80 z-[9999] flex items-center justify-center;}
+
+/* website */
+.website img:first-child{@apply mt-0;}
+.website img{@apply -mt-1;}
+
+.tab_all.on .tag, .tab_all_m.on .tag{@apply hidden;}
+.tab_all.on .tag_hover, .tab_all_m.on .tag{@apply block;}

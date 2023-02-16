@@ -1,0 +1,556 @@
+<html lang="ko">
+  <head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="imagetoolbar" content="no"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SNS메이커</title>
+  <!-------------------------- 구글아이콘 -------------------------->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+  <!--tailwind.css -->
+  <!-- <link rel="stylesheet" href="css/index.min.css" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+  
+</head>
+<body style="
+    overflow-x: hidden;">
+  <div class="bg-white index">
+    <header class="flex flex-col justify-center items-center fixed left-0 top-0 bg-white/[0.30] backdrop-blur-[5px] w-[100%] z-10" style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 6px rgba(108, 117, 125, 0.15);">
+      <ul class="container flex items-center self-stretch justify-between py-2.5">
+        <li class="flex gap-[30px] text-lg">
+          <a href="">둘러보기</a>
+          <a href="">서비스소개</a>
+        </li>
+        <li><a href=""><img src="img/logo.png"></a></li>
+        <li class="flex items-center gap-1">
+          <a href="" class="flex justify-center items-center gap-3 px-6 py-2.5 rounded-[6px] border border-[#fc4c4c] text-[#fc4c4c]"><p class="">회원가입</p><div class="w-5 h-6 "><p class="material-icons-round">person</p></div></a>
+          <a href="" class="flex justify-center items-center  gap-3 px-6 py-2.5 rounded-[6px] bg-gradient-to-r from-[#fc4c4c] to-[#9732fc] text-white"><p class="">로그인</p><div class="w-5 h-6 "><p class=" material-icons-round">login</p></div></a>
+    
+        </li>
+      </ul>
+      <nav class="flex justify-center items-center self-stretch   gap-20 px-4 py-[15px] border-top border-[#fd7070]  text-lg font-medium">
+        <a href="">둘러보기</a>
+        <a href="">로그인</a>
+        <a href="">서비스</a>
+        <a href="">회원가입</a>
+      </nav>
+    </header>
+    <div id="includedContent2"></div><!-- header -->
+
+
+    <main class="" style="">
+      <div style="background: linear-gradient(to right, #9732fc 0%, #a435e5 13.85%, #ed4867 79.48%, #fc4c4c 98.23%);">
+        <ul class="flex justify-center items-center self-stretch pt-[180px] gap-[70px] container" style="">
+          <li class="flex flex-col lg:gap-10 gap-[3.5vw] lg:pt-[50px] pb-[100px] col-7">
+            <div class="text-white">
+              <div class="">
+                <div class="flex justify-center items-center gap-3 px-[15px] py-2.5 rounded-[1000px] border-2 border-white border w-fit"><p class="text-xl font-bold">쉽고 정확하게 셀프마케팅 끝내기</p></div>
+                <p class="pt-[0.5rem] xl:text-[55px] text-[4.8vw] font-black" style="letter-spacing: -1.2px;line-height: 1.2;">차별화된 기술력과 노하우로 성공적인 SNS마케팅을 지원합니다.</p>
+              </div>
+              <p class="pt-[1rem] text-2xl" style="letter-spacing: -1.5px;">SNS메이커의 앞선 기술과 경험으로 브랜드 성장을 쉽게 도와드립니다.</p>
+            </div>
+            <a href="" class="flex justify-center items-center w-[190px] h-[54px]  gap-3 px-[46px] py-[11px] rounded-tr-xl rounded-bl-xl rounded-br-xl bg-white text-base font-bold text-[#9732fc]"><p class="">둘러보기</p><p class="material-icons-round">navigate_next</p></a>
+          </li>
+          <li class="col-5"><div class=" h-[705px] overflow-hidden"><img src="img/main_img.png" alt="아이폰이미지" style="width: 100%;"></div></li>
+        </ul> 
+      </div>
+      
+      <ul class="container flex items-center self-stretch justify-center gap-12 py-10 bg-white">
+        <li class="flex flex-col items-center justify-center flex-grow gap-4 ">
+          <p class="text-2xl font-medium text-center ">누적 구매고객</p>
+          <p class=" text-[38px] font-bold text-center">183,153명</p>
+        </li>
+        <li class="flex flex-col items-center justify-center flex-grow gap-4 ">
+          <p class="text-2xl font-medium text-center ">재구매율</p>
+          <p class=" text-[38px] font-bold text-center">85%</p>
+        </li>
+        <li class="flex flex-col items-center justify-center flex-grow gap-4 ">
+          <p class="text-2xl font-medium text-center ">현재 이용주문</p>
+          <p class=" text-[38px] font-bold text-center">32,432건</p>
+        </li>
+      </ul>
+    </main><!-- 1 -->
+
+    <section class="py-20 bg-[#f8f9fa]">
+      <div class="container ">
+        <p class="text-[38px] text-[#fc4c4c] pb-[50px] text-center font-bold">Services</p>
+        <ul class="flex self-stretch py-[24px]">
+          <li class="flex flex-col items-center self-stretch flex-grow gap-3 col-3">
+            <img src="img/instagram.png" class="w-[70px] h-[68px] object-cover">
+            <div class="flex flex-col items-center gap-4 ">
+              <p class="text-3xl font-bold text-center">인스타그램</p>
+              <div class="text-2xl text-center ">계정 좋아요, 팔로워, 댓글 등 24시간 모든 서비스를 관리해드립니다.</div>
+            </div>
+          </li>
+          <li class="flex flex-col items-center self-stretch flex-grow gap-3 col-3">
+            <img src="img/facebook.png" class=" w-[70px] h-[68px] object-cover">
+            <div class="flex flex-col items-center gap-4 ">
+              <p class="text-3xl font-bold text-center ">페이스북</p>
+              <div class="text-2xl text-center ">페이스북 계정 좋아요, 팔로워,페이지 좋아요 등 24시간 모든 서비스를 관리해드립니다.</div>
+            </div>
+          </li>
+          <li class="flex flex-col items-center self-stretch flex-grow gap-3 col-3">
+            <img src="img/youtube.png" class=" w-[70px] h-[68px] object-cover">
+            <div class="flex flex-col items-center gap-4 ">
+              <p class="text-3xl font-bold text-center ">유튜브</p>
+              <div class="text-2xl text-center ">동영상 좋아요,조회수, 채널 구독자를 증가시킬 수 있습니다.</div>
+            </div>
+          </li>
+          <li class="flex flex-col items-center self-stretch gap-3 col-3">
+            <img src="img/etc.png" class=" w-[70px] h-[70px] object-cover">
+            <div class="flex flex-col items-center gap-4 ">
+              <p class="text-3xl font-bold text-center">기타</p>
+              <div class="text-2xl text-center ">트위터, 틱톡 등 그외 SNS 계정의 상품을 관리해드립니다.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section><!-- 2 -->
+
+    <section class="flex flex-col justify-center items-center self-stretch  h-[780px] gap-2.5 py-20 container">
+      <div class="flex flex-col justify-center items-center self-stretch flex-grow gap-2.5 p-20 rounded-[10px]" style="background: linear-gradient(to left, #9732fc 0.21%, #ff543e 101.48%); box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+        <ul class="flex justify-center items-center self-stretch  gap-[35px]">
+          <li class="flex flex-col justify-center items-center flex-grow gap-[25px] font-bold col-6">
+            <div class="flex items-center self-stretch justify-center gap-4 ">
+              <div class="flex   gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>인기게시물</div>
+              <div class="flex    gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>매출상승</div>
+            </div>
+            <div class="flex items-center self-stretch justify-center gap-4">
+              <div class="flex    gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>인스타팔로워늘리기</div>
+              <div class="flex    gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>인스타좋아요늘리기</div>
+            </div>
+            <div class="flex items-center self-stretch justify-center gap-4">
+              <div class="flex    gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>인스타그램팔로우늘리는법</div>
+              <div class="flex    gap-2.5 px-[25px] py-[15px] rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px] bg-white" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);"><p class="">#</p>클릭 한번으로</div>
+            </div>
+          </li>
+          <li class="flex flex-col justify-center gap-4 text-white ">
+            <div class="flex flex-col justify-center gap-4 ">
+              <p class="xl:text-[55px] text-[4.8vw] font-black" style="
+    letter-spacing: -1.2px;
+    line-height: 1.2;
+">SNS 성장을 통한 브랜드 인지도 상승과 매출상승의 효과!</p>
+              <span class="self-stretch w-[95px] h-[8px] bg-white"></span>
+            </div>
+            <p class="self-stretch text-2xl">
+              <span class="self-stretch">SNS 마케팅을 통한 매출 상승의 기회!</span><br>
+              <span class="self-stretch">SNS 메이커에서 만나보세요.</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section><!-- 3 -->
+
+    <section class="flex flex-col   self-stretch  gap-2.5 py-20 bg-[#f4f7fe]">
+      <div class="flex flex-col justify-center items-center self-stretch gap-[50px] container ">
+        <p class="xl:text-[55px] text-[4.8vw] font-black text-center text-[#fc4c4c]">언제 어디서든,<br>간편한 주문으로 편리하게!</p>
+        <ul class="flex items-center self-stretch py-6">
+          <li class="flex flex-col  items-center self-stretch flex-grow gap-[50px] col-6">
+            <div class="flex justify-center items-center self-stretch  lg:h-[185px] gap-[60px] px-10 py-5 rounded-[10px] bg-white border-2 border-[#FD7070] border" style="box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+              <div class="flex justify-center items-center   gap-2.5 bg-transparent">
+                <img src="img/order1.png">
+              </div>
+              <div class="flex flex-col self-stretch justify-center flex-grow gap-2 ">
+                <p class="text-3xl font-bold ">주문즉시 가동</p>
+                <div class="flex flex-col items-center "><p class="text-2xl ">주문하는 즉시 자동으로<br>24시간 언제든 작업이 시작됩니다.</p></div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center self-stretch  lg:h-[185px] gap-[60px] px-10 py-5 rounded-[10px] bg-white border-2 border-[#FD7070] border" style="box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+              <div class="flex gap-2.5 bg-transparent">
+                <img src="img/order2.png">
+              </div>
+              <div class="flex flex-col justify-center flex-grow gap-2 ">
+                <p class="text-3xl font-bold ">기술지원</p>
+                <div class="">
+                  <p class="text-2xl " style="word-break: keep-all;">광고 대행사 및 프리랜서를 위한<br>페이지 개발 및 분양 지원!<br>API 제공으로 재판매도 가능합니다.</p></div>
+              </div>
+            </div>
+          </li>
+          <li class="flex flex-col  items-center self-stretch flex-grow gap-[50px] col-6">
+            <div class="flex justify-center items-center self-stretch  lg:h-[185px] gap-[60px] px-10 py-5 rounded-[10px] bg-white border-2 border-[#FD7070] border" style="box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+              <div class="flex flex-col justify-center items-center   gap-2.5 py-1 bg-transparent">
+                <img src="img/order3.png">
+              </div>
+              <div class="flex flex-col self-stretch justify-center flex-grow gap-2 ">
+                <p class="text-3xl font-bold ">프리미엄 서비스</p>
+                <p class="text-2xl " style="word-break: keep-all;">실제 한국인이 활동하는 SNS 서비스를 제공합니다.</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center self-stretch  lg:h-[185px] gap-[60px] px-10 py-5 rounded-[10px] bg-white border-2 border-[#FD7070] border" style="box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+              <div class="flex justify-center items-center   gap-2.5 px-1 bg-transparent">
+                <img src="img/order4.png">
+              </div>
+              <div class="flex flex-col self-stretch justify-center flex-grow gap-2 ">
+                <p class="text-3xl font-bold ">최고 보안레벨</p>
+                <p class="text-2xl " style="
+    word-break: keep-all;
+">고객님의 정보를 암호화하여 소중하게 지켜드립니다.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section><!-- 4 -->
+
+    <section class="flex justify-center items-center self-stretch  gap-[70px] container py-20">
+      <div class="flex flex-col justify-center items-center self-stretch flex-grow gap-[50px] py-10">
+        <div class="flex flex-col justify-center items-center self-stretch   gap-[30px]">
+          <p class="xl:text-[55px] text-[4.8vw] font-black">“SNS 메이커” 이용효과</p>
+          <span class="w-[95px] h-[8px] bg-[#FC4C4C]"></span>
+        </div>
+        <ul class="flex flex-col items-center gap-5">
+          <li class="flex  items-center  w-[768.04px]  gap-10">
+            <ul class="flex flex-col justify-center items-center self-stretch  gap-[30px] ">
+              <li class="flex flex-col items-center justify-center flex-grow gap-1 "><img src="img/instagram icon.png" class=" w-[70px] h-[68px] object-cover"></li>
+              <li class="flex flex-col items-center justify-center flex-grow gap-1 "><img src="img/instagram icon.png" class=" w-[70px] h-[68px] object-cover"></li>
+              <li class="flex flex-col items-center self-stretch justify-center flex-grow gap-1 "><img src="img/youtube icon.png" class=" w-[70px] h-[68px] object-cover"></li>
+            </ul>
+
+            <ul class="flex flex-col justify-center items-center flex-grow gap-[30px] before ">
+              <li class=" w-[100%] text-[38px] font-bold text-center absolute -top-20">Before</li>
+              <li class="flex flex-col self-stretch gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl text-white ">10개</p>
+                  </div>
+                </div>
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl text-white ">200명</p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex flex-col self-stretch justify-center gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl text-white ">200개</p>
+                  </div>
+                </div>
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl text-white ">1,900명</p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex flex-col self-stretch justify-center gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl text-white ">800개</p>
+                  </div>
+                </div>
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#6c757d]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl text-white ">5,200명</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="" preserveAspectRatio="xMidYMid meet">
+              <path d="M24.8003 0.78125C38.1792 0.78125 49.019 11.6211 49.019 25C49.019 38.3789 38.1792 49.2188 24.8003 49.2188C11.4214 49.2188 0.581543 38.3789 0.581543 25C0.581543 11.6211 11.4214 0.78125 24.8003 0.78125ZM13.4722 29.2969H24.8003V36.2207C24.8003 37.2656 26.0698 37.793 26.8022 37.0508L37.9644 25.8301C38.4233 25.3711 38.4233 24.6387 37.9644 24.1797L26.8022 12.9492C26.0601 12.207 24.8003 12.7344 24.8003 13.7793V20.7031H13.4722C12.8276 20.7031 12.3003 21.2305 12.3003 21.875V28.125C12.3003 28.7695 12.8276 29.2969 13.4722 29.2969Z" fill="#1C1D1F"></path>
+            </svg>
+            
+            <ul class="flex flex-col justify-center items-center  gap-[30px] ">
+              <li class=" w-[100%] text-[38px] font-bold text-center absolute -top-20">After</li>
+              <li class="flex flex-col self-stretch gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl font-bold text-white ">70개</p>
+                  </div>
+                </div>
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl font-bold text-white ">1,200명</p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex flex-col justify-center gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl font-bold text-white ">450개</p>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl font-bold text-white ">5,200명</p>
+                  </div>
+                </div>
+              </li>
+              <li class="flex flex-col self-stretch justify-center gap-4">
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/heart.png" class="">
+                    <p class="text-2xl text-white ">좋아요</p>
+                    <p class="text-2xl font-bold text-white ">900개</p>
+                  </div>
+                </div>
+                <div class="flex items-center self-stretch justify-center ">
+
+                  <div class="before_after bg-[#fc4c4c]">
+                    <img src="img/person.png" class="">
+                    <p class="text-2xl text-white ">팔로워</p>
+                    <p class="text-2xl font-bold text-white ">7,000명</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="flex items-center self-stretch justify-center py-10 ">
+        <div class=" w-[404px] h-[800px] " style="filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.1)) drop-shadow(0px 4px 12px rgba(252,76,76,0.1));"><img src="img/phone.png" alt="아이폰이미지" style="width: 100%;"></div>
+      </div>
+    </section><!-- 5 -->
+
+    <section class="py-20 " style="background: linear-gradient(to right, #9732fc -0.68%, #fc4c4c 100%);">
+      <div class="flex flex-col items-center self-stretch justify-center gap-6 pb-10">
+        <div class="flex flex-col items-center justify-center gap-4 ">
+          <p class=" text-[22px] font-bold text-center text-white">SNS메이커의 생생한 리뷰</p>
+          <div class="flex flex-col items-center justify-center gap-3 ">
+            <p class="xl:text-[55px] text-[4.8vw] font-black  text-white">고객님의 실시간 후기</p>
+            <p class="text-2xl text-white ">SNS메이커를 실제 이용하시는 고객분들의 생생한 리얼 후기!</p>
+          </div>
+        </div>
+        <div class="flex justify-center items-center  h-[54px]  gap-3 px-6 py-[11px] rounded-tr-md rounded-bl-md rounded-br-md bg-white">
+          <p class=" text-[22px] font-bold  text-[#9732fc]">실시간후기 보러가기</p>
+          <p class="material-icons-roundtext-3xl text-center text-[#9732fc]">navigate_next</p>
+        </div>
+      </div>
+      <div class="container flex justify-center items-center self-stretch  gap-[15px] relative">
+        
+        <div class="flex flex-col justify-between  self-stretch   p-10 rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-white/90" style="box-shadow: 0px 0px 20px 0 rgba(193,193,193,0.8);">
+          <div class="flex flex-col gap-3 ">
+            <p class="self-stretch  w-[432px] text-[38px] font-bold  ">원하는 서비스만 있어 쉽고 유용하게 이용할 수 있어요.</p>
+            <p><span>제가 원하는 서비스만 잘 모아져 있어서 쉽고 유용하게 </span><br><span>이용했습니다. 처음 사용해도 어렵지 않게 했네요ㅎㅎ</span><br><span>SNSMAKER 최고입니다. 감사합니다!</span></p>
+          </div>
+          <p class="">김민x 님</p>
+        </div> 
+        
+        <ul class="flex flex-col flex-grow gap-3">
+          <li class="flex self-stretch gap-3">
+            <div class="flex flex-col   self-stretch flex-grow  gap-1.5 p-5 rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-white/90">
+              <div class="flex flex-col self-stretch gap-1 ">
+                <p class="self-stretch  text-[22px] font-bold  ">드디어 마케팅의 효과를 봤어요!</p>
+                부동산을 운영하고 있는데, 요새는 부동산이 온라인 마케팅이 없이는 진짜 힘듭니다. 그래서 유튜브를 통해 부동산에 대한 지식도 전달하고 좋은매물도 소개해주는 채널을 만들었지만, 구독자를 늘리는것이 정말 힘들었습니다. SNS타운을 알게 되어 서비스를 활용하게 되었고, 현재는 제 채널이 많이 활성화 되고 있습니다. 확실히 유튜부와 인스타그램으로 홍보를 제대로 하니 마케팅 효과가 큰것 같습니다. 앞으로 계속 사용하겠습니다^^
+              </div>
+              <p class="text-sm ">서철x 님</p>
+            </div>
+            <div class="flex flex-col   self-stretch flex-grow  gap-1.5 p-5 rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-white/90">
+              <div class="flex flex-col self-stretch gap-1 ">
+                <p class="  text-[22px] font-bold  ">매출과 직결되는 마케팅도 있네요.
+                </p>
+                부동산을 운영하고 있는데, 요새는 부동산이 온라인 마케팅이 없이는 진짜 힘듭니다. 그래서 유튜브를 통해 부동산에 대한 지식도 전달하고 좋은매물도 소개해주는 채널을 만들었지만, 구독자를 늘리는것이 정말 힘들었습니다. SNS타운을 알게 되어 서비스를 활용하게 되었고, 현재는 제 채널이 많이 활성화 되고 있습니다. 확실히 유튜부와 인스타그램으로 홍보를 제대로 하니 마케팅 효과가 큰것 같습니다. 앞으로 계속 사용하겠습니다^^
+              </div>
+              <p class="text-sm ">서철x 님</p>
+            </div>
+          </li>
+          <li class="flex self-stretch gap-3">
+            <div class="flex flex-col   self-stretch flex-grow  gap-1.5 p-5 rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-white/90">
+              <div class="flex flex-col self-stretch gap-1 ">
+                <p class="self-stretch  text-[22px] font-bold  ">
+                  저렴하게 할용할수 있어서 너무 좋은거같아요!
+                </p>
+                부동산을 운영하고 있는데, 요새는 부동산이 온라인 마케팅이 없이는 진짜 힘듭니다. 그래서 유튜브를 통해 부동산에 대한 지식도 전달하고 좋은매물도 소개해주는 채널을 만들었지만, 구독자를 늘리는것이 정말 힘들었습니다. SNS타운을 알게 되어 서비스를 활용하게 되었고, 현재는 제 채널이 많이 활성화 되고 있습니다. 확실히 유튜부와 인스타그램으로 홍보를 제대로 하니 마케팅 효과가 큰것 같습니다. 앞으로 계속 사용하겠습니다^^
+              </div>
+              <p class="text-sm">서철x 님</p>
+            </div>
+            <div class="flex flex-col   self-stretch flex-grow  gap-1.5 p-5 rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-white/90">
+              <div class="flex flex-col self-stretch gap-1 ">
+                <p class="self-stretch  text-[22px] font-bold  ">원하는 서비스만 있어 쉽고 유용하게 이용할 수 있어요.</p>
+                부동산을 운영하고 있는데, 요새는 부동산이 온라인 마케팅이 없이는 진짜 힘듭니다. 그래서 유튜브를 통해 부동산에 대한 지식도 전달하고 좋은매물도 소개해주는 채널을 만들었지만, 구독자를 늘리는것이 정말 힘들었습니다. SNS타운을 알게 되어 서비스를 활용하게 되었고, 현재는 제 채널이 많이 활성화 되고 있습니다. 확실히 유튜부와 인스타그램으로 홍보를 제대로 하니 마케팅 효과가 큰것 같습니다. 앞으로 계속 사용하겠습니다^^
+              </div>
+              <p class="text-sm ">서철x 님</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- arrow -->
+        <div class="absolute top-50 w-[100%] flex justify-between">
+          <a href="#!" class="flex flex-col  items-center gap-[8px] p-[8px] rounded-[34px] border-2 border-white"><p class="text-3xl text-center text-white material-icons-round">navigate_next</p></a>
+
+          <a href="#!" class="flex flex-col  items-center   gap-[8px] p-[8px] rounded-[31.97px] border-2 border-white"><p class="text-3xl text-center text-white material-icons-round">navigate_next</p></a>
+        </div>
+      </div>
+    </section><!-- 6 -->
+
+    <section class="flex flex-col justify-center items-center self-stretch  gap-[30px] container py-20">
+      <div class="flex flex-col justify-center items-center self-stretch  relative gap-[30px] py-5">
+        <p class="xl:text-[55px] text-[4.8vw] font-black">SNS마케팅 어떻게 시작해야 할까요?</p>
+        <span class="w-[95px] h-[8px] bg-[#9732FC]"></span>
+      </div>
+      <ul class="flex justify-center items-center self-stretch  gap-[50px] py-[30px]">
+        <li class="flex flex-col items-center flex-grow gap-6 ">
+          <div class="relative w-[400px] h-[400px] p-5">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0" preserveAspectRatio="xMidYMid meet"><circle cx="200" cy="200" r="197" stroke="url(#paint0_radial_4_763)" stroke-width="6"></circle><defs><radialGradient id="paint0_radial_4_763" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(106.251 430.808) rotate(-90) scale(396.43 368.711)"><stop stop-color="#FFDD55"></stop><stop offset="0.1" stop-color="#FFDD55"></stop><stop offset="0.5" stop-color="#FF543E"></stop><stop offset="1" stop-color="#C837AB"></stop></radialGradient></defs></svg>
+            <div class="flex flex-col items-center justify-center gap-6 rounded-full border border-2 border-[#FD9494] self-stretch h-100">
+              <div class="flex justify-center items-center  relative gap-3 px-9 py-2.5 rounded-[30px] border-2 border-white" style="background: linear-gradient(to bottom, #fc4c4c 0%, #9732fc 100%);">
+                <p class="text-xl font-bold text-white ">#STEP 1</p>
+              </div>
+              <p class="text-2xl font-medium text-center ">회원가입 후 주문할서비스 상세설명 확인</p>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col items-center flex-grow gap-6 ">
+          <div class="relative w-[400px] h-[400px] p-5">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0" preserveAspectRatio="xMidYMid meet"><circle cx="200" cy="200" r="197" stroke="url(#paint0_radial_4_763)" stroke-width="6"></circle><defs><radialGradient id="paint0_radial_4_763" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(106.251 430.808) rotate(-90) scale(396.43 368.711)"><stop stop-color="#FFDD55"></stop><stop offset="0.1" stop-color="#FFDD55"></stop><stop offset="0.5" stop-color="#FF543E"></stop><stop offset="1" stop-color="#C837AB"></stop></radialGradient></defs></svg>
+            <div class="flex flex-col items-center justify-center gap-6 rounded-full border border-2 border-[#FD9494] self-stretch h-100">
+              <div class="flex justify-center items-center  relative gap-3 px-9 py-2.5 rounded-[30px] border-2 border-white" style="background: linear-gradient(to bottom, #fc4c4c 0%, #9732fc 100%);">
+                <p class="text-xl font-bold text-white ">#STEP 2</p>
+              </div>
+              <p class="text-2xl font-medium text-center ">상세설명 확인 후 주문정보 작성하여 서비스 시작</p>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col items-center flex-grow gap-6 ">
+          <div class="relative w-[400px] h-[400px] p-5">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 left-0" preserveAspectRatio="xMidYMid meet"><circle cx="200" cy="200" r="197" stroke="url(#paint0_radial_4_763)" stroke-width="6"></circle><defs><radialGradient id="paint0_radial_4_763" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(106.251 430.808) rotate(-90) scale(396.43 368.711)"><stop stop-color="#FFDD55"></stop><stop offset="0.1" stop-color="#FFDD55"></stop><stop offset="0.5" stop-color="#FF543E"></stop><stop offset="1" stop-color="#C837AB"></stop></radialGradient></defs></svg>
+            <div class="flex flex-col items-center justify-center gap-6 rounded-full border border-2 border-[#FD9494] self-stretch h-100">
+              <div class="flex justify-center items-center  relative gap-3 px-9 py-2.5 rounded-[30px] border-2 border-white" style="background: linear-gradient(to bottom, #fc4c4c 0%, #9732fc 100%);">
+                <p class="text-xl font-bold text-white ">#STEP 3</p>
+              </div>
+              <p class="text-2xl font-medium text-center ">회원가입 후 주문할 서비스 상세설명 확인</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section><!-- 7 -->
+
+    <section class="flex justify-center items-center self-stretch  gap-20 container py-20 rounded-[20px] bg-white">
+      <div class="flex  items-center flex-grow overflow-hidden gap-[70px] px-20 py-10 rounded-[10px]" style="background: linear-gradient(to right, #ff543e 0%, #9732fc 46.78%, rgba(151,50,252,0.1) 104.31%),url(./img/ask.png) no-repeat 0 0 /cover; box-shadow: 10px 10px 0px 0 rgba(252,76,76,0.5), 20px 20px 0px 0 rgba(253,112,112,0.5);">
+        <div class="flex flex-col justify-center   gap-[55px]">
+          <div class="flex flex-col    relative gap-[30px]">
+            <p class=" text-[46px] font-bold  text-white">궁금한 점이 있으신가요?</p>
+            <span class="w-[95px] h-[8px] bg-white"></span>
+            <p class="text-2xl text-white ">SNS메이커와 함께하시면<br>당신의 SNS가 특별해집니다.</p>
+          </div>
+          <a class="flex justify-center items-center  w-[190px] h-[54px] relative gap-3 px-[46px] py-[11px] rounded-tr-xl rounded-bl-xl rounded-br-xl border-2 border-white border text-white"><p class="text-base font-bold ">상담하러가기</p><p class="text-3xl text-center material-icons-round">navigate_next</p></a>
+        </div>
+      </div>
+    </section><!-- 8 -->
+    
+    <footer class="flex flex-col   self-stretch  gap-2.5  py-10 bg-[#1c1d1f]">
+      <div class="container relative flex self-stretch gap-12">
+        <a><img src="img/footer_logo.png"></a>
+        <div class="relative flex flex-col gap-6">
+          <div class="flex flex-col gap-6">
+            <div class="relative flex flex-col gap-3">
+              <p class=" text-lg font-bold text-[#fc4c4c]">지클래스 마케팅 주소 (124-88-00357)</p>
+              <p class="text-white ">
+                <span class="">서울본사 : 서울특별시 강남구 논현동 115-3,3층</span><br>
+                <span class="">일산지사 : 경기도 고양시 일산동구</span><br><span class="">인천지사 : 인천광역시 구월동 1256-1, 205호</span>
+              </p>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="relative flex items-center gap-2 text-base text-center text-white">
+                <p class="text-lg font-bold ">대표이사: 김성재</p>
+                <p class="">대표번호: 1833-7058</p>
+                <p class=" w-[5px] h-[21px] ">|</p>
+                <p class="">회사상호: 지클래스 마케팅 (124-88-00357)</p>
+              </div>
+              <div class="relative flex gap-2 text-base text-center text-white">
+                <p class="">전자메일: wwjd@g-clss.co.kr</p>
+                <p class="">|</p>
+                <p class="">통신판매 2018-서울강서-0492</p>
+                <p class="">|</p>
+                <p class="">개인정보취급방침</p>
+                <p class="">|</p>
+                <p class="">이용약관</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-center text-white ">snstown© 2022 All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <div id="includedContent"></div><!-- <footer> -->
+  </div>
+
+  <!--버튼 --->
+  <button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop" class="fixed z-10 hidden p-2 bg-gray-100 rounded-full shadow-md right-10 bottom-10 animate-bounce" style="display: none;">
+    <i class="material-icons-round sm:text-7xl">arrow_upward</i>
+  </button>
+  <!--버튼 --->
+
+<!--커스텀 js--->
+<script src="tailwind.config.js"></script>
+<script src="js/compressed.js"></script>
+<!-- Tailwind Elements JS -->
+<script type="text/javascript" src="js/index.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+  $(function(){
+    $("#includedContent").load("footer.html"); 
+    $("#includedContent2").load("header.html");
+  });
+
+  $(function() {
+      $("#top_btn").on("click", function() {
+          $("html, body").animate({scrollTop:0}, '500');
+          return false;
+      });
+      // #top_btn
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              $('#top_btn').fadeIn('slow');
+          } else {
+              $('#top_btn').fadeOut('slow');
+          }
+      });
+
+  });
+</script>
+<style>
+  .before .before_after:before{background: #6C757D;}
+
+  .before_after:before{background: #FC4C4C;
+    content: '';
+    display: block;
+    width: 18px;
+    transform: rotate(45deg);
+    height: 18px;
+    position: absolute;
+    left: -9px;}
+
+</style>
+
+</body>
+</html>

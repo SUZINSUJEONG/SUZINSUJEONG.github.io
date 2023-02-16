@@ -1,0 +1,50 @@
+/* @import "https://cdn.tailwindcss.com"; */
+/* @config "/js/../tailwind.config.js"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  .top_btn {
+    @apply flex flex-col justify-center items-center fixed bottom-10 right-10 gap-2.5 px-2.5 py-[13px] bg-white/50 border border-[#ddd] text-[23px] text-center text-[#666];
+  }
+  .full_btn{
+    @apply flex justify-center items-center self-stretch  gap-2.5 px-9 py-3 rounded-2xl bg-primary text-white text-base font-semibold text-center;
+  }
+  .stroke_btn{
+    @apply flex justify-center items-center self-stretch  gap-2.5 px-9 py-3 rounded-2xl border border-primary text-primary text-base font-semibold text-center;
+  }
+  .swiper_btn{
+    @apply w-12 h-12 text-white rounded-full bg-dark text-[32px];
+  }
+  .swiper_btn:after,.swiper_btn_notice:after{ 
+    @apply hidden;
+  }
+ 
+}
+i{@apply w-fit;}
+strong{@apply font-bold;}
+
+/* title */
+h2{@apply py-[20px] text-5xl font-bold text-center leading-relaxed flex flex-col;}
+.sub_title {@apply text-lg font-normal text-center text-neutral-500; }
+
+h4{@apply text-2xl font-bold;}
+h5{@apply text-xl font-bold;}
+
+/* tab */
+.tab li a{@apply flex justify-center items-center flex-grow  px-[45px] py-[26px] rounded-tl-2xl rounded-tr-2xl border-[3px] border-b-0 border-transparent text-2xl text-neutral-500 transition;}
+.tab li.active a{@apply border-[3px] border-b-0 border-primary text-primary;}
+
+/* card */
+[class*="card"]{ @apply flex flex-col items-center self-stretch flex-grow rounded-[30px] relative border transition hover:drop-shadow-md h-full overflow-hidden bg-white;}
+
+.card1{@apply overflow-hidden gap-3.5 px-6 py-4 bg-white ;}
+
+[class*="card"] img{@apply transition ;}
+[class*="card"]:hover img{@apply duration-200 scale-110;}
+
+
+
