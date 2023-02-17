@@ -85,75 +85,6 @@
         <span class="text-[18px] font-semibold text-surfacegreen pretendard sm:block hidden"><i class="mr-1 align-middle material-icons-round text-yellow">place</i>콤마 포레스트</span>
       </h4>
 
-      <script>
-        // 타이핑 스크립트
-        class TypeWriter {
-          constructor(txtElement, words, wait = 3000) {
-            this.txtElement = txtElement;
-            this.words = words;
-            this.txt = "";
-            this.wordIndex = 0;
-            this.wait = parseInt(wait, 10);
-            this.type();
-            this.isDeleting = false;
-          }
-
-          type() {
-            // Current index of word
-            const current = this.wordIndex % this.words.length;
-            // Get full text of current word
-            const fullTxt = this.words[current];
-
-            // Check if deleting
-            if (this.isDeleting) {
-              // Remove char
-              this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-              // Add char
-              this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            // Insert txt into element
-            this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-            // Initial Type Speed
-            let typeSpeed = 300;
-
-            if (this.isDeleting) {
-              typeSpeed /= 2;
-            }
-
-            // If word is complete
-            if (!this.isDeleting && this.txt === fullTxt) {
-              // Make pause at end
-              typeSpeed = this.wait;
-              // Set delete to true
-              this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === "") {
-              this.isDeleting = false;
-              // Move to next word
-              this.wordIndex++;
-              // Pause before start typing
-              typeSpeed = 500;
-            }
-
-            setTimeout(() => this.type(), typeSpeed);
-          }
-        }
-
-        // Init On DOM Load
-        document.addEventListener("DOMContentLoaded", init);
-
-        // Init App
-        function init() {
-          const txtElement = document.querySelector(".txt-type");
-          const words = JSON.parse(txtElement.getAttribute("data-words"));
-          const wait = txtElement.getAttribute("data-wait");
-          // Init TypeWriter
-          new TypeWriter(txtElement, words, wait);
-        }
-
-      </script>
     </main>
   </section>
   <!-- intro -->
@@ -268,12 +199,12 @@
       <!-- 씨엔쥐 -->
 
       <li class=" xl:px-[25px] px-2">
-        <a href="http://webpub.dothome.co.kr/04/hsj/naturerepublic" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="./site/naturerepublic/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 네이쳐리퍼블릭 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
         </div>
-        <a href="http://webpub.dothome.co.kr/04/hsj/naturerepublic" target="_blank" class="button_bg">사이트바로가기</a>
+        <a href="./site/naturerepublic/index.html" target="_blank" class="button_bg">사이트바로가기</a>
       </li>
       <!-- 네이쳐리퍼블릭 -->
 
@@ -344,9 +275,6 @@
             </a>
           </li>
           <!-- 3 -->
-          
-        </ul>
-        <ul class="flex flex-col gap-[57px] col-6 items-center">
           <li class="">
             <a href="#img4"class="tab_all">
               <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
@@ -355,6 +283,9 @@
             </a>
           </li>
           <!-- 4 -->
+          
+        </ul>
+        <ul class="flex flex-col gap-[57px] col-6 items-center">         
           <li class="">
             <a href="#img5"  class="tab_all">
               <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
@@ -371,21 +302,21 @@
             </a>
           </li>
           <!-- 6 -->
-          <!-- <li class="">
+          <li class="">
             <a href="#img7"  class="tab_all">
               <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
               <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
-              카드뉴스 
+              캐릭터디자인 
             </a>
-          </li> -->
+          </li>
           <!-- 7 -->
-          <!-- <li class="">
+          <li class="">
             <a href="#img8"class="tab_all">
               <img class="absolute top-[-23px] left-[15px] block tag" src="img/tag.png">
               <img class="absolute top-[-23px] left-[15px] hidden tag tag_hover" src="img/tag_hover.png">
               광고배너
             </a>
-          </li> -->
+          </li>
           <!-- 8 -->
         </ul>
       </div>
@@ -747,14 +678,15 @@
       </div>
     </div>
 
-    <div class="container px-0 md:pt-14 sm:px-4">
+    <div class="container px-0 sm:px-4">
       <ul class="md:p-6 sm:p-[3.125vw] m-auto bg-surfacegreen lg:w-fit rounded-xl section5_box_wrap">
         <li id="cng" class="lg:h-[550px] sm:h-[350px] h-[300px] lg:w-[900px] mx-auto section5_box">
-          <iframe src="https://www.youtube-nocookie.com/embed/L_5k-n76Z4k?controls=0autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allow="accelerometer;" allowfullscreen ></iframe>
+          <iframe src="https://www.youtube.com/embed/L_5k-n76Z4k?controls=0&autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
         </li>
         <li id="ddc" class="md:h-lg50px] sm:h-[350px] h-[300px] lg:w-[900px] mx-auto section5_box hidden">
-          <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/cGmiX6QxX-Q?autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="100%"src="https://www.youtube.com/embed/cGmiX6QxX-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </li>
+
       </ul>
     </div>
   </section>
@@ -768,7 +700,7 @@
           <h3 class="comma text-text1 leading-normal pb-[5.2vw] text-center lg:text-left">아무것도 안해도 돼.<br>
           그냥,<i class="text-primary2">'쉼표'</i>에 오셔서<br>잠시 쉬어가세요.</h3>
           <div class="flex flex-col gap-4 lg:flex-row">
-          <!-- <a href="" class="button_stroke comma !rounded-full !border-2 !w-full">제작과정 보러가기</a> -->
+          <a href="" class="button_stroke comma !rounded-full !border-2 !w-full">제작과정 보러가기</a>
           <a href="cv.docx" download class="button_stroke comma !rounded-full !border-2 !w-full">이력서 다운받기</a>
           </div>
         </div>
