@@ -3,19 +3,16 @@
 <head>
   <meta charset="utf-8">
   <!-- <meta http-equiv="imagetoolbar" content="no"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>지속가능한 디자인,하수정 포트폴리오</title>
   <!-------------------------- 구글아이콘 -------------------------->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- 폰트어썸 -->
   <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
   <!-- 폰트 -->
   <link rel="stylesheet" href="css/font.css">
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-
+  
   <!--swiper 스와이퍼 css & js-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -23,10 +20,17 @@
   <!--tailwind.css -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="stylesheet" href="css/index.min.css">
+  <!-- 커스텀 CSS -->
   <link rel="stylesheet" href="css/common.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+  <link rel="stylesheet" href="css/output.css">
 
+  <!-- 제이쿼리 js -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!--tailwind js--->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- 커스텀 js -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- <script src="tailwind.config.js"></script> -->
 </head>
 
 <body class="overflow-x-hidden body_wrap">
@@ -48,11 +52,6 @@
         </div>
       </div>
     </div>
-    <script>
-      $(".popup_close").on("click",function(){
-        $(this).hide();
-      });
-    </script>
   </div>
   <section id="intro" class="h-[100vh] relative"style="">
     <img src="./img/bg3_1.png" class="absolute bottom-[-25%] z-[1000] right-0 w-[15.5vw] 2xl:block hidden">
@@ -73,15 +72,6 @@
         </ul>
       </nav>
     </header>
-    <script>
-
-      $(".btn_menu_btn").click(function() { 
-
-        $(".menu").toggleClass("on");
-        $(this).toggleClass("on");
-      });
-
-    </script>
 
     <main class="lg:py-[230px] container h-full flex items-center">
       <h4 class="flex flex-col items-center w-full gap-3 text-center text-white comma" style="">
@@ -175,7 +165,7 @@
         <h1 class="text-center comma text-7xl text-surfacegreen pb-7">Preview Picnic</h1>
         <p class="font-semibold text-center h4 text-surfacegreen pretendard">프리뷰 피크닉에서 미리 맛보고 충전하자!</p>
       </div>
-      <div class="swiper mySwiper xl:w-[1100px] w-auto">
+      <div class="swiper mySwiper preview xl:w-[1100px] w-auto">
         <ul class="swiper-wrapper h-[350px] ">
           <li class="swiper-slide ">
             <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview1.jpg)no-repeat 0 0 /cover"></div>
@@ -207,41 +197,6 @@
         <div class="swiper-button-prev after:hidden text-[0]  w-14 -rotate-180"><img src="./img/slide_arrow.svg"></div>
         <!-- <div class="swiper-pagination"></div> -->
       </div>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 1,
-          centeredSlides: true,
-          spaceBetween: 0,
-          loop: true,
-          // freeMode: true,
-          navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          breakpoints: {
-            480: {
-              slidesPerView: 3,
-              spaceBetween: 0,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-            1600: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-          },
-        });
-      </script>
     </div>
   </section>
   <!-- 0 -->
@@ -266,8 +221,10 @@
         </div>
         <a href="./npas.html" target="_blank" class="button_bg">작업과정 보기</a>
       </li>
+      <!-- 엔파스 -->
+
       <li class=" xl:px-[1.5vw] px-2">
-        <a href="./site/snsmaker/index.html" class="go_site group">
+        <a href="./site/snsmaker/index.html" target="_blank" class="go_site group">
           <img class="w-full" src="img/main_page/2.png">
           <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
         </a>
@@ -278,54 +235,68 @@
         </div>
         <a href="./snsmaker.html" target="_blank" class="button_bg">작업과정 보기</a>
       </li>
+      <!-- 에스엔메이커 -->
+
       <li class=" xl:px-[1.5vw] px-2">
-        <a href="./site/kpou/index.html" class="go_site group"><img class="w-full" src="img/main_page/3.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="./site/kpou/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/3.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 전국공무원노동조합 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
         </div>
         <a href="./kpou.html" target="_blank" class="button_bg">작업과정 보기</a>
       </li>
+      <!-- 전국공무원노동조합 -->
+
       <li class=" xl:px-[25px] px-2">
-        <a href="ddcnecoop.kr" class="go_site group"><img class="w-full" src="img/main_page/4.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="./site/ddc/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/4.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 동두천에너지협동조합 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
         </div>
         <a href="./ddc.html" target="_blank" class="button_bg">작업과정 보기</a>
       </li>
+      <!-- 동두천에너지협동조합 -->
+
       <li class=" xl:px-[25px] px-2">
-        <a href="./site/cng/html/MainPage/Main.html" class="go_site group"><img class="w-full" src="img/main_page/5.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="./site/cng/html/MainPage/Main.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/5.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; C&G: 씨엔쥐 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
         </div>
         <a href="./cng.html" target="_blank" class="button_bg">작업과정 보기</a>
       </li>
+      <!-- 씨엔쥐 -->
+
       <li class=" xl:px-[25px] px-2">
-        <a href="http://webpub.dothome.co.kr/04/hsj/naturerepublic" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="http://webpub.dothome.co.kr/04/hsj/naturerepublic" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 네이쳐리퍼블릭 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
         </div>
         <a href="http://webpub.dothome.co.kr/04/hsj/naturerepublic" target="_blank" class="button_bg">사이트바로가기</a>
       </li>
+      <!-- 네이쳐리퍼블릭 -->
+
       <li class=" xl:px-[25px] px-2">
-        <a href="http://webpub.dothome.co.kr/04/hsj/collect" class="go_site group"><img class="w-full" src="img/main_page/7.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="http://webpub.dothome.co.kr/04/hsj/collect" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/7.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 콜렉트 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
         </div>
         <a href="http://webpub.dothome.co.kr/04/hsj/collect" target="_blank" class="button_bg">사이트바로가기</a>
       </li>
+      <!-- 콜렉트 -->
+
       <li class=" xl:px-[25px] px-2">
-        <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" class="go_site group"><img class="w-full" src="img/main_page/8.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
+        <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/8.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
         <div class="py-6 font-medium text-center sm:px-12 pretendard">
           제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 브랜디 &gt;</p>
           <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로, 모바일에서도 볼 수 있습니다.</i>
         </div>
         <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" target="_blank" class="button_bg">사이트바로가기</a>
       </li>
+      <!-- 브랜디 -->
+
     </ul>
 
   </section>
@@ -341,7 +312,7 @@
     <div class="h5 px-[46px] py-5 rounded-full bg-primary2 font-semibold text-center text-white mt-[0.5vw] mx-auto w-fit font-['pretendard']">그래픽 라인업</div>
     <div class="container graghic">
       <!-- 왼쪽 -->
-      <div class="lg:flex justify-center w-full graphic lg:col-6 hidden">
+      <div class="justify-center hidden w-full lg:flex graphic lg:col-6">
         <ul class="flex flex-col gap-[57px] col-6 items-center"> 
           <li class="">
             <a href="#img1"  class="tab_all on">
@@ -607,111 +578,51 @@
           <!-- 8 -->
         </ul>
       </div>
-      <ol class="content_mobile lg:hidden block">
+      <ol class="block content_mobile lg:hidden">
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m" id="img1_m" >
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img1.jpg" alt="모달컨텐츠1">
           </div>
         </li>
         <!-- 1 -->
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img2_m">
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img2.png" alt="모달컨텐츠2">
           </div>
         </li>
         <!-- 2 -->
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img3_m">
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img3.jpg" alt="모달컨텐츠3">
           </div>
         </li>
         <!-- 3 -->
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img4_m">
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img4.jpg" alt="모달컨텐츠4">
           </div>
         </li>
         <!-- 4 -->
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img5_m">
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img5.jpg" alt="모달컨텐츠4">
           </div>
         </li>
         <!-- 5 -->
         <li class="fixed top-0 left-0  w-screen h-screen z-[9999] hidden mx-auto bg-black/80 modal_content_m " id="img6_m">
           <!-- <a href="#!" class="absolute top-0 right-0 block p-3 text-5xl font-bold bg-white material-icons-round text-primary2 modal_close_m"><span>close</span></a> -->
-          <div class="container h-full overflow-y-scroll px-0">
+          <div class="container h-full px-0 overflow-y-scroll">
             <img src="img/popup/img6.jpg" alt="모달컨텐츠4">
           </div>
         </li>
         <!-- 5 -->
       </ol>
 
-      <script>
-        
-        //section_2 pc
-        $(".tab_all").click(function (e) {
-          e.preventDefault();
-          let modalid = $(this).attr("href");
-          $(".tab_all").removeClass('on');
-          $(this).addClass('on');
-         // $(this).parent().siblings().children().removeClass('on');
-          $(modalid).fadeIn(300);
-          $(modalid).siblings().hide();
-       });
-
-       //section_2 m
-       $(".tab_all_m").click(function (e) {
-          e.preventDefault();
-          let modalid = $(this).attr("href");
-          $(".tab_all_m").removeClass('on');
-          $(this).addClass('on');
-         // $(this).parent().siblings().children().removeClass('on');
-          $(modalid).fadeIn(300);
-          $(modalid).siblings().hide();
-       });
-       $(".modal_content_m").click(function(e){
-          e.preventDefault();
-          $(this).fadeOut(300);
-          //$(".modal_close,.close-back").fadeOut(0)
-         // $(".main-character").show()
-          $("html,body").removeClass("not_scroll");
-         // poseY = $(window).scrollTop(poseY);
-        });
-
-
-
-       // 모달컨텐츠(롤케이크모달)//
-       let poseY;
-        $(".modal_all").click(function (e) {
-          e.preventDefault();
-          let modalid = $(this).attr("href");
-         $(modalid).fadeIn(300);
-         $(".modal-close,.close-back").fadeIn(300);
-          poseY = $(window).scrollTop();
-          $("html,body").addClass("not_scroll")
-          $(".body_wrap").css({top: -poseY})
-       });
-        $(".modal_close,.modal_content").click(function(e){
-          e.preventDefault();
-          $(".modal_content").fadeOut(300);
-          //$(".modal_close,.close-back").fadeOut(0)
-         // $(".main-character").show()
-          $("html,body").removeClass("not_scroll");
-          poseY = $(window).scrollTop(poseY);
-        });
-
-      //모바일
-      function toggleModal() {
-        document.getElementById('modal').classList.toggle('hidden')
-      }
-
-      </script>
     </div>
     
   </section>
@@ -813,33 +724,7 @@
       <div class="swiper-button-prev"></div> -->
       <div class="swiper-pagination "></div>
     </div>
-    <script>
-      var swiper = new Swiper(".fineArt_Swiper", {
-        slidesPerView: 1,
-        centeredSlides: true,
-        spaceBetween: 30,
-        loop: true,
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          960: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-          1600: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        },
-      });
-    </script>
+   
   </section>
   <!-- 4 -->
 
@@ -848,13 +733,13 @@
       <img src="./img/title.svg">
       <h1 class="text-[50px] comma text-center"> 05. FILM DESIGN</h1>
       <div class="flex flex-col items-center w-full gap-5 sm:flex-row h4 sm:w-fit">한여름밤의 
-        <span class="h3 block border-[7px] border-point1 px-8 py-5 border-solid rounded-full items-center comma text-point1 font-thin -rotate-3 w-full"># 
+        <span class="sm:h3 h4 block border-[7px] border-point1 sm:px-8 px-4 py-5 border-solid rounded-full items-center comma text-point1 -rotate-3 w-full font-thin"># 
         <strong class="cinema1">씨엔지</strong>
         <strong class="hidden cinema2">동두천에너지협동조합</strong>
         </span>시네마
       </div>
       <div class="w-full">
-        <ul class="flex justify-center sm:gap-16 section5_top_btn flex-col sm:flex-row">
+        <ul class="flex flex-col justify-center sm:gap-16 section5_top_btn sm:flex-row">
           <li><a href="#cng"class="text-lg px-9 py-3 rounded-full bg-primary2 font-semibold text-center text-white mb-[30px] mx-auto sm:w-fit w-full font-['pretendard'] block cng">씨엔지</a></li>
           <li><a href="#ddc" class="text-lg px-9 py-3 rounded-full bg-primary2 font-semibold text-center text-white mb-[30px] mx-auto sm:w-fit w-full font-['pretendard'] block ddc">동두천에너지협동조합</a></li>
         </ul>
@@ -862,55 +747,33 @@
       </div>
     </div>
 
-    <div class="container md:pt-14">
+    <div class="container px-0 md:pt-14 sm:px-4">
       <ul class="md:p-6 sm:p-[3.125vw] m-auto bg-surfacegreen lg:w-fit rounded-xl section5_box_wrap">
-        <li id="cng" class="lg:h-[550px] h-[360px] lg:w-[900px] mx-auto section5_box">
+        <li id="cng" class="lg:h-[550px] sm:h-[350px] h-[300px] lg:w-[900px] mx-auto section5_box">
           <iframe src="https://www.youtube-nocookie.com/embed/L_5k-n76Z4k?controls=0autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allow="accelerometer;" allowfullscreen ></iframe>
         </li>
-        <li id="ddc" class="md:h-lg50px] h-[360px] lg:w-[900px] mx-auto section5_box hidden">
+        <li id="ddc" class="md:h-lg50px] sm:h-[350px] h-[300px] lg:w-[900px] mx-auto section5_box hidden">
           <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/cGmiX6QxX-Q?autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
         </li>
       </ul>
     </div>
   </section>
-  <script>
-    //section_5
-	    $(".section5_box").eq(0).show();
-		  $(".section5_top_btn a").click(function(e){
-			e.preventDefault();
-			  $(".section5_top_btn a").removeClass("on2");
-			  $(this).addClass("on2");
-			  $(".section5_box").hide();
-			  let tapid=$(this).attr("href");
-			  $(tapid).show();
-		  });
 
-      $(".section5_top_btn .cng").click(function(){
-            $(".cinema1").show();
-            $(".cinema2").hide();
-      });
-      $(".section5_top_btn .ddc").click(function(){
-            $(".cinema2").show();
-            $(".cinema1").hide();
-      });
-
-
-  </script>
   <!-- 5 -->
 
   <footer class="overflow-hidden">
     <div class="container relative z-10">
       <div class="flex flex-col lg:flex-row items-center justify-center p-[24px] lg:p-20 rounded-[15px] bg-white container z-10 shadow-default-button -mb-14  gap-[35px] max-w-[1030px]">
-        <div class="lg:col-6 w-full">
+        <div class="w-full lg:col-6">
           <h3 class="comma text-text1 leading-normal pb-[5.2vw] text-center lg:text-left">아무것도 안해도 돼.<br>
           그냥,<i class="text-primary2">'쉼표'</i>에 오셔서<br>잠시 쉬어가세요.</h3>
-          <div class="flex gap-4 flex-col lg:flex-row">
+          <div class="flex flex-col gap-4 lg:flex-row">
           <!-- <a href="" class="button_stroke comma !rounded-full !border-2 !w-full">제작과정 보러가기</a> -->
           <a href="cv.docx" download class="button_stroke comma !rounded-full !border-2 !w-full">이력서 다운받기</a>
           </div>
         </div>
 
-        <ul class="flex flex-col gap-3 lg:col-6 w-full">
+        <ul class="flex flex-col w-full gap-3 lg:col-6">
           <li class="flex  items-center gap-[13px] p-6  bg-white shadow-default3 rounded-3xl" style="">
             <!-- <div class="flex  gap-2.5 p-3  bg-surfaceLow text-primary rounded-full"><span class="w-6 h-6 material-icons-round">place</span></div> -->
             <img src="./img/kakao.png" class="w-[48px] h-auto">
@@ -954,43 +817,10 @@
 
   </footer>
 
-
-
   <!--버튼 --->
   <button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop"class="top_btn" style="display: none;"><i class="material-icons-round sm:text-7xl">arrow_upward</i></button>
   <!--버튼 --->
 
-
-  <!--tailwind js--->
-  <script src="tailwind.config.js"></script>
-  <script type="text/javascript" src="js/index.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script>
-    $(function () {
-      $("#top_btn").on("click", function () {
-        $("html, body").animate({ scrollTop: 0 }, '500');
-        return false;
-      });
-      // #top_btn
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $('#top_btn').fadeIn('slow');
-        } else {
-          $('#top_btn').fadeOut('slow');
-        }
-      });
-
-      // header 
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > $("#intro").height()) {
-          $('header').addClass('on');
-        } else {
-          $('header').removeClass('on');
-        }
-      });
-
-    });
-  </script>
 </body>
 
 </html>

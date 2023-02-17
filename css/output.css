@@ -81,10 +81,10 @@ header.on .logo_d_e {
 }
 
 nav ul {
-  margin: auto;
+  margin: 0 0 0 auto;
   display: none;
   height: 100%;
-  max-width: 1300px;
+  max-width: 60%;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0px !important;
@@ -93,7 +93,9 @@ nav ul {
 
 @media (min-width: 1300px) {
   nav ul {
+    margin: auto;
     display: flex;
+    max-width: 1300px;
     flex-direction: row;
   }
 }
@@ -123,11 +125,14 @@ nav .gnb {
 }
 
 nav .gnb a {
-  display: block;
-  height: 100%;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  text-align: center;
   font-weight: 700;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1000,16 +1005,28 @@ a.button_stroke.comma:hover:after {
   height: 1.5rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .max-h-64 {
   max-height: 16rem;
 }
 
-.min-h-\[5\.2vw\] {
-  min-height: 5.2vw;
+.max-h-\[360px\] {
+  max-height: 360px;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
 }
 
 .min-h-\[100px\] {
   min-height: 100px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
 }
 
 .w-full {
@@ -1213,10 +1230,6 @@ a.button_stroke.comma:hover:after {
   overflow-x: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .overflow-y-scroll {
   overflow-y: scroll;
 }
@@ -1368,8 +1381,8 @@ a.button_stroke.comma:hover:after {
   padding: 2rem;
 }
 
-.p-\[3\.125vw\] {
-  padding: 3.125vw;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-\[24px\] {
@@ -1378,10 +1391,6 @@ a.button_stroke.comma:hover:after {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-0 {
@@ -1394,9 +1403,9 @@ a.button_stroke.comma:hover:after {
   padding-bottom: 0.75rem;
 }
 
-.py-\[60px\] {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .px-2 {
@@ -1439,9 +1448,9 @@ a.button_stroke.comma:hover:after {
   padding-right: 2.25rem;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-3 {
@@ -1774,6 +1783,32 @@ a.button_stroke.comma:hover:after {
     display: block;
   }
 
+  .sm\:h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    line-height: 150%;
+  }
+
+  @media (max-width: 1300px) {
+     {
+      font-size: calc(3rem + 0.5vw) !important;
+      font-size: calc(2.25rem + 0.5vw) !important;
+    }
+
+    .sm\:h3 {
+      font-size: calc(1.875rem + 0.5vw) !important;
+    }
+
+     {
+      font-size: calc(1.5rem + 0.5vw) !important;
+      font-size: calc(1.25rem + 0.5vw) !important;
+    }
+  }
+
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
   .sm\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
@@ -1807,6 +1842,16 @@ a.button_stroke.comma:hover:after {
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:pr-4 {
