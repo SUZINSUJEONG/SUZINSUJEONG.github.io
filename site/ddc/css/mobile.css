@@ -93,6 +93,7 @@ transition: 0.3s all ease-in-out;
     #hd{height:55px}
     #gnb {display:none}
     #logo a{padding: 12px 15px;height: 55px;}
+    #hd_btn{display: none;}
     #hd_btn button{width:38px;height:55px}
     #hd_sch #sch_submit{width:55px;height:55px}
     #hd_sch #sch_stx{padding:0 55px;height:55px}
