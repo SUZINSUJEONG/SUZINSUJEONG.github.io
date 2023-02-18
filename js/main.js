@@ -16,18 +16,22 @@ $(document).ready(function(){
     });
 
     // header 
-    var bodyW = $('body').innerWidth();
-    if (window.innerWidth >= 1300) {
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > $("#intro").height() - '80') {
-          $('header').addClass('on');
-        } else {
-          $('header').removeClass('on');
-        }
-        
-      });
+    function resizeFunction() {
+      if ($(window).width() < 1300) {
+        $('header').removeClass('on');
+      }
     }
+    
+    $(window).on('resize', resizeFunction);
+    
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > $("#intro").height() - '80') {
+        $('header').addClass('on');
+      } else {
+        $('header').removeClass('on');
+      }
+    });
+
       
     // $(window.innerWidth >= 1300).scroll(function () {
     // if ($(this).scrollTop() > $("#intro").height() - '80') {
@@ -99,7 +103,7 @@ $(document).ready(function(){
   });
 
   //섹션 2
-
+  
    //section_2 pc
    $(".tab_all").click(function (e) {
     e.preventDefault();
@@ -149,7 +153,7 @@ $(document).ready(function(){
     $("html,body").removeClass("not_scroll");
    // poseY = $(window).scrollTop(poseY);
   });
-
+  
 
   //파인아트스와이퍼 섹션 4
   var swiper = new Swiper(".fineArt_Swiper", {

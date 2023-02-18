@@ -1909,6 +1909,10 @@ a.button_stroke.comma:hover:after {
     flex: 0 0 50%;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }

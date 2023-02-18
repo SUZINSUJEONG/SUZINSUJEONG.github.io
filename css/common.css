@@ -457,11 +457,11 @@ pre code {
 
 
 
-#intro{background: url(../img/bg.png)no-repeat 0 0 /contain,url(../img/bg3.svg)no-repeat 0 100%,linear-gradient(180deg, #00BF96 0%, #11B09E 15%, rgba(54, 172, 106, 0.7) 35%);}
+#intro{background: url(../img/bg.png)no-repeat 0 0 /contain,url(../img/people.png)no-repeat 0 90% /contain,url(../img/bg3.svg)no-repeat 0 100%,linear-gradient(180deg, #00BF96 0%, #11B09E 15%, rgba(54, 172, 106, 0.7) 35%);}
 
 @media (max-width: 768px) {
   
-  #intro{background:url(../img/bg3.svg)no-repeat 0 100%,linear-gradient(180deg, #00BF96 0%, #11B09E 15%, rgba(54, 172, 106, 0.7) 35%) !important;}
+  #intro{background:url(../img/people.png)repeat-x 8% 110% ,url(../img/bg3.svg)no-repeat 0 100%,linear-gradient(180deg, #00BF96 0%, #11B09E 15%, rgba(54, 172, 106, 0.7) 35%) !important;}
 }
  
 
