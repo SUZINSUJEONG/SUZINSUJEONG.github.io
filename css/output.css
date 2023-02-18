@@ -883,10 +883,6 @@ a.button_stroke.comma:hover:after {
   bottom: -1.75rem;
 }
 
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
 .z-\[1000\] {
   z-index: 1000;
 }
@@ -989,16 +985,16 @@ a.button_stroke.comma:hover:after {
   height: 3px;
 }
 
+.h-\[620px\] {
+  height: 620px;
+}
+
 .h-screen {
   height: 100vh;
 }
 
 .h-\[90\%\] {
   height: 90%;
-}
-
-.h-\[620px\] {
-  height: 620px;
 }
 
 .h-auto {
@@ -1033,10 +1029,6 @@ a.button_stroke.comma:hover:after {
   width: 250px;
 }
 
-.w-\[15\.5vw\] {
-  width: 15.5vw;
-}
-
 .w-\[80px\] {
   width: 80px;
 }
@@ -1047,6 +1039,10 @@ a.button_stroke.comma:hover:after {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-fit {
@@ -1076,10 +1072,6 @@ a.button_stroke.comma:hover:after {
 
 .w-\[48px\] {
   width: 48px;
-}
-
-.w-20 {
-  width: 5rem;
 }
 
 .min-w-\[142px\] {
@@ -1353,6 +1345,11 @@ a.button_stroke.comma:hover:after {
   background-color: rgb(0 0 0 / 0.8);
 }
 
+.bg-\[\#fff5df\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 245 223 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFC439\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 196 57 / var(--tw-bg-opacity));
@@ -1373,11 +1370,6 @@ a.button_stroke.comma:hover:after {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#fff5df\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 245 223 / var(--tw-bg-opacity));
-}
-
 .p-5 {
   padding: 1.25rem;
 }
@@ -1388,6 +1380,10 @@ a.button_stroke.comma:hover:after {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-3 {
@@ -1457,17 +1453,8 @@ a.button_stroke.comma:hover:after {
   padding-right: 2.25rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.pb-\[230px\] {
-  padding-bottom: 230px;
 }
 
 .pb-\[50px\] {
@@ -1571,13 +1558,13 @@ a.button_stroke.comma:hover:after {
   line-height: 1.75rem;
 }
 
+.text-\[26px\] {
+  font-size: 26px;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-\[26px\] {
-  font-size: 26px;
 }
 
 .text-\[22px\] {
@@ -1671,12 +1658,6 @@ a.button_stroke.comma:hover:after {
 .shadow-default-button {
   --tw-shadow: 0px 12px 30px rgba(19, 26, 21, 0.18);
   --tw-shadow-colored: 0px 12px 30px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-default3 {
-  --tw-shadow: 0px 4px 12px rgba(19, 26, 21, 0.18);
-  --tw-shadow-colored: 0px 4px 12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1996,12 +1977,12 @@ a.button_stroke.comma:hover:after {
     display: none;
   }
 
-  .xl\:w-\[1100px\] {
-    width: 1100px;
-  }
-
   .xl\:w-\[15\.5vw\] {
     width: 15.5vw;
+  }
+
+  .xl\:w-\[1100px\] {
+    width: 1100px;
   }
 
   .xl\:p-10 {
@@ -2028,10 +2009,6 @@ a.button_stroke.comma:hover:after {
 }
 
 @media (min-width: 1600px) {
-  .\32xl\:bottom-\[-25\%\] {
-    bottom: -25%;
-  }
-
   .\32xl\:block {
     display: block;
   }
