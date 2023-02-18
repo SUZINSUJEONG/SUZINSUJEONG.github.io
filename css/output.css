@@ -1202,6 +1202,10 @@ a.button_stroke.comma:hover:after {
   gap: 6rem;
 }
 
+.gap-\[2\.5vw\] {
+  gap: 2.5vw;
+}
+
 .self-stretch {
   align-self: stretch;
 }
@@ -1486,6 +1490,10 @@ a.button_stroke.comma:hover:after {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
 }
 
 .text-center {
@@ -1784,6 +1792,10 @@ a.button_stroke.comma:hover:after {
     }
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:h-\[350px\] {
     height: 350px;
   }
@@ -1887,6 +1899,10 @@ a.button_stroke.comma:hover:after {
   .md\:pb-7 {
     padding-bottom: 1.75rem;
   }
+
+  .md\:pt-\[5\.2vw\] {
+    padding-top: 5.2vw;
+  }
 }
 
 @media (min-width: 960px) {
@@ -1939,6 +1955,11 @@ a.button_stroke.comma:hover:after {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 

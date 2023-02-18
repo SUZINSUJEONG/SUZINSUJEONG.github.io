@@ -41,12 +41,12 @@ nav .gnb:last-child a{@apply lg:border-r;}
 /* 타이틀 */
 h1,h2,h3,h4,h5,h6{@apply font-bold font-["jalnan"];}
 h1[class*="jalnan"],h2[class*="jalnan"],h3[class*="jalnan"],h4[class*="jalnan"],h5[class*="jalnan"],h6[class*="jalnan"]{@apply !font-normal;}
-h1,.h1{@apply text-6xl leading-[150%];} 
-h2,.h2{@apply text-5xl leading-[150%];}
-h3,.h3{@apply text-4xl leading-[150%];}
-h4,.h4{@apply text-3xl leading-[150%];}
-h5,.h5{@apply text-2xl leading-[150%];}
-h6,.h6{@apply text-xl leading-[150%];}
+h1,.h1{@apply text-6xl leading-[120%];} 
+h2,.h2{@apply text-5xl leading-[120%];}
+h3,.h3{@apply text-4xl leading-[120%];}
+h4,.h4{@apply text-3xl leading-[120%];}
+h5,.h5{@apply text-2xl leading-[120%];}
+h6,.h6{@apply text-xl leading-[120%];}
   
 @media (max-width: 1300px) {
   h1, .h1 {
@@ -72,7 +72,7 @@ h6,.h6{@apply text-xl leading-[150%];}
 
 /* 버튼 */
 
-.top_btn{@apply fixed z-10 hidden p-2 text-4xl bg-white rounded-full shadow-lg sm:w-24 sm:h-24 text-primary2 sm:right-10 right-4 bottom-10;}
+.top_btn{@apply fixed z-10 hidden sm:p-2 p-6 text-4xl bg-white rounded-full shadow-lg sm:w-24 sm:h-24 text-primary2 sm:right-10 right-4 bottom-10;}
 .button{@apply block py-5 rounded-md text-xl text-center w-[200px] mx-auto transition-all;}
 .button_bg{@apply text-white transition-all button bg-primary2 hover:shadow-button hover:-rotate-12;}
 .button_stroke{@apply transition-all border border-solid button text-primary2 border-primary2 hover:shadow-button hover:-rotate-12 group-hover:shadow-button group-hover:-rotate-12;}

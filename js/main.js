@@ -50,7 +50,6 @@ $(document).ready(function(){
   //프리뷰 스와이퍼 -섹션0
   var swiper = new Swiper(".preview.mySwiper", {
     slidesPerView: 1,
-    centeredSlides: true,
     spaceBetween: 0,
     loop: true,
     // freeMode: true,
@@ -64,16 +63,18 @@ $(document).ready(function(){
     },
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     breakpoints: {
       480: {
         slidesPerView: 3,
         spaceBetween: 0,
+        centeredSlides: true,
       },
       768: {
         slidesPerView: 4,
         spaceBetween: 0,
+        centeredSlides: true,
       },
       1600: {
         slidesPerView: 4,
