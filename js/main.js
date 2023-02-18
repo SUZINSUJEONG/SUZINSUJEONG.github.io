@@ -111,7 +111,27 @@ $(document).ready(function(){
     $(modalid).siblings().hide();
  });
 
- //section_2 m
+ // 모달컨텐츠(롤케이크모달)//
+ let poseY;
+  $(".modal_all").click(function (e) {
+    e.preventDefault();
+    let modalid = $(this).attr("href");
+   $(modalid).fadeIn(300);
+   $(".modal_close").fadeIn(300);
+    poseY = $(window).scrollTop();
+    $("html,body").addClass("not_scroll");
+    $(".body_wrap").css({top: -poseY});
+ });
+  $(".modal_close").click(function(e){
+    e.preventDefault();
+    $(".modal_content").fadeOut(300);
+    $(".modal_close").fadeOut(0);
+   // $(".main-character").show()
+    $("html,body").removeClass("not_scroll");
+    poseY = $(window).scrollTop(poseY);
+  });
+
+ //section_2 모바일
  $(".tab_all_m").click(function (e) {
     e.preventDefault();
     let modalid = $(this).attr("href");
@@ -130,25 +150,6 @@ $(document).ready(function(){
    // poseY = $(window).scrollTop(poseY);
   });
 
- // 모달컨텐츠(롤케이크모달)//
- let poseY;
-  $(".modal_all").click(function (e) {
-    e.preventDefault();
-    let modalid = $(this).attr("href");
-   $(modalid).fadeIn(300);
-   $(".modal-close,.close-back").fadeIn(300);
-    poseY = $(window).scrollTop();
-    $("html,body").addClass("not_scroll")
-    $(".body_wrap").css({top: -poseY})
- });
-  $(".modal_close,.modal_content").click(function(e){
-    e.preventDefault();
-    $(".modal_content").fadeOut(300);
-    //$(".modal_close,.close-back").fadeOut(0)
-   // $(".main-character").show()
-    $("html,body").removeClass("not_scroll");
-    poseY = $(window).scrollTop(poseY);
-  });
 
   //파인아트스와이퍼 섹션 4
   var swiper = new Swiper(".fineArt_Swiper", {

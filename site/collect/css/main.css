@@ -131,7 +131,7 @@ text-shadow: 6px 3px 2px rgb(0 0 0 / 60%);
 .history .history_bg{ background: url(../img/history1.png)no-repeat 100% 5%,url(../img/history2.png)no-repeat 80% 5% , url(../img/history3.png)no-repeat 60% 5% , url(../img/history4.png)no-repeat 40% 5% , url(../img/history5.png)no-repeat 20% 5% , url(../img/history6.png)no-repeat 100% 95% , url(../img/history7.png)no-repeat 80% 95%,url(../img/history8.png)no-repeat 60% 95%,url(../img/history9.png)no-repeat 40% 95%,url(../img/history10.png)no-repeat 20% 95%; position:absolute; height: 100%;
     width: 100%; animation:animation_bg 20s infinite; transform: translate(100%,100%);}
 */
-.history .title_box{background:rgba(0,0,0,.85); height:606px; width: 40%; }
+.history .title_box{background:rgba(0,0,0,.85); height:606px;width: 40%; }
 .history .press{margin-top: 60px; color:#fff; }
 .history .title_box div{width: 100%;
     max-width: 335px;
