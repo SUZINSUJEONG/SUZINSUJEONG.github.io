@@ -1968,6 +1968,12 @@ a.button_stroke.comma:hover:after {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .lg\:shadow-default3 {
+    --tw-shadow: 0px 4px 12px rgba(19, 26, 21, 0.18);
+    --tw-shadow-colored: 0px 4px 12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
 }
 
 @media (min-width: 1300px) {
