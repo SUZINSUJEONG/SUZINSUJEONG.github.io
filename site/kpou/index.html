@@ -36,7 +36,7 @@
 
 <body class="">
   <!-- Navbar Start -->
-  <nav class="shadow navbar fixed-top" style="">
+  <nav class="shadow navbar fixed-top fixed w-full z-[999]" style="">
 
     
     <div class="bg-white  border-top">
@@ -55,17 +55,17 @@
 
       <header class="container header">
 
-        <div class="in">
+        <div class="in w-full">
           <h1 class="logo-box">
-            <a href="/" title="인트로 페이지로 이동" tabindex="2">
-             <img src="./img/logo.svg">
+            <a href="/" title="인트로 페이지로 이동" class="w-80">
+             <img src="./img/logo.svg" class="w-full">
             </a>
           </h1>
 
           <!-- lnb -->
           <nav class="header-menu">
             <ul class="flex gap-5">
-              <li class="first current"> <a href="" tabindex="2" ><span>조합소개</span></a>
+              <li class="first current"> <a href="#none"  ><span>조합소개</span></a>
                 <ul class="gnb-sub" style="">
                   <li class="first current"><a href="/?p=6" ><span>교육과정안내</span></a></li>
                   <li><a href="/?p=7" ><span>교육프로그램</span></a></li>
@@ -73,9 +73,9 @@
 
                 </ul>
               </li>
-              <li> <a href="/?p=3" tabindex="2"><span>소식마당</span></a>
+              <li> <a href="/?p=3" ><span>소식마당</span></a>
                 <ul class="gnb-sub" style="">
-                  <li class="first"><a href="" ><span>단원고 4.16
+                  <li class="first"><a href="#none" ><span>단원고 4.16
                         기억교실</span></a></li>
                   <li><a href="/?p=10" ><span>온라인 기억교실</span></a></li>
                   <li><a href="/?p=11" ><span>기억교실 방문</span></a></li>
@@ -83,9 +83,9 @@
 
                 </ul>
               </li>
-              <li> <a href="/?p=4" tabindex="2" ><span>뉴스/속보</span></a>
+              <li> <a href="/?p=4"  ><span>뉴스/속보</span></a>
                 <ul class="gnb-sub" style="">
-                  <li class="first"><a href="" ><span>웹진
+                  <li class="first"><a href="#none" ><span>웹진
                         바람대로</span></a></li>
                   <li><a href="/?p=14" ><span>공지사항</span></a></li>
                   <li><a href="/?p=15" ><span>자료실</span></a></li>
@@ -95,9 +95,9 @@
 
                 </ul>
               </li>
-              <li> <a href="/?p=5" tabindex="2" ><span>참여마당</span></a>
+              <li> <a href="/?p=5"  ><span>참여마당</span></a>
                 <ul class="gnb-sub" style="">
-                  <li class="first"><a href="" ><span>인사말</span></a></li>
+                  <li class="first"><a href="#none" ><span>인사말</span></a></li>
                   <li><a href="/?p=18" ><span>설립과정</span></a></li>
                   <li><a href="/?p=19" ><span>운영방향</span></a></li>
                   <li><a href="/?p=20" ><span>교육원 BI</span></a></li>
@@ -109,9 +109,9 @@
               </li>
 
 
-              <li> <a href="/?p=5" tabindex="2" ><span>자료실</span></a>
+              <li> <a href="/?p=5"  ><span>자료실</span></a>
                 <ul class="gnb-sub" style="">
-                  <li class="first"><a href="" ><span>인사말</span></a></li>
+                  <li class="first"><a href="#none" ><span>인사말</span></a></li>
                   <li><a href="/?p=18" ><span>설립과정</span></a></li>
                   <li><a href="/?p=19" ><span>운영방향</span></a></li>
                   <li><a href="/?p=20" ><span>교육원 BI</span></a></li>
@@ -236,20 +236,21 @@
         if (window.innerWidth > 960) {
           $('.gnb-sub').attr('style', '');
           $('.header-menu').removeClass('on');
+          $('html, body').css('overflow', 'visible');
         }
       });
     });
 
   </script>
-  <section class=" md: pt-[123px]" style="background: url(./img/main_bg.png);">
-    <div class="container flex items-center self-stretch py-12 overflow-hidden rounded-lg">
-      <img class=" w-[668px] h-[444px] rounded-[20px]" src="./img/main_banner.png">
-      <div class="flex flex-col  self-stretch flex-grow gap-9 p-9 bg-[#a91d38]/90">
+  <section class="pt-[80px]" style="background: url(./img/main_bg.png);">
+    <div class="container flex items-center self-stretch py-24 overflow-hidden rounded-[20px]">
+      <div class="col-6"><img class="" src="./img/main_banner.png"></div>
+      <div class="flex flex-col  self-stretch flex-grow gap-9 p-9 bg-[#a91d38]/90 col-6">
         <div class=" flex flex-col  self-stretch gap-4 text-[46px] font-bold  text-white">윤석열 정부 규탄<br>보수 위원회</div>
         <span class="overflow-hidden h-[150px] text-white">
             하지만 정부는 지난 10일 행정안전부 지방행정정책관 주재로 전국 시·도 행정자치국장회의를 개최해 법령위반, 징계운운 하면서 투표에 참여를 못하게 하도록 조치할 것을 지시했다. 이에 공무원노조는 “정상적인 노동조합 활동을 방해하고 있다. 이러한 방해 행위는 국민으로서 갖는 헌법상 권리인 표현의 자유, 양심의 자유를 침해하는 행위이며 노동조합의 정당한 활동을 침해하는 부당노동행위”라며 “정부가 방해를 계속한다면 ILO를 비롯한 국제기구, 인권기구 등에 인권 후진국인 대한민국을 제소하고 정부에 더 큰 투쟁으로 돌려줄 것”이라고 밝혔다.
         </span>
-        <button class="flex justify-center items-center  w-[190px] h-[54px]  gap-3 px-[46px] py-[11px] rounded-md border border-[#f8f9fa] font-bold  text-[#f8f9fa]">자세히보기<p class=" text-3xl text-center text-[#f8f9fa] material-icons-round">keyboard_arrow_right</p></button>
+        <button class="flex justify-center items-center  w-[190px] h-[54px]  gap-3 px-[46px] py-[11px] rounded-md border border-[#f8f9fa] font-bold  text-[#a91d38]">자세히보기<p class=" text-3xl text-center material-icons-round">keyboard_arrow_right</p></button>
       </div>
     </div>
   </section>
@@ -260,21 +261,15 @@
       <div class="flex flex-col   self-stretch flex-grow p-4 rounded-[5px] bg-white col-6">
         <div class="flex items-center self-stretch justify-center ">
           <div class="flex flex-grow">
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38]">
-              <p class=" text-xl font-bold text-right text-[#a81c37]">전국본부소식</p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">본부.지부소식</p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">전국지부소식</p>
-            </div>
+            <a href="#!"class="flex justify-center flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38] text-xl font-bold text-right text-[#a81c37]">전국본부소식</a>
+            <a href="#!"class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">본부.지부소식</a>
+            <a href="#!" class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">전국지부소식</a>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+          <a href="#!" class="flex flex-col justify-center items-center self-stretch gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38]">
             <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
-          </div>
+          </a>
         </div>
-        <ul class="flex flex-col   self-stretch  gap-2.5 px-4 py-6">
+        <ul class="flex flex-col self-stretch  gap-2.5 py-6">
           <li class="flex justify-between w-full text-lg text-[#333]">
             [대구지역] 노동조합 상근 정규 직원 채용 공고
             <p class="text-[#666]">2022.00.00</p>
@@ -302,33 +297,25 @@
       <div class="flex flex-col   self-stretch flex-grow p-4 rounded-[5px] bg-white col-6">
         <div class="flex items-center self-stretch justify-center ">
           <div class="flex flex-grow">
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38]">
-              <p class=" text-xl font-bold text-right text-[#a81c37]">
-                지부소식
-              </p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">조합소식</p>
-            </div>
-            <div class="flex justify-between  flex-grow w-[197px] h-14 px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]"></div>
+            <a href="#!" class="flex justify-center flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38] text-xl font-bold text-right text-[#a81c37]">지부소식</a>
+            <a class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">조합소식</a>
+            <div class="flex justify-between  flex-grow w-[197px] h-14 px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38]"></div>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-            <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
-          </div>
+          <a  href="#!" class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38]  text-3xl text-right text-[#333] material-icons-round">add</a>
         </div>
-        <div class="flex flex-col   self-stretch  gap-2.5 px-4 py-6">
+        <div class="flex flex-col   self-stretch  gap-2.5 py-6">
           <div class="flex self-stretch justify-between overflow-hidden rounded-md">
-            <div class="flex flex-col justify-center  self-stretch   overflow-hidden gap-2.5">
-              <img class=" w-[218px] h-[164px]" src="./img/main_banner.png">
+            <div class="flex flex-col justify-center  self-stretch   overflow-hidden gap-2.5 col-6 p-4">
+              <img class="" src="./img/main_banner.png">
             </div>
-            <div class="flex flex-col   self-stretch  w-[331px] gap-1">
+            <div class="flex flex-col  self-stretch col-6 gap-1">
               <div class="flex flex-col gap-2">
                 <div class="flex justify-center items-center   gap-3 px-5 py-[5px] rounded-[1000px] border border-[#c77f8d]" style="filter: drop-shadow(0px 12px 30px rgba(24,92,255,0.18));">
                   <p class=" text-xs font-bold  text-[#c77f8d]">보도자료</p>
                 </div>
               </div>
               <div class="flex flex-col self-stretch gap-3 ">
-                <h3>전국공무원노동조합 통합홈페이지 사업 입찰 공고</h3>
+                <h4>전국공무원노동조합 통합홈페이지 사업 입찰 공고</h4>
                 <p>전국노동조합에서 홈페이지 구축사업을 진행하고 있음을 알려드립니다. 현재는 배타서비스를 진행 중에 있으므로 새로워진 홈페이지의 기능 및 사업을 확인 해보세요.</p>
               </div>
             </div>
@@ -337,30 +324,20 @@
       </div>
     </section>
     
-    <section class="flex justify-center items-center gap-[54px] w-full">
-      <img src="./img/banner1.jpg">
-      <img src="./img/banner2.jpg">
+    <section class="flex justify-center items-center w-full">
+      <img src="./img/banner1.jpg" class="col-6 px-2">
+      <img src="./img/banner2.jpg" class="col-6 px-2">
     </section>
 
     <section class="flex   self-stretch  gap-[4px]">
       <div class="flex flex-col   self-stretch flex-grow gap-4 p-4 rounded-[5px] bg-white col-4">
         <div class="flex items-center self-stretch justify-center ">
           <div class="flex flex-grow">
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38]">
-              <p class=" text-xl font-bold text-right text-[#a81c37]">
-                성명/논평
-              </p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">뉴스클리핑</p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">보도자료</p>
-            </div>
+            <div class="flex justify-center flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38] text-xl font-bold text-right text-[#a81c37]">성명/논평</div>
+            <div class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">뉴스클리핑</div>
+            <div class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">보도자료</div>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-            <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
-          </div>
+          <a  href=""class="flex flex-col justify-center items-center self-stretch  gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38] text-3xl text-right text-[#333] material-icons-round">add</a>
         </div>
         <div class="flex flex-col self-stretch gap-4 px-4">
           <div class="flex flex-col self-stretch gap-4">
@@ -386,13 +363,13 @@
         </div>
       </div>
       <div class="flex flex-col  items-center self-stretch flex-grow overflow-hidden gap-4 px-[15px] py-4 bg-white col-4">
-        <div class="flex justify-center items-center self-stretch  border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+        <div class="flex justify-center items-center self-stretch   border-b border-l-0 border-[#a91d38]">
           <div class="flex   flex-grow  px-2.5 py-[13px]">
             <p class=" text-[22px] font-bold text-right text-[#1c1d1f]">
               조합선전자료
             </p>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38]">
             <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
           </div>
         </div>
@@ -401,13 +378,13 @@
         </div>
       </div>
       <div class="flex flex-col  items-center self-stretch flex-grow overflow-hidden gap-4 px-[15px] py-4 bg-white col-4">
-        <div class="flex justify-center items-center self-stretch  border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+        <div class="flex justify-center items-center self-stretch   border-b border-l-0 border-[#a91d38]">
           <div class="flex   flex-grow  px-2.5 py-[13px]">
             <p class=" text-[22px] font-bold text-right text-[#1c1d1f]">
               공무원U신문
             </p>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38]">
             <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
           </div>
         </div>
@@ -444,15 +421,15 @@
       </div>
     </section>
 
-    <section class="flex   self-stretch  gap-[50px]">
+    <section class="flex  self-stretch  gap-[50px]">
       <div class="flex flex-col  items-center self-stretch flex-grow overflow-hidden gap-4 px-[15px] py-4 bg-white">
-        <div class="flex justify-center items-center self-stretch  border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+        <div class="flex justify-center items-center self-stretch   border-b border-l-0 border-[#a91d38]">
           <div class="flex   flex-grow  px-2.5 py-[13px]">
             <p class=" text-[22px] font-bold text-right text-[#1c1d1f]">
               속이 뻥뚫린다! 사이다TV
             </p>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
+          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38]">
             <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
           </div>
         </div>
@@ -493,19 +470,11 @@
       <div class="flex flex-col   self-stretch  w-[433.33px] gap-4 p-4 rounded-[5px] bg-white col-4">
         <div class="flex items-center self-stretch justify-center ">
           <div class="flex flex-grow">
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38]">
-              <p class=" text-xl font-bold text-right text-[#a81c37]">
-                지부활동
-              </p>
-            </div>
-            <div class="flex justify-between  flex-grow  px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-              <p class=" text-xl text-right text-[#666]">조합소식</p>
-            </div>
-            <div class="flex justify-between  flex-grow w-[117.11px] h-14 px-2.5 py-[13px] border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]"></div>
+            <a class="flex justify-center flex-grow  px-2.5 py-[13px] rounded-tl-md rounded-tr-md border-b-0 border border-[#a91d38] text-xl font-bold text-right text-[#a81c37] ">지부활동</a>
+            <a class="flex justify-center flex-grow  px-2.5 py-[13px]  border-b border-l-0 border-[#a91d38] text-xl text-right text-[#666]">조합소식
+            </a>
           </div>
-          <div class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a91d38]">
-            <p class=" text-3xl text-right text-[#333] material-icons-round">add</p>
-          </div>
+          <a class="flex flex-col justify-center items-center self-stretch   gap-2.5 p-2.5  border-b border-l-0 border-[#a91d38] text-3xl text-right text-[#333] material-icons-round">add</a>
         </div>
         <div class="flex flex-col self-stretch ">
           <div class="flex flex-col  items-end self-stretch   gap-1 px-4 py-[5px] bg-[#f8f9fa]">
@@ -535,118 +504,30 @@
         </div>
       </div>
     </section>
-
-    <section class="flex justify-center items-center gap-[50px]">
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#f43142]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] font-medium text-center text-[#f43142]">
-            뉴스클리핑
-          </p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">공무원U신문</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">복지산업단</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">민주노총</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">전교조</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">행정안전부</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">인사혁신처</p>
-        </div>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow  overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <p class=" text-[15px] text-center ">고용노동부</p>
-      </div>
-      <div class="flex flex-col justify-center items-center flex-grow overflow-hidden gap-2.5 px-[30px] py-[50px] rounded-[5px] bg-[#f8f9fa] border border-[#dee2e6]">
-        <div class="flex items-center justify-center ">
-          <p class=" text-[15px] text-center ">
-            선거관리위원회
-          </p>
-        </div>
-      </div>
-    </section>
-
   </div>
 
   <!-- Footer Start -->
-  <footer class="py-5 mt-5 text-white container-fluid px-sm-3 px-md-5 border-top bg-dark">
-    <div class="flex flex-col  items-center  bg-[#383b44]">
-      <div class="flex justify-between   w-[1920px] px-[210px] bg-[#222328]">
-        <div class="flex     gap-2.5">
-          <p class=" text-[15px]  text-white">
-            전국공무원노동조합 인트라넷
-          </p>
-        </div>
-        <div class="flex items-center self-stretch justify-center ">
-          <div class="flex justify-center items-center self-stretch   gap-[5px] px-2.5 py-[3px] border-0 border-[#dee2e6]">
-            <p class="text-xs text-center text-white ">지부홈페이지</p>
-            <p class="text-sm text-center text-white  material-icons-round">arrow_drop_down</p>
-          </div>
-          <div class="flex justify-center items-center self-stretch   gap-[5px] px-2.5 py-[3px] border-t-0 border-r border-b-0 border-l-0 border-[#dee2e6]">
-            <p class="text-xs text-center text-white ">정부기관</p>
-            <p class="text-sm text-center text-white  material-icons-round">arrow_drop_down</p>
-          </div>
-          <div class="flex justify-center items-center self-stretch   gap-[5px] px-2.5 py-[3px] border-t-0 border-r border-b-0 border-l-0 border-[#dee2e6]">
-            <p class="text-xs text-center text-white ">민주노총산별연맹</p>
-            <p class="text-sm text-center text-white  material-icons-round">arrow_drop_down</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-between items-center  w-[1500px] py-12">
-        <div class="flex flex-col     gap-2.5">
-          <p class=" text-[15px]  text-white">
-            (도로명주소) 서울특별시 영등포구 국회대로 664 한흥빌딩6층 , (지번주소) 서울시 영등포구
-            영등포동7가 29-28 한흥빌딩6층
-          </p>
-          <div class="flex     gap-[30px]">
-            <p class=" text-[15px]  text-white">
-              TEL. 02-2631- 1948
-            </p>
-            <p class=" text-[15px]  text-white">
-              FAX. 02-2631- 1949
-            </p>
-            <p class=" text-[15px]  text-white">
-              대표메일. kgeu@kgeu.org
-            </p>
-          </div>
-        </div>
-        <div class="flex  items-center  gap-2.5">
-          <div class="flex flex-col justify-center items-center  h-10 w-10  gap-2.5 rounded-[3px] bg-white">
-            <i class="fa-brands fa-facebook-f"></i>
-          </div>
-          <div class="flex flex-col justify-center items-center  h-10 w-10  gap-2.5 rounded-[3px] bg-white">
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <div class="flex flex-col    h-10 w-10  gap-2.5 p-2.5 rounded-[3px] bg-white">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            
-          </div>
-        </div>
+  <footer class="py-5 mt-5 text-white container-fluid px-sm-3 px-md-5 border-top bg-[#383b44]">
+    <div class="flex flex-col gap-2.5 w-full text-center">
+      <p class=" text-[15px]  text-white">
+        (도로명주소) 서울특별시 영등포구 국회대로 664 한흥빌딩6층 , (지번주소) 서울시 영등포구
+        영등포동7가 29-28 한흥빌딩6층
+      </p>
+      <div class="flex gap-[30px] justify-center">
+        <p class=" text-[15px]  text-white">
+          TEL. 02-2631- 1948
+        </p>
+        <p class=" text-[15px]  text-white">
+          FAX. 02-2631- 1949
+        </p>
+        <p class=" text-[15px]  text-white">
+          대표메일. kgeu@kgeu.org
+        </p>
       </div>
     </div>
     <div class="pt-5 container-fluid text-info" style="">
       <p class="m-0 text-center">
-        COPYRIGHT © <a class="text-secondary font-weight-bold" href="index.html">전국공무원노동조합 </a> ALL RIGHTS
+        COPYRIGHT © <a class="text-[#a91d38] font-weight-bold" href="index.html">전국공무원노동조합 </a> ALL RIGHTS
         RESERVED.
       </p>
     </div>

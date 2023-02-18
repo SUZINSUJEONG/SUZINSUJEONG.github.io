@@ -26,12 +26,6 @@
 /* 헤더 */
 header{@apply flex w-full absolute bottom-0  items-center z-[999] h-[80px] transition ease-in-out duration-700;}
 
-nav ul{@apply xl:flex flex-col xl:flex-row justify-between h-full !px-0  xl:max-w-[1300px] xl:m-auto m-[0_0_0_auto] max-w-[60%] hidden;}
-nav ul.on{@apply flex ;}
-nav .gnb{@apply flex-grow text-center h-full leading-[73px] xl:col-2 border-b-[3px] border-yellow border-solid bg-[#03594E];}
-nav .gnb a{@apply flex text-center items-center justify-center h-[80px] font-bold lg:border-l border-white border-solid hover:bg-[#00C3D1] transition-all ;}
-nav .gnb:last-child a{@apply lg:border-r;}
-
 /* 타이틀 */
 h1,h2,h3,h4,h5,h6{@apply font-bold font-["nanumsquare"];}
 
