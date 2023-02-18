@@ -16,13 +16,27 @@ $(document).ready(function(){
     });
 
     // header 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > $("#intro").height() - '80') {
-        $('header').addClass('on');
-      } else {
-        $('header').removeClass('on');
-      }
-    });
+    var bodyW = $('body').innerWidth();
+    if (window.innerWidth >= 1300) {
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > $("#intro").height() - '80') {
+          $('header').addClass('on');
+        } else {
+          $('header').removeClass('on');
+        }
+        
+      });
+    }
+      
+    // $(window.innerWidth >= 1300).scroll(function () {
+    // if ($(this).scrollTop() > $("#intro").height() - '80') {
+    //   $('header').addClass('on');
+    // } else {
+    //   $('header').removeClass('on');
+    // }
+      
+    // });
 
 
    
@@ -41,11 +55,12 @@ $(document).ready(function(){
     $(this).toggleClass("on");
   });
 
+
   $('.menu').click(function(e) { 
-  
     $(this).removeClass("on"); 
     $(".btn_menu_btn").removeClass("on"); 
   });
+ 
 
   //프리뷰 스와이퍼 -섹션0
   var swiper = new Swiper(".preview.mySwiper", {
@@ -141,10 +156,15 @@ $(document).ready(function(){
     centeredSlides: true,
     spaceBetween: 30,
     loop: true,
+    grabCursor: true,
 
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
     },
     breakpoints: {
       768: {

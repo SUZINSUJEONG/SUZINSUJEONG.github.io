@@ -3,15 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-paragraph, footer, header{
-  font-family: "pretendard";
-}
 
 @layer base {
 .not_scroll{@apply overflow-hidden;}
 /* 폰트 */
 .pretendard{@apply font-['pretendard'];}
-.comma{@apply font-['comma'];}
+
 .col-auto { @apply max-w-[100%] flex-[0_0_auto];}
 .col-1 { @apply max-w-[8.33333%] flex-[0_0_8.33333%];}
 .col-2 { @apply max-w-[16.66667%] flex-[0_0_16.66667%];}
@@ -25,12 +22,9 @@
 .col-10 { @apply max-w-[83.33%] flex-[0_0_83.33%];}
 .col-11 { @apply max-w-[891.6%] flex-[0_0_91.6%];}
 .col-12 { @apply max-w-[100%] flex-[0_0_100%];}
+
 /* 헤더 */
-header{@apply flex w-full absolute bottom-0  items-center z-[999] text-white bg-[#03594E] h-[80px] transition ease-in-out duration-700;}
-header.on{@apply fixed top-0 bottom-auto;}
-header.on a.logo{@apply h-[50px];}
-header.on .logo_l_e{@apply block;}
-header.on .logo_d_e{@apply hidden;}
+header{@apply flex w-full absolute bottom-0  items-center z-[999] h-[80px] transition ease-in-out duration-700;}
 
 nav ul{@apply xl:flex flex-col xl:flex-row justify-between h-full !px-0  xl:max-w-[1300px] xl:m-auto m-[0_0_0_auto] max-w-[60%] hidden;}
 nav ul.on{@apply flex ;}
@@ -39,8 +33,8 @@ nav .gnb a{@apply flex text-center items-center justify-center h-[80px] font-bol
 nav .gnb:last-child a{@apply lg:border-r;}
 
 /* 타이틀 */
-h1,h2,h3,h4,h5,h6{@apply font-bold font-["comma"];}
-h1[class*="comma"],h2[class*="comma"],h3[class*="comma"],h4[class*="comma"],h5[class*="comma"],h6[class*="comma"]{@apply !font-normal;}
+h1,h2,h3,h4,h5,h6{@apply font-bold font-["nanumsquare"];}
+
 h1,.h1{@apply text-6xl leading-[150%];} 
 h2,.h2{@apply text-5xl leading-[150%];}
 h3,.h3{@apply text-4xl leading-[150%];}

@@ -989,6 +989,10 @@ h6,.h6 {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .text-ellipsis {
   text-overflow: ellipsis;
 }

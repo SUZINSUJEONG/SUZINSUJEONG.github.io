@@ -355,7 +355,7 @@
 }
 
 .header > .in { height:100%; display:flex; justify-content:space-between; align-items: center; z-index: 1;  }
-.logo-box > a { display:block; width: 225px; height: 62px; text-indent:-9999px; transition-delay:.4s; }
+.logo-box > a { display:block; width: 225px; height: 62px; }
 
 .header-menu { height:100%; }
 .header-menu > ul { display:flex; height:100%; z-index: 1; position: relative; }

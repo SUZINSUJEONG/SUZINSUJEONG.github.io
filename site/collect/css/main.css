@@ -233,7 +233,8 @@ text-shadow: 6px 3px 2px rgba(255 255 255 / 30%);
 	.mv{padding-top:60px;}
 	.mv .inner{height:307px; background-size:570px; background-position: 0px -70px;}
 	
-	.mv .mv_title{font-size: 18px; padding-top: 43px; }
+	.mv .mv_title{font-size: 18px; padding-top: 43px;flex-direction: column;
+		justify-content: center; }
 	.mv .mv_title video{min-width: 400px;}
 	.mv .mv_title h2{font-size: 48px; margin-top:8px;}
 	.mv .mv_title p{margin-top:11px; font-size: 18px;}
@@ -337,6 +338,7 @@ text-shadow: 6px 3px 2px rgba(255 255 255 / 30%);
 
 /*모바일*/
 @media screen and (max-width: 480px){
+
 	/*섹션 공통*/
 	.contents > section{margin-top:40px;}
 	.contents > .store{margin-top:50px;}
@@ -346,7 +348,8 @@ text-shadow: 6px 3px 2px rgba(255 255 255 / 30%);
 	
 	.gnb h1 img {width: 100%; }
 	
-	.mv{padding-top: 50px;}
+	.mv{padding-top: 50px;height: 100vh;}
+	.mv .mv_title{height: 100%;}
 	.mv .inner{height: 66.66666666666667vw; min-height:260px; background-position:-210px -50px; background-size: auto 120%; }
 	.mv .mv_title video { min-width: 200px; }
 	.mv .mv_title .txt h2 { font-size: 6.217391304347826vw;}

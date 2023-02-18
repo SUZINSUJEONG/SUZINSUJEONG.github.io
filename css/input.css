@@ -26,7 +26,7 @@
 .col-11 { @apply max-w-[891.6%] flex-[0_0_91.6%];}
 .col-12 { @apply max-w-[100%] flex-[0_0_100%];}
 /* 헤더 */
-header{@apply flex w-full absolute bottom-0  items-center z-[999] text-white bg-[#03594E] h-[80px] transition ease-in-out duration-700;}
+header{@apply flex w-full xl:absolute fixed xl:bottom-0 xl:top-auto top-0 items-center z-[999] text-white bg-[#03594E] h-[80px] transition ease-in-out duration-700;}
 header.on{@apply fixed top-0 bottom-auto;}
 header.on a.logo{@apply h-[50px];}
 header.on .logo_l_e{@apply block;}
