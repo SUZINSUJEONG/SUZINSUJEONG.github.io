@@ -26,7 +26,7 @@
 .col-11 { @apply max-w-[891.6%] flex-[0_0_91.6%];}
 .col-12 { @apply max-w-[100%] flex-[0_0_100%];}
 /* 헤더 */
-header{@apply flex w-full md:absolute fixed md:bottom-0 bottom-[-80px] items-center z-[999] text-white bg-[#03594E] h-[80px] transition ease-in-out duration-700;}
+header{@apply flex w-full md:absolute fixed md:bottom-0 bottom-[-80px] items-center z-[999] text-white bg-[#03594E] h-[60px] transition ease-in-out duration-700;}
 header.on{@apply fixed top-0 bottom-auto;}
 header.on a.logo{@apply h-[50px];}
 header.on .logo_l_e{@apply block;}
@@ -35,7 +35,7 @@ header.on .logo_d_e{@apply hidden;}
 nav ul{@apply xl:flex flex-col xl:flex-row justify-between h-full !px-0  xl:max-w-[1300px] xl:m-auto m-[0_0_0_auto] max-w-[60%] hidden;}
 nav ul.on{@apply flex ;}
 nav .gnb{@apply flex-grow text-center h-full leading-[73px] xl:col-2 border-b-[3px] border-yellow border-solid bg-[#03594E];}
-nav .gnb a{@apply flex text-center items-center justify-center h-[80px] font-bold lg:border-l border-white border-solid hover:bg-[#00C3D1] transition-all ;}
+nav .gnb a{@apply flex text-center items-center justify-center h-[60px] font-bold lg:border-l border-white border-solid hover:bg-[#00C3D1] transition-all ;}
 nav .gnb:last-child a{@apply lg:border-r;}
 
 /* 타이틀 */
