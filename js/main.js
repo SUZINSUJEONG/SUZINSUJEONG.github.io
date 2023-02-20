@@ -25,7 +25,7 @@ $(document).ready(function(){
     $(window).on('resize', resizeFunction);
     
     $(window).scroll(function () {
-      if ($(this).scrollTop() > $("#intro").height() - '80') {
+      if ($(this).scrollTop() > $("#intro").height() - '60') {
         $('header').addClass('on');
       } else {
         $('header').removeClass('on');
@@ -52,19 +52,87 @@ $(document).ready(function(){
     $(this).hide();
   });
 
+
   // 모바일 버튼 클릭
-  $(".btn_menu_btn").click(function() { 
+  if ($(window).width() < 768) {
 
-    $(".menu").toggleClass("on");
-    $(this).toggleClass("on");
-  });
+    $(".btn_menu_btn").click(function() { 
+      $(".menu").toggleClass("on");
+     $(".menu_close").stop().fadeToggle();
+      $(this).toggleClass("on");
+    });
+  
+  }else {
+    //$(".btn_menu_btn").off("click");
+   $(".btn_menu_btn").removeClass("on");
+    $(".menu_close").fadeOut();
+    $(".menu ").removeClass("on");
 
+  }  
+
+  // function resizeFunction() {
+  //   if($(window).width() < 768) {
+
+  //     $(".btn_menu_btn").click(function() { 
+  //       $(".menu").toggleClass("on");
+  //      $(".menu_close").stop().fadeToggle();
+  //       $(this).toggleClass("on");
+  //     });
+  //   }else {
+  //     //$(".btn_menu_btn").off("click");
+  //    $(".btn_menu_btn").removeClass("on");
+  //     $(".menu_close").fadeOut();
+  //     $(".menu ").removeClass("on");
+  
+  //   }  
+  // }
+  
+  // $(window).on('resize', resizeFunction);
+
+
+  // $(window).resize(function() {
+   
+   
+  // });
 
   $('.menu').click(function(e) { 
-    $(this).removeClass("on"); 
-    $(".btn_menu_btn").removeClass("on"); 
+    $(this).removeClass("on");
+    $(".menu_close").fadeOut();
+    $(".btn_menu_btn").removeClass("on");
+
   });
+//
  
+  // $(window).resize(function() {
+
+  //     if ($(window).width() < 768) {
+
+  //   $(".btn_menu_btn").click(function() { 
+  //     $(".menu").toggleClass("on");
+  //    $(".menu_close").stop().fadeToggle();
+  //     $(this).toggleClass("on");
+  //   });
+  
+  
+  //   $('.menu').click(function(e) { 
+  //     $(this).removeClass("on");
+  //     $(".menu_close").fadeOut();
+  //     $(".btn_menu_btn").removeClass("on");
+  
+  //   });
+   
+  // }else {
+  //  // $(".btn_menu_btn").off("click");
+  //  $(".btn_menu_btn").removeClass("on");
+  //   $(".menu_close").fadeOut();
+  //   $(".menu ").removeClass("on");
+
+
+  // }  
+  
+  // });
+
+
 
   //프리뷰 스와이퍼 -섹션0
   var swiper = new Swiper(".preview.mySwiper", {
