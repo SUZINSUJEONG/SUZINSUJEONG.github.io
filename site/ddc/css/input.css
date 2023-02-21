@@ -87,7 +87,7 @@ body {
 .mySwiper .swiper-slide-active div{@apply scale-100;}
 
 .intro2 .swiper-slide{@apply scale-95 opacity-80;}
-.intro2 .swiper-slide-active{@apply opacity-100 scale-105 border-[5px] border-primary2;}
+.intro2 .swiper-slide-active{@apply opacity-100 scale-110 border-[5px] border-primary2;}
 
 /*지역사회공헌 탭 버튼 */
 .tab_btn{@apply sm:w-[270px] w-full p-4 rounded-full border-[3px] border-transparent hover:border-primary border-solid sm:text-[22px] text-lg text-center transition text-text2 hover:text-text1;}
@@ -96,7 +96,7 @@ body {
 /* title h6*/
 .title{@apply flex flex-col lg:flex-row justify-center items-center self-stretch  gap-[5.2vw] px-4 pb-[50px];}
 .title strong{@apply text-primary;}
-.title h6, h6.sub_title{@apply relative pb-6 text-primary w-fit bg-[url(../img/intro/sub_title_stroke.svg)] bg-no-repeat bg-[0_100%] bg-contain;}
+.title h6, h6.sub_title{@apply relative pb-4 text-primary w-fit bg-[url(../img/intro/sub_title_stroke.svg)] bg-no-repeat bg-[0_100%] bg-contain;}
 /* 서브 컨텐츠 -지역사회공헌 */
 i.tag1{@apply px-[15px] py-2 rounded-[100px] bg-primary2 text-base font-bold text-neutral-50 shadow-button flex;}
 .point1{@apply bg-[url('../img/intro/point1.svg')] bg-no-repeat bg-[10px] pl-[50px];}
