@@ -31,10 +31,10 @@ $(document).ready(function(){
     spaceBetween: 20,
     loop: true,
    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       768: {
         slidesPerView: 4,

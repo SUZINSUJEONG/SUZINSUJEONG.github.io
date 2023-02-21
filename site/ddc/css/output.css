@@ -2539,6 +2539,78 @@ h6,.h6 {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/1\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/1.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/2\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/2.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/3\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/3.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/4\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/4.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/5\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/5.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/6\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/6.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/7\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/7.png');
+}
+
+.bg-\[url\(\'\.\.\/ddc\/img\/intro1\/8\.png\'\)\] {
+  background-image: url('../ddc/img/intro1/8.png');
+}
+
+.bg-\[url\(\'\.\.\.\/ddc\/img\/intro1\/9\.png\'\)\] {
+  background-image: url('.../ddc/img/intro1/9.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/1\.png\'\)\] {
+  background-image: url('../img/intro1/1.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/2\.png\'\)\] {
+  background-image: url('../img/intro1/2.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/3\.png\'\)\] {
+  background-image: url('../img/intro1/3.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/4\.png\'\)\] {
+  background-image: url('../img/intro1/4.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/5\.png\'\)\] {
+  background-image: url('../img/intro1/5.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/6\.png\'\)\] {
+  background-image: url('../img/intro1/6.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/7\.png\'\)\] {
+  background-image: url('../img/intro1/7.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/intro1\/8\.png\'\)\] {
+  background-image: url('../img/intro1/8.png');
+}
+
+.bg-\[url\(\'\.\.\.\/img\/intro1\/9\.png\'\)\] {
+  background-image: url('.../img/intro1/9.png');
+}
+
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-to: rgb(0 0 0 / 0);
