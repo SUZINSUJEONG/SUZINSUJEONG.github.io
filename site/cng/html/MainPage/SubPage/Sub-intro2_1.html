@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)C&G TECH</title>
+    <!-------------------------- 구글아이콘 -------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- 폰트 -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font.css">
+  
+  
+    <!--swiper 스와이퍼 css & js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+    <!--tailwind.css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="/css/index.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+    
+    <!-- Tailwind JS -->
+    <!-- <script src="../../js/tailwind.config.js"></script> -->
+    <script type="text/javascript" src="/js/index.min.js"></script>
+  
+    <!-- 커스텀 scripts -->
+    <script type="text/javascript" src="/js/common.js"></script>
+    
+</head>
+<body>
+<button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop" class="top_btn animate-bounce"><i class="material-icons-round sm:text-3xl">arrow_upward</i></button>
+
+  <header class="">
+    <nav class="container flex items-center justify-between w-full h-full">
+      <a href="/html/MainPage/Main.html"class="logo lg:px-[50px] h-[60px]">
+        <!-- <img src="/img/logo_d_e.svg" class="hidden h-full lg:block logo_d_e"> -->
+        <img src="/img//logo_l_e.svg" class="h-full !block logo_l_e">
+      </a>
+      <ol class="items-center self-stretch justify-center flex-grow hidden gap-20 lg:flex text-text1">
+        <li><a href="/html/MainPage/SubPage/Sub-intro.html"class="">기업소개</a></li>
+        <li><a href="/html/MainPage/SubPage/Sub-intro2.html"class="">제품소개</a></li>
+        <li><a href="/html/MainPage/SubPage/Sub-intro3.html"class="">문의하기</a></li>
+      </ol>
+      <a href=""class=" button_bg lg:flex">문의 바로가기 <span class="material-icons-round">chevron_right</span></a>
+      <button type="button" class=" h-full w-[80px]  btn_menu_btn flex items-center justify-center lg:hidden"><span class="menu_icon"></span></button>
+    </nav>
+  </header>
+
+  <div class="flex  max-w-[1300px] gap-[50px] container pt-12 mt-20">
+    <div class="flex flex-col  flex-grow pb-[30px]">
+      <div class="flex  self-stretch  overflow-hidden pb-[30px]">
+        <div class="flex flex-col  flex-grow relative overflow-hidden gap-2.5 px-1 py-[154px] bg-black/50">
+          <div class=" w-[592px] h-[293px]"></div>
+          <div class="flex justify-start items-center  absolute left-[212px] top-[270px] gap-3 px-[30px] py-4 rounded-md border border-white">
+            <p class=" text-[22px] font-bold text-left text-white">
+              More View
+            </p>
+            <p class=" text-lg text-center text-white">chevron_right</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-start items-center self-stretch  gap-2.5">
+        <div class="flex   relative gap-2.5 p-px bg-[url('a.png')] border border-[#5e635f]">
+          <img class=" w-[100px] h-[100px]" src="80.png">
+        </div>
+        <div class="flex   relative gap-2.5 p-px bg-[url('a.png')] border border-[#5e635f]">
+          <img class=" w-[100px] h-[100px]" src="80-2.png">
+        </div>
+        <div class="flex   relative gap-2.5 p-px bg-[url('a.png')] border border-[#5e635f]">
+          <img class=" w-[100px] h-[100px]" src="80-3.png">
+        </div>
+        <div class="flex   relative gap-2.5 p-px bg-[url('a-2.jpeg')] bg-cover bg-no-repeat bg-center border border-[#5e635f]">
+          <div class=" w-[100px] h-[100px] bg-black/20"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col  flex-grow gap-[30px] py-0.5">
+      <div class="flex flex-col  self-stretch  gap-7">
+        <div class="flex  self-stretch  gap-4 pb-2.5 border-t-0 border-r-0 border-b border-l-0 border-[#a9abaa]">
+          <div class="flex justify-start items-center  relative overflow-hidden px-3 rounded-[3px] bg-[#00bf96]" style="box-shadow: 0px 2px 6px 0 rgba(19,26,21,0.15), 0px 1px 2px 0 rgba(5,185,117,0.3);">
+            <p class=" text-xs text-center text-white">New</p>
+          </div>
+          <div class="flex justify-start items-center  relative gap-2">
+            <div class=" w-px h-3 bg-[#a9abaa]"></div>
+            <div class="flex justify-start items-center  relative overflow-hidden gap-[3px]">
+              <p class=" text-lg text-center text-[#a9abaa]">home</p>
+              <p class=" text-sm text-left text-[#131a15]">제품소개</p>
+            </div>
+            <div class="flex flex-col justify-center items-center  relative p-[3px] rounded-[1000px] border border-[#a9abaa]">
+              <p class=" text-xs text-center text-[#a9abaa]">
+                chevron_right
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col  self-stretch  relative gap-[19px]">
+          <div class=" w-[480px] h-9 relative overflow-hidden">
+            <p class="absolute left-0 top-0 text-[26px] font-medium text-left text-[#131a15]">
+              25루베 슬러지 오니 암롤박스
+            </p>
+          </div>
+          <div class="flex  self-stretch  relative gap-2.5 pb-1.5 border-t-0 border-r-0 border-b border-l-0 border-[#a9abaa]">
+            <p class=" text-base text-left text-[#616161]">규격</p>
+          </div>
+          <div class="flex flex-col  self-stretch  overflow-hidden bg-white border border-[#a9abaa]">
+            <div class="flex justify-start items-center self-stretch  overflow-hidden border-t-0 border-r-0 border-b border-l-0 border-[#a9abaa]">
+              <div class="flex justify-center items-center flex-grow relative p-2.5 bg-white border-t-0 border-r border-b-0 border-l-0 border-[#a9abaa]">
+                <p class=" text-lg font-medium text-left text-[#131a15]">
+                  규격(L*W*H)
+                </p>
+              </div>
+              <div class="flex justify-center items-center self-stretch flex-grow relative gap-2.5 p-2.5 border-t-0 border-r border-b-0 border-l-0 border-[#a9abaa]">
+                <p class=" text-sm font-medium text-left text-[#a9abaa]">
+                  5800
+                </p>
+              </div>
+              <div class="flex justify-center items-center self-stretch flex-grow relative gap-2.5 p-2.5 border-t-0 border-r border-b-0 border-l-0 border-[#a9abaa]">
+                <p class=" text-sm font-medium text-left text-[#a9abaa]">
+                  5800
+                </p>
+              </div>
+              <div class="flex justify-center items-center self-stretch flex-grow relative gap-2.5 p-2.5">
+                <p class=" text-sm font-medium text-left text-[#a9abaa]">
+                  5800
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start items-center self-stretch ">
+              <div class="flex justify-center items-center  w-[138.5px] relative p-2.5 bg-white border-t-0 border-r border-b-0 border-l-0 border-[#a9abaa]">
+                <p class=" text-lg font-medium text-left text-[#131a15]">
+                  철판 두께
+                </p>
+              </div>
+              <div class="flex justify-center items-center flex-grow relative gap-2.5 p-2.5">
+                <p class=" text-sm font-medium text-left text-[#a9abaa]">
+                  5800
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col  self-stretch  gap-[60px]">
+        <div class="flex flex-col  self-stretch  gap-5">
+          <div class="flex flex-col   pt-px border-t border-r-0 border-b-0 border-l-0 border-[#f4f4f4]">
+            <div class="flex justify-start items-center self-stretch  pr-5 py-3 border-t-0 border-r-0 border-b border-l-0 border-[#f2f2f2]">
+              <div class="flex  flex-grow gap-2">
+                <div class="flex justify-start items-center  gap-2">
+                  <div class="flex flex-col   relative overflow-hidden gap-2.5 p-0.5">
+                    <p class=" text-xl text-center text-[#5e635f]">
+                      local_shipping
+                    </p>
+                  </div>
+                  <div class="flex justify-start items-center  relative gap-20">
+                    <p class=" text-sm text-left text-[#00bacc]">
+                      제작 및 배송기간 문의필요
+                    </p>
+                    <p class=" text-xs text-center text-[#a9abaa]">help</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex   pt-3 pb-[11px] border-t-0 border-r-0 border-b border-l-0 border-[#f2f2f2]">
+              <div class="flex justify-start items-center  relative gap-2 pr-[301px]">
+                <div class="flex flex-col   relative overflow-hidden gap-2.5 p-0.5">
+                  <p class=" text-xl text-center text-[#5e635f]">language</p>
+                </div>
+                <p class=" text-base text-left text-[#5e635f]">
+                  본 상품은 국내제작만 가능합니다.
+                </p>
+              </div>
+            </div>
+            <div class="flex  self-stretch  pt-3 pb-[11px] border-t-0 border-r-0 border-b border-l-0 border-[#f2f2f2]">
+              <div class="flex   gap-6">
+                <div class="flex justify-start items-center  relative gap-2">
+                  <div class="flex flex-col   relative overflow-hidden gap-2.5 p-0.5">
+                    <p class=" text-xl text-center text-[#5e635f]">
+                      manage_search
+                    </p>
+                  </div>
+                  <p class=" text-base text-left text-[#5e635f]">제작장소</p>
+                </div>
+                <div class="flex justify-start items-center  relative gap-2.5">
+                  <div class=" w-px h-3.5 bg-[#a9abaa]"></div>
+                  <p class=" text-base text-left text-[#5e635f]">
+                    경기도 평택시 서탄면 서탄2로 226
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex  self-stretch  h-[84px] overflow-hidden">
+            <div class="flex  flex-grow h-[84px]">
+              <div class="flex justify-center items-center self-stretch  relative overflow-hidden gap-4 px-4 bg-[#f4f4f4]">
+                <img src="/img/introduce2/detail/truck.png">
+
+                <p class=" text-base text-left text-[#131a15]">
+                  <span class=" text-base text-left text-[#131a15]">큰 가격이 부담 스러우신가요?</span><br><span class=" text-base font-bold text-left text-[#131a15]">횟수ㆍ기간 제한없이 대여 가능!</span>
+                </p>
+              </div>
+              <div class="flex justify-end items-center self-stretch flex-grow relative overflow-hidden px-4 bg-[#f4f4f4]">
+                <a href="" class=" w-[78px] h-[38px] rounded-md bg-white border border-[#c7d9d2] text-[15px] text-center">렌탈문의</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col  self-stretch  gap-[89px] pt-5">
+          <div class="flex flex-col  self-stretch  relative gap-3">
+            <p class=" text-base font-bold text-left text-[#1e2732]">
+              기본설명
+            </p>
+            <div class="flex justify-start items-center self-stretch  relative px-[15px] rounded-[3px] border border-[#d6d7d8]">
+              <div class="flex flex-col   w-[500px] relative overflow-hidden gap-2.5 px-[15px] py-3 bg-white">
+                <div class=" w-[490px] h-[22px] relative overflow-hidden">
+                  <p class="absolute left-0 top-0 text-base text-left text-[#233549]">자세히보기</p>
+                </div>
+              </div>
+              <div class=" w-5 h-5 relative overflow-hidden">
+                <p class="absolute left-0 top-5 text-xl text-center text-[#5e635f]">chevron_right</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col  self-stretch  gap-2.5">
+            <div class="flex justify-center items-center self-stretch  relative gap-2.5 px-[43px] py-[13px] rounded-sm bg-[#05cd82]" style="box-shadow: 0px 1px 1px 0 rgba(0,0,0,0.1);">
+              <p class=" text-2xl font-bold text-center text-white">
+                견적문의
+              </p>
+              <div class=" w-[72px] h-[43.5px]">
+                <svg width="74" height="47" viewBox="0 0 74 47" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[205.5px] top-[-22.5px]" preserveAspectRatio="none">
+                  <path d="M16 31.5H19.5353C19.5687 31.6252 19.6102 31.7784 19.6594 31.9552C19.8027 32.4703 20.0113 33.1862 20.2723 33.99C20.7911 35.5872 21.5294 37.5698 22.39 39.0069C23.1756 40.3186 24.4295 41.7874 25.4684 42.913C25.9912 43.4795 26.466 43.9658 26.8101 44.3106C26.9823 44.4831 27.122 44.6204 27.2189 44.7148C27.2358 44.7313 27.2514 44.7465 27.2657 44.7603C27.2923 44.7861 27.3142 44.8073 27.331 44.8234L27.3606 44.8519L27.3684 44.8593L27.3705 44.8613L27.3711 44.8619L27.3712 44.862C27.3713 44.8621 27.3713 44.8621 27.7161 44.5L27.3713 44.8621L28.2215 45.6715L28.2161 44.4978V44.4977V44.4973L28.2161 44.4948L28.2161 44.4836L28.2163 44.437C28.2165 44.3954 28.2172 44.3334 28.2186 44.2529C28.2216 44.092 28.2279 43.8575 28.2414 43.5666C28.2685 42.9843 28.3244 42.1782 28.4392 41.2835C28.6717 39.471 29.1361 37.3828 30.0307 36.0251C30.788 34.8759 32.1933 33.7337 33.4563 32.8603C34.08 32.429 34.6544 32.0731 35.0727 31.825C35.2817 31.7011 35.4513 31.6044 35.568 31.539C35.5941 31.5245 35.6175 31.5114 35.6381 31.5H58C66.5604 31.5 73.5 24.5604 73.5 16C73.5 7.43959 66.5604 0.5 58 0.5H16C7.43959 0.5 0.5 7.43959 0.5 16C0.5 24.5604 7.43958 31.5 16 31.5Z" fill="#FF7E36" stroke="#CC652B"></path>
+                </svg>
+                <p class="absolute left-[217px] top-[-13px] text-xs font-medium text-left text-white">
+                  무료상담!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 1 -->
+
+  <section class="pb-[140px] mt-[100px]">
+    <div class="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 max-w-[1300px] container">
+      <div
+        class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 overflow-hidden bg-[url(&#x27;div.png&#x27;)]"
+      >
+        <div class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0">
+          <div
+            class="flex flex-col justify-start items-start flex-grow pt-10 border-t-0 border-r border-b-0 border-l-0 border-[#a9abaa]"
+          >
+            <div
+              class="flex flex-col justify-center items-center self-stretch flex-grow-0 flex-shrink-0 gap-8 px-8"
+            >
+              <div
+                class="flex justify-center items-center self-stretch flex-grow-0 flex-shrink-0 px-4 py-6 bg-[#fff5f5] border border-[#ffbfbf]"
+              >
+                <div
+                  class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[31px]"
+                >
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-5 h-5 relative"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.833 9.99999C18.833 12.21 17.9551 14.3296 16.3923 15.8923C14.8296 17.4551 12.71 18.333 10.5 18.333C8.28994 18.333 6.17041 17.4551 4.60767 15.8923C3.04493 14.3296 2.16699 12.21 2.16699 9.99999C2.16699 7.78994 3.04493 5.67041 4.60767 4.10767C6.17041 2.54493 8.28994 1.66699 10.5 1.66699C12.71 1.66699 14.8296 2.54493 16.3923 4.10767C17.9551 5.67041 18.833 7.78994 18.833 9.99999ZM8.97299 6.82699C8.93611 6.60553 8.94791 6.37869 9.00757 6.16225C9.06722 5.94581 9.1733 5.74496 9.31843 5.57366C9.46356 5.40237 9.64426 5.26474 9.84796 5.17034C10.0517 5.07594 10.2735 5.02704 10.498 5.02704C10.7225 5.02704 10.9443 5.07594 11.148 5.17034C11.3517 5.26474 11.5324 5.40237 11.6776 5.57366C11.8227 5.74496 11.9288 5.94581 11.9884 6.16225C12.0481 6.37869 12.0599 6.60553 12.023 6.82699L11.391 10.633C11.3555 10.8441 11.2464 11.0358 11.083 11.174C10.9196 11.3122 10.7125 11.3881 10.4985 11.3881C10.2845 11.3881 10.0774 11.3122 9.91395 11.174C9.75056 11.0358 9.64144 10.8441 9.60599 10.633L8.97399 6.82699H8.97299ZM11.791 13.655C11.791 13.9979 11.6548 14.3268 11.4123 14.5693C11.1698 14.8118 10.8409 14.948 10.498 14.948C10.1551 14.948 9.82619 14.8118 9.5837 14.5693C9.34122 14.3268 9.20499 13.9979 9.20499 13.655C9.20499 13.3121 9.34122 12.9832 9.5837 12.7407C9.82619 12.4982 10.1551 12.362 10.498 12.362C10.8409 12.362 11.1698 12.4982 11.4123 12.7407C11.6548 12.9832 11.791 13.3121 11.791 13.655Z"
+                      fill="#EF2B2A"
+                    ></path>
+                  </svg>
+                  <p class="flex-grow-0 flex-shrink-0 text-base text-center">
+                    <span class="flex-grow-0 flex-shrink-0 text-base text-center text-[#131a15]"
+                      >사진의 이미지는 </span
+                    ><span class="flex-grow-0 flex-shrink-0 text-base text-center text-[#ef2b2a]"
+                      >실제 측정된 사이즈 및 구성과 </span
+                    ><span class="flex-grow-0 flex-shrink-0 text-base text-center text-[#131a15]"
+                      >다를 수 있습니다.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 overflow-hidden"
+              >
+                <div
+                  class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative"
+                >
+                  <img
+                    class="self-stretch flex-grow-0 flex-shrink-0 h-[311px]"
+                    src="20221218g2.png.png"
+                  /><img
+                    class="self-stretch flex-grow-0 flex-shrink-0 h-[282px]"
+                    src="20221218g2.png-2.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0">
+            <div
+              class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 overflow-hidden gap-2.5 px-[19px] py-10"
+            >
+              <div
+                class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-1.5"
+              >
+                <p class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#131a15]">
+                  기본설명
+                </p>
+                <div
+                  class="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 relative overflow-hidden px-4 rounded-tl-sm rounded-tr-sm border border-[#a9abaa]"
+                >
+                  <div
+                    class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative overflow-hidden py-3 bg-white"
+                  >
+                    <div class="flex-grow-0 flex-shrink-0 w-[195px] h-[22px] relative overflow-hidden">
+                      <p class="absolute left-0 top-0 text-base text-left text-[#131a15]">자세히보기</p>
+                    </div>
+                  </div>
+                  <div class="flex-grow-0 flex-shrink-0 w-5 h-5 relative overflow-hidden">
+                    <p class="absolute left-0 top-0 text-xl text-center text-[#5e635f]">
+                      chevron_right
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 gap-2.5 p-2.5"
+            >
+              <div
+                class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative px-[15px] pt-[66px] border-t border-r-0 border-b-0 border-l-0 border-[#f4f4f4]"
+              >
+                <div
+                  class="flex-grow-0 flex-shrink-0 w-[270px] h-[62px] relative rounded-sm bg-[#05cd82]"
+                  style="box-shadow: 0px 4px 12px 0 rgba(19,26,21,0.1);"
+                >
+                  <p
+                    class="w-[88.53px] h-9 absolute left-[90.83px] top-[13px] text-2xl font-bold text-center text-white"
+                  >
+                    견적문의
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 2 -->
+
+
+<footer class="w-full lg:py-[100px] border-t-[3px] border-primary border-solid ">
+  <div class="container flex justify-between">
+    <a class="logo px-[50px] h-[80px]"><img src="/img/logo_l_e.svg" class="h-full"></a>
+    <ul class="flex col-8 justify-between">
+      <li class="">
+        <h5>CONTACT</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><strong class="min-w-[100px] inline-block">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Tel</strong>031-668-8386</li>
+          <li><strong class="min-w-[100px] inline-block">Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        </ol>
+      </li>
+      <li>
+        <h5>About</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><a href="">Home</a></li>
+          <li><a href="">기업소개</a></li>
+          <li><a href="">제품소개</a></li>
+          <li><a href="">견적문의</a></li>
+        </ol>
+      </li>
+      <li class="flex flex-col gap-6 text-xl font-medium">
+        <h5>Family Site</h5>
+        <div class="relative p-4 border border-text2 w-[180px]" style="">
+          <a class="dropdown-toggle flex h-full justify-between" href="#">Family Site <span class="material-icons-round">expand_less</span></a>
+          <ul class="p-4 border border-text2 dropdown absolute hidden w-[180px] -left-px top-full" style="">
+            <li><a href="#!">크리샤 </a></li>
+          </ul>
+        </div>
+        <script>
+          $(function() { // Dropdown toggle
+            $('.dropdown-toggle').click(function(e) {
+              event.preventDefault()
+              $(this).next('.dropdown').slideToggle(200);
+              $(this).toggleClass('on');
+            });
+
+            $(document).click(function(e) { 
+            var target = e.target; 
+              if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+              //{ $('.dropdown').hide(); }
+                { $('.dropdown').slideUp(); }
+            });
+          });
+        </script>
+      </li>
+    </ul>
+  
+
+
+  </div>
+  <div class="container pt-[60px]">
+    <ul class="flex border-b border-solid pb-9">
+      <li><a href="">개인정보처리방침 | </a></li>
+      <li><a href=""> 개인정보처리방침</a></li>
+    </ul>
+    <div class="flex justify-between pt-9">
+      <p>Copyright © 2022 C&G tech. All Rights Reserved.</p>
+      <ul class="flex gap-4">
+        <li><a href=""><img src="/img/icon/Instagtam.svg"></a></li>
+        <li><a href=""><img src="/img/icon/Youtube.svg"></a></li>
+        <li><a href=""><img src="/img/icon/Naver.svg"></a></li>
+        <li><a href=""><img src="/img/icon/Facebook.svg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

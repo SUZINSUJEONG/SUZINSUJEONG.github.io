@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)C&G TECH</title>
+    <!-------------------------- 구글아이콘 -------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <!-- 폰트 -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/font.css">
+  
+  
+    <!--swiper 스와이퍼 css & js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+    <!--tailwind.css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../../../css/index.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+    
+    <!-- Tailwind JS -->
+    <!-- <script src="../../js/tailwind.config.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script type="text/javascript" src="../../../js/index.min.js"></script>
+  
+    <!-- 커스텀 scripts -->
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    
+</head>
+<body>
+<button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop" class="top_btn animate-bounce"><i class="material-icons-round sm:text-3xl">arrow_upward</i></button>
+
+<header class="">
+  <nav class="container flex items-center justify-between w-full h-full">
+    <a href="../Main.html"class="logo lg:px-[50px] h-[60px]">
+      <!-- <img src="/img/logo_d_e.svg" class="hidden h-full lg:block logo_d_e"> -->
+      <img src="../../../img/logo_l_e.svg" class="h-full !block logo_l_e">
+    </a>
+    <ol class="items-center self-stretch justify-center flex-grow hidden gap-20 lg:flex text-text1">
+      <li><a href="../SubPage/Sub-intro.html" class="">기업소개</a></li>
+      <li><a href="../SubPage/Sub-intro2.html" class="">제품소개</a></li>
+      <li><a href="../SubPage/Sub-intro3.html" class="">문의하기</a></li>
+    </ol>
+    <a href=""class=" button_bg lg:flex">문의 바로가기 <span class="material-icons-round">chevron_right</span></a>
+    <button type="button" class=" h-full w-[80px]  btn_menu_btn flex items-center justify-center lg:hidden"><span class="menu_icon"></span></button>
+  </nav>
+</header>
+
+  <div class="flex flex-col lg:flex-row 2xl:gap-[200px] lg:gap-[12.5vw] gap-9 justify-center container 2xl:px-20 mt-[80px] pt-14">
+    <h3 class="">
+      <strong class="text-primary" style="">‘C&G TECH’</strong> 
+      는 압롤 박스 분야의<br>앞선 기술력 바탕으로<br>
+      <strong class="text-primary" style="background: url(../../../img/after_stroke.svg)no-repeat 0 100%/contain;">30년 전통 최고 기업</strong> 입니다.
+    </h3>
+
+    <p class="text-lg font-medium text-paragraph">수년간 암롤박스와 스크랩/고철박스를 생산해온 특화된<br> 기술력과 노하우를 갖고 있는 용접 구조물 전문 기업으로<br> 여러 기업의 파트너로서 자리잡고 있습니다.</p>
+  </div>
+  <img src="../../../img/main/Container.png">
+  <!-- 1 -->
+
+  <section class="pb-[140px]">
+    <div class="container flex justify-center gap-20">     
+      <ol class="flex flex-col self-stretch justify-center flex-grow gap-4 py-10 partner col-6 ">
+        <li class="flex gap-6 justify-center">
+          <img id="Ci" src="../../../img/introduce/graph.png">
+          <img id="Ci" src="../../../img/introduce/graph-1.png">
+        </li>
+        <li>
+          <img id="Ci" src="../../../img/introduce/graph-2.png" class="m-auto">
+        </li>
+      </ol>
+      <div class="flex flex-col justify-center gap-3 py-10 pb-8 w-fit">
+        <h2 class="flex flex-col gap-4"><span class="w-fit" style="background: url(../../../img/after_stroke.svg)no-repeat 0 100%/contain;">Why? <i class="text-primary">C&amp;G</i></span><span class="text-lg font-medium text-paragraph">고객을 최우선으로 하여 고객이 만족할 수 있는<br>품질과 비용 절약을 제공 합니다.</span></h2>
+      </div>
+    </div>
+  </section>
+  <!-- 2 -->
+
+  <section class="py-20 bg-[#FFFAF5]">
+    <div class="container flex flex-col gap-9">
+      <div class="flex flex-col items-center justify-center gap-3 py-10 pb-8">
+        <h2 class="flex flex-col gap-4 text-center"><i  style="background: url(../../../img/after_stroke.svg)no-repeat 0 90%/contain;">Our Services</i>
+          <span class="text-lg font-medium text-paragraph">변치 않는 믿음과 신뢰를 바탕으로 지속적인 고객서비스를 진행하고 있습니다.</span>
+        </h2>
+      </div>
+      <ol class="flex flex-col self-stretch justify-center flex-grow py-10 overflow-hidden lg:flex-row lg:gap-20 partner h5">
+        <li class="ourService group"style="background: url(../../../img/introduce/service1.png) 50% /cover;" >
+          <div class="">
+            <img class="block transition-all group-hover:hidden w-[150px]" src="../../../img/icon/service/icon1.svg">
+            <img class="hidden transition-all group-hover:block group-hover:opacity-100 w-[150px] opacity-0" src="../../../img/icon/service/icon1_w.svg">
+            고객 비용 절감을 위한<br>직접 유통 시스템
+          </div>
+        </li>
+
+        <li class="ourService group"style="background: url(../../../img/introduce/service2.png) 50% /cover;" >
+          <div>
+            <img class="block transition-all group-hover:hidden w-[150px]" src="../../../img/icon/service/icon2.svg">
+          <img class="hidden transition-all group-hover:block w-[150px]" src="../../../img/icon/service/icon2_w.svg">
+          무료 렌탈 서비스
+          </div>
+        </li>
+
+        <li class="ourService group" style="background: url(../../../img/introduce/service3.png) 50% /cover;">
+          <div>
+            <img class="block transition-all group-hover:hidden w-[150px]" src="../../../img/icon/service/icon3.svg">
+            <img class="hidden transition-all group-hover:block w-[150px]" src="../../../img/icon/service/icon3_w.svg">
+            품질 보증을 위한 A/S 서비스
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!-- 3 -->
+
+  <section class="py-20">
+    <main class="container relative flex gap-8 justify-center overflow-hidden">
+      
+      <div class="flex flex-col gap-6 py-10 pb-8">
+        <p class="flex flex-col gap-3 text-xl font-bold text-primary">Partner<span class="w-[100px] h-[5px] bg-primary"></span></p>
+        <h2 class="flex flex-col gap-4">Easy Integrations with<br> Our Partner<span class="text-lg font-medium text-paragraph">100여개의 다양한 기업들의 선택으로 제품에 대한 <br>기술력과 신뢰도를 보여줍니다.</span></h2>
+      </div>
+      <div class="py-10 col-6">
+        <div class="absolute bottom-0 right-0 z-10 w-full h-1/2 bg-gradient-to-b from-transparent to-white"></div>
+        <img src="../../../img/introduce/ourService_bg.png" class="absolute top-0 right-0 -z-10 w-full">
+        <!-- animate-[moveforeverBtoT_30s_linear_infinite] -->
+        <ol class="flex flex-col self-stretch justify-center flex-grow gap-9 partner ">
+          <li class="flex self-stretch justify-center gap-12 ">
+            <img src="../../../img/main/partner/1.png">
+            <img src="../../../img/main/partner/2.png">
+            <img src="../../../img/main/partner/3.png">
+            <img src="../../../img/main/partner/4.png">
+            <img src="../../../img/main/partner/5.png">
+
+          </li>
+          <li class="flex self-stretch justify-center gap-12 ">
+            <img src="../../../img/main/partner/6.png">
+            <img src="../../../img/main/partner/7.png">
+            <img src="../../../img/main/partner/8.png">
+            <img src="../../../img/main/partner/9.png">
+            <img src="../../../img/main/partner/10.png">
+            <img src="../../../img/main/partner/11.png">
+          </li>
+          <!-- <li class="flex self-stretch justify-end gap-12 ">
+            <img src="/img/main/partner/12.png">
+            <img src="/img/main/partner/13.png">
+            <img src="/img/main/partner/1.png">
+            <img src="/img/main/partner/2.png">
+            <img src="/img/main/partner/3.png">
+            <img src="/img/main/partner/4.png">
+            <img src="/img/main/partner/5.png">
+            <img src="/img/main/partner/6.png">
+            <img src="/img/main/partner/7.png">
+            <img src="/img/main/partner/8.png">
+            <img src="/img/main/partner/9.png">
+            <img src="/img/main/partner/10.png">
+            <img src="/img/main/partner/11.png">
+            <img src="/img/main/partner/12.png">
+            <img src="/img/main/partner/13.png">
+            <img src="/img/main/partner/14.png">
+            <img src="/img/main/partner/15.png">
+            <img src="/img/main/partner/16.png">
+            <img src="/img/main/partner/17.png">
+            <img src="/img/main/partner/18.png">
+            <img src="/img/main/partner/19.png">
+            <img src="/img/main/partner/20.png">
+            <img src="/img/main/partner/21.png">
+            <img src="/img/main/partner/22.png">
+            <img src="/img/main/partner/23.png">
+            <img src="/img/main/partner/24.png">
+            <img src="/img/main/partner/25.png">
+            <img src="/img/main/partner/26.png">
+            <img src="/img/main/partner/27.png">
+            <img src="/img/main/partner/28.png">
+            <img src="/img/main/partner/29.png">
+            <img src="/img/main/partner/14.png">
+            <img src="/img/main/partner/15.png">
+            <img src="/img/main/partner/16.png">
+            <img src="/img/main/partner/17.png">
+            <img src="/img/main/partner/18.png">
+            <img src="/img/main/partner/19.png">
+            <img src="/img/main/partner/20.png">
+            <img src="/img/main/partner/21.png">
+            <img src="/img/main/partner/22.png">
+            <img src="/img/main/partner/23.png">
+            <img src="/img/main/partner/24.png">
+            <img src="/img/main/partner/25.png">
+            <img src="/img/main/partner/26.png">
+            <img src="/img/main/partner/27.png">
+            <img src="/img/main/partner/28.png">
+            <img src="/img/main/partner/29.png">
+          </li> -->
+        </ol>
+      </div>
+    </main>
+  </section>
+  <!-- 4 -->
+  <section class="container flex">
+    <div id="daumRoughmapContainer1677504388452" class="root_daum_roughmap root_daum_roughmap_landing col-6 h-full">
+      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+      <!-- 3. 실행 스크립트 -->
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp" : "1677504388452",
+          "key" : "2dvky",
+          "mapWidth" : "auto",
+          "mapHeight" : "545"
+        }).render();
+      </script>
+    </div>
+    <div class="flex flex-col gap-4 p-9 col-6">
+      <p class="flex flex-col gap-3 text-xl font-bold text-primary">Contact<span class="w-[100px] h-[5px] bg-primary"></span></p>
+      <h2 class="flex flex-col gap-4">C&G TECH</h2>
+      <ol class="flex flex-col text-xl font-medium">
+        <li class="p-4"><strong class="min-w-[200px] pr-2 inline-block">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        <li class="p-4"><strong class="min-w-[200px] pr-2 inline-block">Tel</strong>031-668-8386</li>
+        <li class="p-4"><strong class="min-w-[200px] pr-2 inline-block">Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        <li class="p-4"><strong class="min-w-[200px] pr-2 inline-block">Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+      </ol>
+    </div>
+
+  </section>
+
+<footer class="w-full lg:py-[100px] border-t-[3px] border-primary border-solid ">
+  <div class="container flex justify-between">
+    <a class="logo px-[50px] h-[80px]"><img src="../../../img/logo_l_e.svg" class="h-full"></a>
+    <ul class="flex col-8 justify-between">
+      <li class="">
+        <h5>CONTACT</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><strong class="min-w-[100px] inline-block">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Tel</strong>031-668-8386</li>
+          <li><strong class="min-w-[100px] inline-block">Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        </ol>
+      </li>
+      <li>
+        <h5>About</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><a href="">Home</a></li>
+          <li><a href="">기업소개</a></li>
+          <li><a href="">제품소개</a></li>
+          <li><a href="">견적문의</a></li>
+        </ol>
+      </li>
+      <li class="flex flex-col gap-6 text-xl font-medium">
+        <h5>Family Site</h5>
+        <div class="relative p-4 border border-text2 w-[180px]" style="">
+          <a class="dropdown-toggle flex h-full justify-between" href="#">Family Site <span class="material-icons-round">expand_less</span></a>
+          <ul class="p-4 border border-text2 dropdown absolute hidden w-[180px] -left-px top-full" style="">
+            <li><a href="#!">크리샤 </a></li>
+          </ul>
+        </div>
+        <script>
+          $(function() { // Dropdown toggle
+            $('.dropdown-toggle').click(function(e) {
+              event.preventDefault()
+              $(this).next('.dropdown').slideToggle(200);
+              $(this).toggleClass('on');
+            });
+
+            $(document).click(function(e) { 
+            var target = e.target; 
+              if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+              //{ $('.dropdown').hide(); }
+                { $('.dropdown').slideUp(); }
+            });
+          });
+        </script>
+      </li>
+    </ul>
+  
+
+
+  </div>
+  <div class="container pt-[60px]">
+    <ul class="flex border-b border-solid pb-9">
+      <li><a href="">개인정보처리방침 | </a></li>
+      <li><a href=""> 개인정보처리방침</a></li>
+    </ul>
+    <div class="flex justify-between pt-9">
+      <p>Copyright © 2022 C&G tech. All Rights Reserved.</p>
+      <ul class="flex gap-4">
+        <li><a href=""><img src="../../../img/icon/Instagtam.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Youtube.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Naver.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Facebook.svg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

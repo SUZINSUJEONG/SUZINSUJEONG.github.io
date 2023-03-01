@@ -56,7 +56,13 @@ $(document).ready(function(){
     }
   });
   
-  
+  $('.menu').click(function(e) { 
+    $(this).removeClass("on");
+    $(".menu_close").fadeOut();
+    $(".btn_menu_btn").removeClass("on");
+
+  });
+ 
    
 
   // function resizeFunction() {
@@ -84,13 +90,7 @@ $(document).ready(function(){
    
   // });
 
-  $('.menu').click(function(e) { 
-    $(this).removeClass("on");
-    $(".menu_close").fadeOut();
-    $(".btn_menu_btn").removeClass("on");
 
-  });
- 
 
   //프리뷰 스와이퍼 -섹션0
   var swiper = new Swiper(".preview.mySwiper", {

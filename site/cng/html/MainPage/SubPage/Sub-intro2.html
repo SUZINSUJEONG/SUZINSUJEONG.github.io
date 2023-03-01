@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)C&G TECH</title>
+    <!-------------------------- 구글아이콘 -------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <!-- 폰트 -->
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/font.css">
+  
+  
+    <!--swiper 스와이퍼 css & js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+    <!--tailwind.css -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../../../css/index.min.css">
+  
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+    
+    <!-- Tailwind JS -->
+    <!-- <script src="../../js/tailwind.config.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script type="text/javascript" src="../../../js/index.min.js"></script>
+  
+    <!-- 커스텀 scripts -->
+    <script type="text/javascript" src="../../../js/common.js"></script>
+    
+</head>
+<body>
+<button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop" class="top_btn animate-bounce"><i class="material-icons-round sm:text-3xl">arrow_upward</i></button>
+
+<header class="">
+  <nav class="container flex items-center justify-between w-full h-full">
+    <a href="../Main.html"class="logo lg:px-[50px] h-[60px]">
+      <!-- <img src="/img/logo_d_e.svg" class="hidden h-full lg:block logo_d_e"> -->
+      <img src="../../../img/logo_l_e.svg" class="h-full !block logo_l_e">
+    </a>
+    <ol class="items-center self-stretch justify-center flex-grow hidden gap-20 lg:flex text-text1">
+      <li><a href="../SubPage/Sub-intro.html" class="">기업소개</a></li>
+      <li><a href="../SubPage/Sub-intro2.html" class="">제품소개</a></li>
+      <li><a href="../SubPage/Sub-intro3.html" class="">문의하기</a></li>
+    </ol>
+    <a href=""class=" button_bg lg:flex">문의 바로가기 <span class="material-icons-round">chevron_right</span></a>
+    <button type="button" class=" h-full w-[80px]  btn_menu_btn flex items-center justify-center lg:hidden"><span class="menu_icon"></span></button>
+  </nav>
+</header>
+
+  <div class="flex flex-col gap-9 justify-center container mt-[60px] pt-20">
+    <h3 class="text-primary w-fit inline-block"  style="background: url(/img/after_stroke.svg)no-repeat 0 100%/contain;">Categorys</h3>
+    <ul class="flex gap-8 h6">
+      <li class="self-stretch flex-grow h-[75px] shadow-md rounded-md overflow-hidden"><a href="" class="flex h-full w-full items-center px-6 py-4 justify-between">암롤박스<span class="material-icons-round rounded-md bg-white text-primary p-2 w-fit h-fit">north_east</span></a></li>
+      <li class="self-stretch flex-grow h-[75px] shadow-md rounded-md overflow-hidden"><a href="" class="flex h-full w-full items-center px-6 py-4 justify-between">고철/스크랩<span class="material-icons-round rounded-md bg-white text-primary p-2 w-fit h-fit">north_east</span></a></li>
+      <li class="self-stretch flex-grow h-[75px] shadow-md rounded-md overflow-hidden"><a href="" class="flex h-full w-full items-center px-6 py-4 justify-between">중고박스<span class="material-icons-round rounded-md bg-white text-primary p-2 w-fit h-fit">north_east</span></a></li>
+      <li class="self-stretch flex-grow h-[75px] shadow-md rounded-md overflow-hidden"><a href="" class="flex h-full w-full items-center px-6 py-4 justify-between">박스수리<span class="material-icons-round rounded-md bg-white text-primary p-2 w-fit h-fit">north_east</span></a></li>
+
+    </ul>
+  </div>
+  <img src="../../../img/introduce2/cg_bg_pc.png" class="py-9 md:block hidden">
+  <img src="../../../img/introduce2/cg_bg_m.png" class="py-9 block md:hidden">
+  <!-- 1 -->
+
+  <section class="pb-[140px]">
+    <div class="container pt-9">
+      <div class="mb-9 w-full after:content-[''] after:block after:clear-both h-12">
+        <span class="float-right flex rounded-md overflow-hidden border"><input class="outline-none p-3 w-[250px]" type="text" placeholder="찾으시는 상품을 입력해 주세요."><button class="material-icons-round bg-primary2 text-white p-3">search</button></span>   
+      </div>  
+      <ol class="flex gap-9 flex-wrap">
+        <li class="flex flex-col  overflow-hidden bg-white self-stretch flex-grow w-[calc(50%-18px)]">
+          <img src="../../../img/introduce2/product.png">
+          <div class="flex flex-col  items-end self-stretch  overflow-hidden gap-[18px] px-[25px] pt-[30px] pb-10 bg-[#fcfefe] border-t border-[#c7d9d2]">
+            <h4 class="text-[32px] font-medium w-full">25루베 슬러지 오니 암롤박스</h4>
+            <div class="flex justify-between items-end w-full">
+              <i class="flex justify-center items-center gap-3 px-[25px] py-2 rounded-[100px] border border-primary2  font-bold  text-primary2">#건설폐기물 양문형</i>
+              <p class=" text-sm font-medium  text-paragraph">2022.00.00</p>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col  overflow-hidden bg-white self-stretch flex-grow w-[calc(50%-18px)]">
+          <img src="../../../img/introduce2/product.png">
+          <div class="flex flex-col  items-end self-stretch  overflow-hidden gap-[18px] px-[25px] pt-[30px] pb-10 bg-[#fcfefe] border-t border-[#c7d9d2]">
+            <h4 class="text-[32px] font-medium w-full">25루베 슬러지 오니 암롤박스</h4>
+            <div class="flex justify-between items-end w-full">
+              <i class="flex justify-center items-center gap-3 px-[25px] py-2 rounded-[100px] border border-primary2  font-bold  text-primary2">#건설폐기물 양문형</i>
+              <p class=" text-sm font-medium  text-paragraph">2022.00.00</p>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col  overflow-hidden bg-white self-stretch flex-grow w-[calc(50%-18px)]">
+          <img src="../../../img/introduce2/product.png">
+          <div class="flex flex-col  items-end self-stretch  overflow-hidden gap-[18px] px-[25px] pt-[30px] pb-10 bg-[#fcfefe] border-t border-[#c7d9d2]">
+            <h4 class="text-[32px] font-medium w-full">25루베 슬러지 오니 암롤박스</h4>
+            <div class="flex justify-between items-end w-full">
+              <i class="flex justify-center items-center gap-3 px-[25px] py-2 rounded-[100px] border border-primary2  font-bold  text-primary2">#건설폐기물 양문형</i>
+              <p class=" text-sm font-medium  text-paragraph">2022.00.00</p>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col  overflow-hidden bg-white self-stretch flex-grow w-[calc(50%-18px)]">
+          <img src="../../../img/introduce2/product.png">
+          <div class="flex flex-col  items-end self-stretch  overflow-hidden gap-[18px] px-[25px] pt-[30px] pb-10 bg-[#fcfefe] border-t border-[#c7d9d2]">
+            <h4 class="text-[32px] font-medium w-full">25루베 슬러지 오니 암롤박스</h4>
+            <div class="flex justify-between items-end w-full">
+              <i class="flex justify-center items-center gap-3 px-[25px] py-2 rounded-[100px] border border-primary2  font-bold  text-primary2">#건설폐기물 양문형</i>
+              <p class=" text-sm font-medium  text-paragraph">2022.00.00</p>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <a href="" class=" button_bg lg:flex mx-auto mt-12 !bg-primary2 !w-[320px] !h-16">더보기 <span class="material-icons-round">expand_more</span></a> 
+  </section>
+  <!-- 2 -->
+
+
+<footer class="w-full lg:py-[100px] border-t-[3px] border-primary border-solid ">
+  <div class="container flex justify-between">
+    <a class="logo px-[50px] h-[80px]"><img src="../../../img/logo_l_e.svg" class="h-full"></a>
+    <ul class="flex col-8 justify-between">
+      <li class="">
+        <h5>CONTACT</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><strong class="min-w-[100px] inline-block">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Tel</strong>031-668-8386</li>
+          <li><strong class="min-w-[100px] inline-block">Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+          <li><strong class="min-w-[100px] inline-block">Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+        </ol>
+      </li>
+      <li>
+        <h5>About</h5>
+        <ol class="flex flex-col gap-6 text-xl font-medium pt-9">
+          <li><a href="">Home</a></li>
+          <li><a href="">기업소개</a></li>
+          <li><a href="">제품소개</a></li>
+          <li><a href="">견적문의</a></li>
+        </ol>
+      </li>
+      <li class="flex flex-col gap-6 text-xl font-medium">
+        <h5>Family Site</h5>
+        <div class="relative p-4 border border-text2 w-[180px]" style="">
+          <a class="dropdown-toggle flex h-full justify-between" href="#">Family Site <span class="material-icons-round">expand_less</span></a>
+          <ul class="p-4 border border-text2 dropdown absolute hidden w-[180px] -left-px top-full" style="">
+            <li><a href="#!">크리샤 </a></li>
+          </ul>
+        </div>
+        <script>
+          $(function() { // Dropdown toggle
+            $('.dropdown-toggle').click(function(e) {
+              event.preventDefault()
+              $(this).next('.dropdown').slideToggle(200);
+              $(this).toggleClass('on');
+            });
+
+            $(document).click(function(e) { 
+            var target = e.target; 
+              if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+              //{ $('.dropdown').hide(); }
+                { $('.dropdown').slideUp(); }
+            });
+          });
+        </script>
+      </li>
+    </ul>
+  
+
+
+  </div>
+  <div class="container pt-[60px]">
+    <ul class="flex border-b border-solid pb-9">
+      <li><a href="">개인정보처리방침 | </a></li>
+      <li><a href=""> 개인정보처리방침</a></li>
+    </ul>
+    <div class="flex justify-between pt-9">
+      <p>Copyright © 2022 C&G tech. All Rights Reserved.</p>
+      <ul class="flex gap-4">
+        <li><a href=""><img src="../../../img/icon/Instagtam.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Youtube.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Naver.svg"></a></li>
+        <li><a href=""><img src="../../../img/icon/Facebook.svg"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
