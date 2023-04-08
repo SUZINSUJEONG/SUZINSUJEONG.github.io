@@ -56,12 +56,12 @@
       </div>
     </div>
   </div>
-  <section id="intro" class="h-[100vh] md:relative top-0  -z-10 sticky "style="">
+  <section id="intro" class="h-[100vh] md:relative top-0  md:z-10 -z-10 sticky "style="">
     <img src="./img/main_banner_m.svg" class="block md:hidden" style="height: 100%;margin: auto;">
-    <img src="./img/bg3_1.png" class="absolute bottom-[-25%] z-[1000] right-0 xl:w-[15.5vw] 2xl:block hidden">
-    <img src="./img/bg3_2.png" class="absolute bottom-[-25%] z-[1000] left-0 xl:w-[15.5vw]  2xl:block hidden">
+    <img src="./img/bg3_1.png" class="absolute bottom-[-10%] z-[1000] right-0 xl:w-[15.5vw] 2xl:block hidden">
+    <img src="./img/bg3_2.png" class="absolute bottom-[-10%] z-[1000] left-0 xl:w-[15.5vw]  2xl:block hidden">
 
-    <main class="md:pt-[80px] md:pb-[140px] pb-[80px] container h-full md:flex flex-col  gap-[50px] items-center hidden justify-center">
+    <main class="md:pt-[80px] md:pb-[140px] pb-[80px] container h-full md:flex flex-col items-center hidden justify-center gap-[50px]">
       <!-- <h4 class="flex flex-col items-center w-full gap-3 text-center text-white comma" style="">
         <div class="md:py-4 h2 text-yellow">아무것도 안 해도 쉴 수 있는 공간</div>
         <span class="md:py-3 h3">여기는 지속가능한 쉼터,</span>
@@ -78,6 +78,7 @@
         </span>
         <span class="h3 title">입니다.</span>
       </h4>
+     
       <img src="./img/main_banner.svg" class="hidden md:block" style="height: 100%;margin: auto;">
 
     </main>
@@ -85,6 +86,8 @@
   <!-- intro -->
   
   <div class="index md:rounded-t-none rounded-t-[50px]"style="background: linear-gradient(180deg, transparent 0, #fff 0%);overflow: auto;">
+    <img src="./img/bg3_2.png" class="absolute bottom-[-10%] z-[1000] left-0 xl:w-[15.5vw]  2xl:block hidden">
+    <img src="./img/bg3_1.png" class="absolute bottom-[-10%] z-[1000] right-0 xl:w-[15.5vw] 2xl:block hidden" style="">
     <header class="">
       <nav class="w-full h-full">
         <div class="container flex justify-between w-full h-full md:hidden">
@@ -92,188 +95,950 @@
           <button type="button" class=" h-full w-[80px] float-right btn_menu_btn"><span class="menu_icon"></span></button>
         </div>
         <ul class="menu">
-          <li class="gnb"><a class=""href="#section_1">WEBSITE CINEMA </a></li>
-          <li class="gnb"><a class=""href="#section_2">GRAPHIC DESIGN SHOW</a></li>
-          <li class="gnb"><a class=""href="#section_3"> PROPOSAL PICNIC </a></li>
-          <li class="gnb"><a class=""href="#section_4">FINE ART FOREST</a></li>
-          <li class="gnb"><a class=""href="#section_5">FLIM DESIGN</a></li>
-          <li class="gnb"><a class=""href="#section_6">CONTACT</a></li>
+          <li class="gnb"><a class=""href="#section_1">웹사이트 시네마 🎫</a></li>
+          <li class="gnb"><a class=""href="#section_2">그래픽디자인 쇼 🌈</a></li>
+          <li class="gnb"><a class=""href="#section_3">기획 피크닉 🧃</a></li>
+          <li class="gnb"><a class=""href="#section_4">파인아트 포레스트 🎨</a></li>
+          <li class="gnb"><a class=""href="#section_5">영상 디자인 🎬</a></li>
+          <li class="gnb"><a class=""href="#section_6">CONTACT 📱</a></li>
         </ul>
       </nav>
     </header>
     <div class="hidden menu_close"></div>
-    <section class="" id="section_0">
-      <div class="container md:pb-[5.2vw] pb-[50px]">
-        <div class="flex flex-col items-center md:pt-[5.2vw] pt-[100px] gap-[2.5vw] md:pb-[2.5vw] pb-[50px]">
-          <img src="./img/Vector.svg">
-          <h1 class="text-center comma lg:text-7xl text-surfacegreen">Preview Picnic</h1>
-          <p class="text-center h6 text-surfacegreen ">프리뷰 피크닉에서 미리 맛보고 충전하자!</p>
+    <section class="font-['pretendard']" id="section_0">
+      <div class="flex flex-col xl:flex-row container py-[5.2vw] gap-[5.2vw]">
+        <div class="flex-grow flex flex-col justify-between">
+          <div class="flex flex-col items-center text-lg text-surfacegreen container">
+            <img src="./img/Vector.svg">
+            <h2 class="text-center comma">Preview Picnic</h2>
+            <p class="text-center h6 text-surfacegreen ">Who am I ?</p>
+          </div>
+          <img src="./img/profile_01.png">
         </div>
-        <div class="swiper mySwiper preview xl:w-[1100px] w-auto ">
-          <ul class="swiper-wrapper h-[350px] ">
-            <li class="swiper-slide ">
+        <div class="flex-grow self-stretch">
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col justify-center items-center self-stretch  overflow-hidden rounded-md border-[5px] border-[#03594e]">
+              <div class="flex sm:flex-row flex-col justify-between items-center self-stretch  relative px-8 py-6 bg-[#03594e] gap-4">
+                <p class=" text-[22px] text-white font-['comma']">Su_Jeong_Ha</p>
+                <div class="flex gap-4">
+                  <a href="/process.pdf" target="_blank" class="transition-all hover:-rotate-12 hover:shadow flex justify-center items-center  gap-0.5 px-[13px] py-1.5 rounded-md bg-[#d9eae4] text-lg font-medium text-center">제작요약본<p class="material-icons-round text-base text-center ">file_open</p></a>
+
+                  <a href="/cv.pdf" target="_blank" class="transition-all hover:-rotate-12 hover:shadow flex justify-center items-center  gap-0.5 px-[13px] py-1.5 rounded-md bg-[#d9eae4] text-lg font-medium text-center">이력서<p class="material-icons-round text-base text-center ">file_download</p></a>
+                </div>
+              </div>
+              <div class="flex flex-col  self-stretch  relative gap-6 p-8">
+                <p class=" text-[22px]  text-[#03594e] font-['comma']">👩🏻&zwj;💻 "경험을 통해 소통의 장을 열어가는 혁신가"</p>
+                <svg width="100%" height="3" viewBox="0 0 610 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-stretch " preserveAspectRatio="xMidYMid meet">
+                  <line y1="1.5" x2="610" y2="1.5" stroke="#03594E" stroke-width="3"></line>
+                </svg>
+                <p class=" text-base font-medium  text-[#03594e]">
+                  안녕하세요. 도전과 성장을 기반하여 창작하는 디자이너 하수정입니다.
+                  <br>
+                  삶에서 대부분의 시간을 차지하는 경제활동이 즐겁다면 인생이 행복할 수 있을 것이라 믿습니다.
+                  <br>
+                  저는 좋아하는 일을 주도적으로 수행하며 경험에서 행복을 찾아 나서는 사람이 되고자 합니다.
+                </p>
+                <svg width="100%" height="3" viewBox="0 0 610 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-stretch " preserveAspectRatio="xMidYMid meet">
+                  <line y1="1.5" x2="610" y2="1.5" stroke="#03594E" stroke-width="3"></line>
+                </svg>
+                <ul class="flex justify-start items-center  gap-4">
+                  <li class="flex justify-center items-center  relative overflow-hidden gap-[5px] px-2.5 py-1.5 rounded-[3px] bg-[#f5c451] text-sm  lowercase">@UIUX DESIGNER</li>
+                  <li class="flex justify-center items-center  relative overflow-hidden gap-[5px] px-2.5 py-1.5 rounded-[3px] bg-[#f5c451] text-sm  lowercase">@WEB DESIGNER</li>
+                  <li class="flex justify-center items-center  relative overflow-hidden gap-[5px] px-2.5 py-1.5 rounded-[3px] bg-[#f5c451] text-sm  lowercase">@PUBLISHER</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center items-start  overflow-hidden rounded-md border-[5px] border-[#03594e]">
+              <div class="flex justify-start items-center self-stretch  relative px-8 py-6 bg-[#03594e]">
+                <p class=" text-[22px]  text-white font-['comma']">Skill &amp; Tools</p>
+              </div>
+              <div class="flex flex-col  self-stretch  relative gap-6 p-8">
+                <div class="flex flex-col   gap-[18px]">
+                  <div class="flex justify-start items-center  relative gap-4">
+                    <p class=" text-[22px] font-semibold  text-[#03594e]">Work Tool:</p>
+                    <ul class="flex gap-2.5 flex-wrap">
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Figma</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Adobe Photoshop</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Framer</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Adobe Illustrator</li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-start items-center  relative gap-4">
+                    <p class=" text-[22px] font-semibold  text-[#03594e]">Team Collaboration Tool:</p>
+                    <ul class="flex gap-2.5 flex-wrap">
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Notion</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Excel</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">PowerPoint</li>
+                      <li class="flex flex-col justify-center items-center  relative px-2.5 py-1.5 rounded-[3px] bg-[#357a71] text-base font-semibold  text-[#f4f4f4]">Word</li>
+                    </ul>
+                 
+                  </div>
+                </div>
+                <svg width="100%" height="3" viewBox="0 0 612 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="self-stretch " preserveAspectRatio="xMidYMid meet"><line y1="1.5" x2="612" y2="1.5" stroke="#03594E" stroke-width="3"></line></svg>
+                <div class="flex  self-stretch  gap-6">
+                  <img src="/img/1.png" class="">
+                  <img src="/img/2.png" class="">
+                  <img src="/img/3.png" class="">
+                  <img src="/img/4.png" class="">
+                  <img src="/img/5.png" class="">
+                  <img src="/img/6.png" class="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper mySwiper preview xl:w-[1100px] w-auto swiper-initialized swiper-horizontal swiper-backface-hidden">
+          <ul class="swiper-wrapper h-[350px] " id="swiper-wrapper-b2b810bd8154295cb" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-687.5px, 0px, 0px);">
+            <li class="swiper-slide" role="group" aria-label="1 / 6" data-swiper-slide-index="0" style="width: 275px;">
               <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview1.jpg)no-repeat 0 0 /cover"></div>
               <p>웹사이트 시네마</p>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide" role="group" aria-label="2 / 6" data-swiper-slide-index="1" style="width: 275px;">
               <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview2.jpg)no-repeat 0 0 /cover"></div>
               <p>그래픽 디자인 쇼</p>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide" role="group" aria-label="3 / 6" data-swiper-slide-index="2" style="width: 275px;">
                <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview3.jpg)no-repeat 0 0 /cover"></div>
               <p>기획서 피크닉</p>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide swiper-slide-prev" role="group" aria-label="4 / 6" data-swiper-slide-index="3" style="width: 275px;">
                <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview4.jpg)no-repeat 0 0 /cover"></div>
               <p>파인아트 포레스트</p>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide swiper-slide-active" role="group" aria-label="5 / 6" data-swiper-slide-index="4" style="width: 275px;">
                <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview5.jpg)no-repeat 0 0 /cover"></div>
               <p>필름 디자인</p>
             </li>
-            <li class="swiper-slide">
+            <li class="swiper-slide swiper-slide-next" role="group" aria-label="6 / 6" data-swiper-slide-index="5" style="width: 275px;">
                <div class="absolute top-0 left-0 w-full h-full sm:-skew-x-3 -z-10" style="background: linear-gradient(0deg, black 0%, transparent 30%),url(./img/preview6.jpg)no-repeat 0 0 /cover"></div>
               <p>연락처</p>
             </li>
             
           </ul>
-          <div class="swiper-button-next after:hidden text-[0] w-14  h-14 right-4"><i class="material-icons-round text-4xl bg-white/90 text-primary roundrd-full rounded-full w-full h-full leading-[3.5rem] text-center">chevron_right</i></div>
-          <div class="swiper-button-prev after:hidden text-[0]  w-14 h-14 left-4"><i class="material-icons-round text-4xl bg-white/90 text-primary roundrd-full rounded-full w-full h-full leading-[3.5rem] text-center">chevron_left</i></div>
-          <!-- <img src="./img/slide_arrow.svg" class="w-20"> -->
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
+          <div class="swiper-button-next after:hidden text-[0] w-14 h-14 right-4" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-b2b810bd8154295cb"><i class="material-icons-round text-4xl bg-white/90 text-primary roundrd-full rounded-full w-full h-full leading-[3.5rem] text-center">chevron_right</i></div>
+          <div class="swiper-button-prev after:hidden text-[0] w-14 h-14 left-4" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-b2b810bd8154295cb"><i class="material-icons-round text-4xl bg-white/90 text-primary roundrd-full rounded-full w-full h-full leading-[3.5rem] text-center">chevron_left</i></div>
+          <img src="./img/slide_arrow.svg" class="w-20"> 
+          <div class="swiper-pagination"></div>
+        </div> -->
       </div>
     </section>
     <!-- 0 -->
   
     <section id="section_1" class=" md:py-[5.2vw] py-[100px] bg-surfaceLow">
-      <div class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center text-surfacegreen container">
+      <div
+        class="flex flex-col  items-center lg:gap-10 gap-[4.7vw] md:pb-[5.2vw] pb-[50px] text-lg text-center text-surfacegreen container">
         <img src="./img/title.svg">
         <h2 class="text-center comma"> 01. WEBSITE CINEMA</h2>
         한여름 밤처럼 열대야를 잊게해줄 최근작업을 확인하세요!
         <span class="inline-block md:w-[760px] w-full h-[3px] bg-surfacegreen"></span>
       </div>
-      <ul class="flex justify-center items-center self-stretch lg:gap-[50px] gap-[36px] container flex-wrap">
-        <li class=" xl:px-[1.5vw] px-2">
+      <ul class="flex justify-center items-center self-stretch lg:gap-0 gap-[36px] container flex-wrap">
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="https://edumeet.imweb.me/" target="_blank" class="go_site group">
+            <i class="absolute group-hover:block hidden text-white font-['pretendard'] top-5 left-5 z-10"> 에듀밋 홈페이지 전면
+              제작</i>
+            <img class="w-full" src="img/main_page/9.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+          </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">
+                  &lt; EDUMEET: 에듀밋 &gt;
+                </p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2023.02-2023.03<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 반응형 사이트로,<br class="block sm:hidden"> 모바일에서도 볼 수
+              있습니다.</i>
+            <a href="https://edumeet.imweb.me/" target="_blank" class="button_bg relative">
+              사이트바로가기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
+          </div>
+    
+        </li>
+        <!-- 에듀밋 -->
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
           <a href="http://www.npas.co.kr/Home/NonprofitMain" target="_blank" class="go_site group">
+            <i class="absolute group-hover:block hidden text-white font-['pretendard'] top-5 left-5 z-10"> 엔파스 홈페이지 전면개편</i>
             <img class="w-full" src="img/main_page/1.png">
             <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
           </a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주
-            <p class="pt-2 pb-2 text-lg comma">&lt; NPAS: 엔파스 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">
+                  &lt; NPAS: 엔파스 &gt;
+                </p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2022.12-2023.01<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./npas.html" target="_blank" class="button_bg relative">
+              작업과정 보기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
           </div>
-          <a href="./npas.html" target="_blank" class="button_bg relative">
-            작업과정 보기
-            <span class="absolute flex h-3 w-3 -top-1 -right-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
-            </span>
-          </a>
+    
         </li>
         <!-- 엔파스 -->
-  
-        <li class=" xl:px-[1.5vw] px-2">
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
           <a href="./site/snsmaker/index.html" target="_blank" class="go_site group">
             <img class="w-full" src="img/main_page/2.png">
             <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
           </a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; SNS MAKER: SNS메이커 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
-  
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; SNS MAKER: SNS메이커 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2022.09-2022.10<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./snsmaker.html" target="_blank" class="button_bg relative">
+              작업과정 보기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
           </div>
-          <a href="./snsmaker.html" target="_blank" class="button_bg relative">
-            작업과정 보기
-            <span class="absolute flex h-3 w-3 -top-1 -right-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
-            </span>
-          </a>
+    
+    
         </li>
         <!-- 에스엔메이커 -->
-  
-        <li class=" xl:px-[1.5vw] px-2">
-          <a href="./site/kpou/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/3.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 전국공무원노동조합 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
-          </div>
-          <a href="./kpou.html" target="_blank" class="button_bg relative">
-            작업과정 보기
-            <span class="absolute flex h-3 w-3 -top-1 -right-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
-            </span>
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="./site/kpou/index.html" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/3.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
           </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; 전국공무원노동조합 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2022.09-2022.10<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./kpou.html" target="_blank" class="button_bg relative">
+              작업과정 보기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
+          </div>
         </li>
         <!-- 전국공무원노동조합 -->
-  
-        <li class=" xl:px-[25px] px-2">
-          <a href="http://ddcnecoop.kr/" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/4.png"><button class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 동두천에너지협동조합 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로,<br class="block sm:hidden"> 모바일에서도 볼 수 있습니다.</i>
-          </div>
-          <a href="./ddc.html" target="_blank" class="button_bg relative">
-            작업과정 보기
-            <span class="absolute flex h-3 w-3 -top-1 -right-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
-            </span>
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="http://ddcnecoop.kr/" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/4.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
           </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; 동두천에너지협동조합 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2023.01-2023.03<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./ddc.html" target="_blank" class="button_bg relative">
+              작업과정 보기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
+          </div>
         </li>
         <!-- 동두천에너지협동조합 -->
-  
-        <li class=" xl:px-[25px] px-2">
-          <a href="./site/cng/html/MainPage/Main.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/5.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; C&G: 씨엔쥐 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
-          </div>
-          <a href="./cng.html" target="_blank" class="button_bg relative">
-            작업과정 보기
-            <span class="absolute flex h-3 w-3 -top-1 -right-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
-            </span>
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="./site/cng/html/MainPage/Main.html" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/5.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
           </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; C&amp;G: 씨엔쥐 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2022.12-2023.02<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./cng.html" target="_blank" class="button_bg relative">
+              작업과정 보기
+              <span class="absolute flex h-3 w-3 -top-1 -right-1">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-point2 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-point1"></span>
+              </span>
+            </a>
+          </div>
         </li>
         <!-- 씨엔쥐 -->
-  
-        <li class=" xl:px-[25px] px-2">
-          <a href="./site/naturerepublic/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/6.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 네이쳐리퍼블릭 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로,<br class="block sm:hidden"> 모바일에서도 볼 수 있습니다.</i>
+    
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="http://empathydata.co.kr/" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/10.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+          </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; EMPATHYDATA : 공감데이터 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2023.03-2023.06<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="http://empathydata.co.kr/" target="_blank" class="button_bg relative">사이트바로가기
+    
+            </a>
           </div>
-          <a href="./site/naturerepublic/index.html" target="_blank" class="button_bg">사이트바로가기</a>
+        </li>
+        <!--공감데이터-->
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="./site/naturerepublic/index.html" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/6.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+          </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; 네이쳐리퍼블릭 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2021.06-2021.11<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./site/naturerepublic/index.html" target="_blank" class="button_bg relative">사이트바로가기
+            </a>
+          </div>
         </li>
         <!-- 네이쳐리퍼블릭 -->
-  
-        <li class=" xl:px-[25px] px-2">
-          <a href="./site/collect/index.html" target="_blank" class="go_site group"><img class="w-full" src="img/main_page/7.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 콜렉트 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로,<br class="block sm:hidden"> 모바일에서도 볼 수 있습니다.</i>
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="./site/collect/index.html" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/7.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+          </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; COLLECT: 콜렉트 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2021.06-2021.11<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="./site/collect/index.html" target="_blank" class="button_bg relative">사이트바로가기
+            </a>
           </div>
-          <a href="./site/collect/index.html" target="_blank" class="button_bg">사이트바로가기</a>
         </li>
+    
         <!-- 콜렉트 -->
-  
-        <li class=" xl:px-[25px] px-2">
-          <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html"  target="_blank" class="go_site group"><img class="w-full" src="img/main_page/8.png"><button href="" class="button_stroke !text-white !border-white">사이트바로가기</button></a>
-          <div class="py-6 font-medium text-center sm:px-12 pretendard">
-            제작기간: 2주<p class="pt-2 pb-2 text-lg comma">&lt; 브랜디 &gt;</p>
-            <i class="text-sm lg:hidden">※해당 사이트는 반응형 사이트로,<br class="block sm:hidden"> 모바일에서도 볼 수 있습니다.</i>
+    
+        <li class="flex flex-col xl:flex-row xl:px-[1.5vw] px-2 xl:col-6 xl:py-5">
+          <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" target="_blank" class="go_site group">
+            <img class="w-full" src="img/main_page/8.png">
+            <button href="" class="button_stroke !text-white !border-white">사이트바로가기</button>
+          </a>
+          <div class="flex flex-col justify-between  self-stretch flex-grow lg:px-6 py-4 gap-3">
+    
+            <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-2.5">
+                <p class="text-[22px]">&lt; BRANDI: 브랜디 &gt;</p>
+                <div class="flex items-center gap-2.5 text-base font-medium font-['pretendard']">2021.06-2021.11<p
+                    class=" text-base font-medium text-center ">|</p>기여도: 100%
+    
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Tool</p>
+                <p class=" text-base font-medium  text-[#ff7e36]">
+                  FIGMA &amp; PS
+                </p>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl">Keyword</p>
+                <div class="flex flex-wrap gap-4 font-['pretendard']">
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f] ">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #웹디자인
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #퍼블리싱
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #프로그램과정
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-center items-center px-[15px] py-2.5 rounded-md bg-[#ffedbf] border border-[#ffd25f]">
+                    <p class=" text-xs font-bold  text-[#3f496b]">
+                      #커리큘럼소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2.5">
+                <p class=" text-xl ">Languages</p>
+    
+                <div class="flex gap-2.5 font-['pretendard']">
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#03594e] border border-white"></div>
+                    <p class=" text-base  ">CSS</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#ff7e36] border border-white"></div>
+                    <p class=" text-base  ">HTML</p>
+                  </div>
+                  <div class="flex  items-center  relative gap-[5px]">
+                    <div class=" w-2.5 h-2.5 rounded-[100px] bg-[#00bf96] border border-white"></div>
+                    <p class=" text-base  ">JavaScript</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="text-sm lg:hidden font-['pretendard']">※해당 사이트는 웹 화면에서 최적화 되어있습니다.</i>
+            <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html" target="_blank"
+              class="button_bg relative">사이트바로가기
+            </a>
           </div>
-          <a href="http://webpub.dothome.co.kr/04/hsj/brandi/index.html"  target="_blank" class="button_bg">사이트바로가기</a>
         </li>
+    
         <!-- 브랜디 -->
-  
+    
       </ul>
-  
+    
     </section>
     <!-- 1 -->
   
@@ -819,7 +1584,7 @@
     <div class="container relative z-10">
       <div class="flex flex-col lg:flex-row items-center justify-center p-[24px] lg:p-20 rounded-[15px] bg-white container z-10 shadow-default-button -mb-14  gap-[35px] max-w-[1030px]">
         <div class="flex flex-col self-stretch justify-between w-full lg:col-6">
-          <h3 class="comma text-text1 leading-normal pb-[5.2vw] text-center lg:text-left">아무것도 안해도 돼.<br>
+          <h3 class="comma text-text1 leading-normal pb-[5.2vw] text-center lg:">아무것도 안해도 돼.<br>
           그냥,<i class="text-primary2">'쉼표'</i>에 오셔서<br>잠시 쉬어가세요.</h3>
           <div class="flex flex-col gap-4 lg:flex-row">
           <a href="/process.pdf" target="_blank" class="button_stroke comma !rounded-full !border-2 !w-full flex items-center justify-center">제작과정 보러가기   <i class="material-icons-round">file_open</i></a>

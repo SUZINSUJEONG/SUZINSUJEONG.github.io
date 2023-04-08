@@ -74,7 +74,7 @@ h6,.h6{@apply text-xl sm:leading-[150%];}
 
 .top_btn{@apply fixed z-10 hidden p-2 text-4xl bg-white rounded-full shadow-lg sm:w-24 sm:h-24 text-primary2 sm:right-10 right-4 bottom-10;}
 .button{@apply block py-5 rounded-md text-xl text-center w-[200px] mx-auto transition-all;}
-.button_bg{@apply text-white transition-all button bg-primary2 hover:shadow-button hover:-rotate-12;}
+.button_bg{@apply text-white transition-all button bg-primary2 hover:shadow-button hover:-rotate-12 mx-0;}
 .button_stroke{@apply transition-all border border-solid button text-primary2 border-primary2 hover:shadow-button hover:-rotate-12 group-hover:shadow-button group-hover:-rotate-12;}
 a.button_stroke.comma:after{@apply transition-all h-[15px] absolute block bottom-[15px] left-[10px] w-0 bg-[#ffc439] z-0 content-[''] mix-blend-multiply rounded-3xl;}
 .zoom_btn{@apply absolute bottom-0 p-10 transition-all rounded-full -right-5 bg-surfacegreen hover:scale-110;}
@@ -97,7 +97,7 @@ a.button_stroke.comma:hover:after{@apply w-[90%];}
 #section_2 .container .graphic ul li{@apply w-full ;}
 #section_2 .container .graphic ul li a{@apply h-[120px] sm:w-[200px] w-full rounded-[20px] bg-white border-[10px] border-[#046f61]  sm:text-[22px] text-xl text-[#046f61] text-center relative border-solid flex items-center justify-center hover:shadow-default-button hover:-rotate-12 transition-all m-auto;}
 
-.go_site{@apply sm:w-[400px] h-[450px] overflow-hidden rounded-[3px] shadow-sm relative inline-block ;}
+.go_site{@apply lg:w-[400px] w-full h-[450px] overflow-hidden rounded-[3px] shadow-sm relative inline-block ;}
 .go_site::after{@apply w-full h-full absolute top-0 left-0 bg-black/80 content-[''] opacity-0 transition-all;}
 .go_site .button_stroke, .go_site .button{@apply absolute top-[calc(50%-35px)] left-[calc(50%-100px)] hidden z-10 transition-all opacity-0;}
 .go_site:hover::after, .go_site:hover .button{@apply block opacity-100;}
