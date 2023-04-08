@@ -151,7 +151,7 @@ nav ul {
   margin: 0 0 0 auto;
   height: 100vh;
   max-width: 60%;
-  --tw-translate-x: 100%;
+  --tw-translate-x: 101%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   flex-direction: column;
   justify-content: space-between;
@@ -1027,6 +1027,10 @@ a.button_stroke.comma:hover:after {
 
 .right-0 {
   right: 0px;
+}
+
+.bottom-\[-25\%\] {
+  bottom: -25%;
 }
 
 .right-4 {
@@ -2207,13 +2211,18 @@ a.button_stroke.comma:hover:after {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-full {
-  --tw-translate-x: 100%;
+.translate-x-\[101\%\] {
+  --tw-translate-x: 101%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-x-0 {
   --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3624,16 +3633,12 @@ a.button_stroke.comma:hover:after {
   padding-bottom: 50px;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .pt-8 {
@@ -3662,6 +3667,10 @@ a.button_stroke.comma:hover:after {
 
 .pt-\[50px\] {
   padding-top: 50px;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .pb-1 {
@@ -4715,11 +4724,6 @@ a.button_stroke.comma:hover:after {
     padding: 3.125vw;
   }
 
-  .sm\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4924,16 +4928,6 @@ a.button_stroke.comma:hover:after {
     padding: 5rem;
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .lg\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .lg\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4976,16 +4970,6 @@ a.button_stroke.comma:hover:after {
   .xl\:px-\[1\.5vw\] {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
-  }
-
-  .xl\:px-\[25px\] {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .xl\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .xl\:py-5 {

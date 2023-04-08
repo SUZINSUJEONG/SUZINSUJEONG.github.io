@@ -32,7 +32,7 @@ header.on a.logo{@apply h-[50px];}
 header.on .logo_l_e{@apply block;}
 header.on .logo_d_e{@apply hidden;}
 
-nav ul{@apply md:flex flex-col md:flex-row justify-between md:h-full h-screen !px-0  md:max-w-[1300px] md:m-auto m-[0_0_0_auto] max-w-[60%] transition-transform md:translate-x-0 translate-x-full bg-[#03594E];}
+nav ul{@apply md:flex flex-col md:flex-row justify-between md:h-full h-screen !px-0  md:max-w-[1300px] md:m-auto m-[0_0_0_auto] max-w-[60%] transition-transform md:translate-x-0 translate-x-[101%] bg-[#03594E];}
 nav ul.on{@apply translate-x-0 md:h-full h-screen bg-[#03594E];}
 nav .gnb{@apply md:flex-grow text-center md:h-full leading-[73px] md:col-2 border-b-[3px] border-yellow border-solid bg-[#03594E];}
 nav .gnb a{@apply flex text-center items-center justify-center h-[60px] md:font-bold md:border-l border-white border-solid hover:bg-[#00C3D1] transition-all ;}

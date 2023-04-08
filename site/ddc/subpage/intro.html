@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 폰트 -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link   href="./css/font.css" rel="stylesheet">
+<script src="./js/jquery.min.js"></script>
+<!-- 스와이퍼 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
+
+<!-- tailwind css-->
+<link   href="./css/index.min.css" rel="stylesheet">
+<link   href="./css/output.css" rel="stylesheet">
+
+<!-- Custom -->
+<link   href="./css/common.css" rel="stylesheet">
+<link   href="./css/mobile.css" rel="stylesheet">
+
+<!-- tailwind js-->
+<script src="./js/index.min.js"></script>
+<!-- <script src="./js/tailwind.config.js"></script> -->
+
+<!-- common js -->
+<script src="./js/common.js"></script>
+</head>
+
+<body style="word-break: keep-all;">
+<header id="hd" class="top fixed w-full bg-transparent h-[85px]">
+  <button type="button" class="hd_menu_btn absolute right-0 top-0 h-full w-[85px]"><span class="menu-icon"></span></button>
+  <div class="container m-auto">
+    <h1 id="hd_h1">동두천 에너지 협동조합</h1>
+    <div id="hd_wrapper">
+      <div id="logo">
+          <a href="">
+            <img src="img/Logo_w.png" alt="동두천 에너지 협동조합" class="block logo_w "title="">
+            <img src="img/logo.png" alt="동두천 에너지 협동조합" class="hidden logo" title="">
+          </a>
+      </div>
+      <div id="hd_btn">
+        <button type="button" class="hd_sch_btn"><span class="search-icon"></span><span class="sound_only">검색열기</span></button>
+        <div class="float-left p-3 lg:p-6 ol"><a href="bbs/login.php" class="btn_b02 btn_s">로그인</a></div>
+      </div>
+      <div id="hd_sch">
+        <div class="sch_wr">
+            <h2 class="sound_only">사이트 내 전체검색</h2>
+            <form name="fsearchbox" action="bbs/search.php" onsubmit="return fsearchbox_submit(this);" method="get">
+            <input type="hidden" name="sfl" value="wr_subject||wr_content">
+            <input type="hidden" name="sop" value="and">
+            <input type="text" name="stx" id="sch_stx" placeholder="검색어(필수)" required="" maxlength="20">
+            <button type="submit" value="검색" id="sch_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+            </form>
+            <button type="button" class="btn_close"><i class="fa fa-times-circle"></i></button>
+        </div>
+      </div>
+
+      <div id="gnb">
+        <ul id="gnb_1dul">
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합소개</a>
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">햇빛발전소</a>
+           
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합가입</a>
+            
+          </li>
+          <li class="gnb_1dli">
+            <a href="/sub/3030.php" target="_self" class="gnb_1da">에너지 이야기</a>
+          
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">커뮤니티</a>
+            
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합원관리</a>
+         
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<div class="sub_banner"style="background: url(img/sub/banner.jpg)no-repeat 100% /cover">
+  <div class="">
+    <h2 class="">지역사회공헌</h2>
+    <span class="bg-white h-[5px] w-16 inline-block"></span>
+  </div>
+</div>
+
+<div class="sub_menu_bar clear font_default">
+  <div class="sm:container">
+    <ul class="float-left w-full h-full sm:w-fit">
+      <li><a href="#">HOME<i class="material-icons-round">home</i></a></li>
+      <li>
+        <div class=" select_wrap">
+          <ul class="default_option">
+            <li><a href="#">조합소개<i class="material-icons-round">expand_more</i></a></li>
+          </ul>
+          <ul class="select_ul">
+            <li><a href="#">걸어온 길</a></li>
+            <li><a href="#">지역사회공헌</a></li>
+            <li><a href="#">연대협력</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="relative">
+        <div class=" select_wrap">
+          <ul class="default_option">
+            <li><a href="#">지역사회공헌<i class="material-icons-round">expand_more</i></a></li>
+          </ul>
+          <ul class="select_ul">
+            <li><a href="#">걸어온 길</a></li>
+            <li><a href="#">지역사회공헌</a></li>
+            <li><a href="#">연대협력</a></li>
+          </ul>
+        </div>
+      </li>
+      <script>
+        $(".default_option").click(function(){
+            $(this).parent().toggleClass("active");
+          });
+
+          $(".select_ul li").click(function(){
+            var currentele = $(this).html();
+            $(".default_option li").html(currentele);
+            $(this).parents(".select_wrap").removeClass("active");
+          });
+      </script>
+    </ul>
+  </div>
+</div>
+
+<main class="pt-20 overflow-hidden">
+  <div class="flex flex-col sm:flex-row container justify-center mb-[60px] intro_tab_btn gap-3">
+    <a href="#tab1" class="tab_btn on">동두천환경거버넌스</a>
+    <a href="#tab2" class="tab_btn">천사운동본부</a>
+  </div>
+  <script>
+    //탭 
+    $(".tab_box").eq(0).show();
+		  $(".intro_tab_btn a").click(function(e){
+			e.preventDefault();
+			  $(".intro_tab_btn a").removeClass("on");
+			  $(this).addClass("on");
+			  $(".tab_box").hide();
+			  let tapid=$(this).attr("href");
+			  $(tapid).show();
+		  });
+  </script>
+
+  <!-- 탭1 -->
+  <div id="tab1" class="py-20 tab_box" style="background: url(./img/intro/bg1.svg)no-repeat 50% 0%;">
+    <div class="title">
+      <p class=" text-[55px] font-bold ">환경을 생각하고<br>지구를 살리는<br><strong>ZERO WASTE</strong></p>
+      <div class="sub_title flex flex-col sm:gap-[18px] self-stretch sm:self-auto">
+        <h6 class="" style="background: url(./img/intro/sub_title_stroke.svg)no-repeat 0 100% /contain;">동두천환경거버넌스</h6>
+        <span class="text-lg font-medium text-text2">동두천환경거버넌스와 함께하는 건강한<br>동두천환경 만들기 활동 환경문제를<br>고민하는 시민들의 모임입니다.</span>
+      </div>
+    </div>
+    
+    <section class="self-stretch py-[30px] container">
+      <div class="flex flex-col self-stretch justify-center gap-8 sm:px-4 lg:flex-row">
+        <div class="xl:px-28 pt-[38px] relative  max-h-[300px] overflow-hidden xl:col-7">
+          <div class="absolute right-0 z-10 w-full h-1/4 -bottom-1 bg-gradient-to-b from-transparent to-white"></div>
+          <div class="absolute right-0 z-10 w-full h-1/4 -top-1 bg-gradient-to-t from-transparent to-white"></div>
+          <div class="animate-[moveforever_15s_linear_infinite] flex flex-col gap-5 relative">
+            <img src="./img/intro/animation.png">
+            <img src="./img/intro/animation.png">
+          </div>
+        </div>
+        <div class="flex flex-col gap-3 py-10">
+          <h2>제로웨이스트란?</h2>
+          <div class="flex flex-col gap-9">
+            <div class="flex flex-col gap-3 text-lg font-medium text-text2">
+              <p class="point1 ">일회회용품 컵,비닐봉지 등 썩지 않는 쓰레기를<br class="hidden sm:block">줄여 쓰레기 생산을 최소화하자는 생활습관</p>
+              <p class="point1">환경오염과 지구 온난화 등 환경에 대한<br class="hidden sm:block">관심이 증대되고 있고,<br>경각심도 커지면서 환경을 보호하려는 운동</p>
+            </div>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="#section1" class="flex flex-col lg:flex-row gap-[5.2vw] pt-[50px] pb-[5.2vw] px-4">
+      <div class="flex flex-col items-end w-full lg:px-4 gap-9 lg:p-9 lg:col-6">
+          <div class="flex flex-col w-full gap-3 lg:w-fit pt-9">
+            <p class="text-[40px] font-bold break-all">건강한 동두천환경 만들기<br class="hidden lg:block">활동환경문제를 고민하는 <br class="hidden lg:block">시민들의 모임</p>
+            <div class="flex flex-col gap-4 lg:items-end">
+              <ul class="flex flex-col gap-3">
+                <li class="flex  items-center gap-2.5">
+                  <i class="text-lg text-primary material-icons-round">check_circle</i>
+                  <p class="text-lg font-medium text-text2">매월 1회 신천(지역하천) 수질검사 활동으로 채수를 합니다.</p>
+                </li>
+                <li class="flex   items-center    gap-2.5">
+                  <i class="text-lg text-primary material-icons-round">check_circle</i>
+                  <p class="text-lg font-medium text-text2">
+                    신천 모니터링 활동으로 쓰레기줍기를 하고 주변 생태를 관찰합니다.
+                  </p>
+                </li>
+                <li class="flex   items-center    gap-2.5">
+                  <i class="text-lg text-primary material-icons-round">check_circle</i>
+                  <p class="text-lg font-medium text-text2">
+                    한탄강지키기운동본부와 물환경지키기 연대활동을 합니다.
+                  </p>
+                </li>
+                <li class="flex   items-center    gap-2.5">
+                  <i class="text-lg text-primary material-icons-round">check_circle</i>
+                  <p class="text-lg font-medium text-text2">
+                    천연비누, 천연세제 등을 만들어 사용합니다.
+                  </p>
+                </li>
+                <li class="flex   items-center    gap-2.5">
+                  <i class="text-lg text-primary material-icons-round">check_circle</i>
+                  <p class="text-lg font-medium text-text2">
+                    제로웨이스트를 홍보하고 실천합니다.
+                  </p>
+                </li>
+              </ul>
+              <ul class="flex flex-wrap self-stretch gap-5">
+                <li><i class="tag1">#미세먼지 대기질</i></li>
+                <li><i class="tag1">#토양오염</i></li>
+                <li><i class="tag1">#환경활동</i></li>
+                <li><i class="tag1">#시민단체</i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden sm:flex gap-9">
+            <a href="#!" class="btn_circle "><div class="swiper-button-prev">Prev</div></a>
+            <a href="#!" class="btn_circle"><div class="swiper-button-next">Next</div></a>
+          </div>
+      </div>
+      <div class="relative overflow-hidden lg:col-6">
+        <div class="absolute -right-1 h-full bottom-0 w-[300px] bg-gradient-to-r from-transparent to-white z-10 hidden md:block"></div>
+        <div class="flex items-center flex-grow gap-5 overflow-visible swiper mySwiper intro1">
+          <ul class="swiper-wrapper">
+            <li class="rounded-[20px] w-[480px] lg:h-[570px] h-[400px] overflow-hidden bg-[url('../img/intro/slide1.jpg')] bg-cover bg-no-repeat bg-center shadow-default swiper-slide">
+              <div class="bg-[url('../img/intro/slide1.jpg')] bg-cover bg-no-repeat bg-center w-full h-full"></div>
+            </li>
+            <li class="rounded-[20px] w-[480px] lg:h-[570px] h-[400px] overflow-hidden shadow-default swiper-slide">
+              <div class="bg-[url('../img/intro/slide2.jpg')] bg-cover bg-no-repeat bg-center w-full h-full"></div>
+            </li>
+            <li class="rounded-[20px] w-[480px] lg:h-[570px] h-[400px] overflow-hidden shadow-default swiper-slide">
+              <div class="bg-[url('../img/intro/slide3.jpg')] bg-cover bg-no-repeat bg-center w-full h-full"></div>
+            </li>
+            <li class="rounded-[20px] w-[480px] lg:h-[570px] h-[400px] overflow-hidden shadow-default swiper-slide">
+              <div class="bg-[url('../img/intro/slide4.jpg')] bg-cover bg-no-repeat bg-center w-full h-full"></div>
+            </li>
+          </ul>
+       </div>
+      </div>
+
+    </section>
+    <div class="container">
+      <img src="./img/intro/event_banner.png" class="hidden m-auto md:block">
+      <img src="./img/intro/event_banner_m.png" class="block m-auto md:hidden">
+    </div>
+  </div>
+
+  <!-- 탭2 -->
+  <div id="tab2" class="hidden py-20 tab_box" style="background: url(./img/intro/bg1.svg)no-repeat 50% 0%;">
+    <div class="title">
+      <img src="./img/intro/tab2/intro.png">
+      <div class=" flex flex-col sm:gap-[18px] self-stretch sm:self-auto">
+        <h6>천사운동본부</h6>
+        <span class="text-lg font-medium text-text2">천사운동본부는 희망을 모으고 있습니다.<br> 그 희망은 고통과 절망에 이웃들에게<br>함께 잘 살자는 더불어 사는 삶의 참 뜻이라고 생각합니다. <br>천사들의 뜻을 모아 이웃들에게 희망을 넘어선 더불어 <br>사는 삶의 참뜻도 함께 새기고자 합니다.</span>
+      <a href="#!" class="btn_circle"><div class="">More View</div></a>
+
+      </div>
+    </div>
+    
+    <section class="self-stretch py-[30px] container">
+      <div class="flex flex-col-reverse self-stretch justify-center gap-[5.2vw] px-4 lg:flex-row bg-surfaceMid rounded-[3.2vw] sm:px-24 py-16 relative">
+        <div class="flex flex-col gap-3 py-10">
+          <h6 class="sub_title">Angel Day</h6>
+          <h2 class="pt-4">천사데이</h2>
+          <div class="flex flex-col gap-9">
+            <p class="text-lg font-medium text-text2 ">한명한명 천사가 늘어날대마다, 가난과 고통속에서 절망하는 이웃들에게<br>새로운 삶에 대한 의지와 희망, 사랑이 늘어감을 발견하게 됩니다.<br>이 세상을 따스하게 만들어가는 당신과 함께 희망천사의 그림을<br>그리고자 합니다.</p>
+            <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+          </div>
+        </div>
+        <div class="lg:col-4">
+          <img class="lg:absolute" src="./img/intro/tab2/angel_day.png">
+        </div>
+      </div>
+    </section>
+    
+    <section id="#section1" class="flex flex-col lg:flex-row gap-[2.1vw] pt-[50px] pb-[5.2vw] px-4 container">
+      <div class="lg:col-6">
+        <img class="" src="./img/intro/tab2/intro2.png">
+      </div>
+      <div class="flex flex-col items-end w-full lg:px-4 gap-9 lg:p-9 lg:col-6">
+        <div class="flex flex-col w-full gap-3 lg:w-fit pt-9">
+          <p class="text-[40px] font-bold break-all">동두천자연에너지협동조합과<br class="hidden lg:block"> 천사운동본부가 함께하는<br class="hidden lg:block"><strong class="text-primary">‘에너지천사’ 사회공헌사업</strong></p>
+          <ul class="flex flex-col gap-3 pb-9">
+            <li class="flex  items-center gap-2.5">
+              <i class="text-lg text-primary material-icons-round">check_circle</i>
+              <p class="text-lg font-medium text-text2">매월 1회 신천(지역하천) 수질검사 활동으로 채수를 합니다.</p>
+            </li>
+            <li class="flex   items-center    gap-2.5">
+              <i class="text-lg text-primary material-icons-round">check_circle</i>
+              <p class="text-lg font-medium text-text2">
+                신천 모니터링 활동으로 쓰레기줍기를 하고 주변 생태를 관찰합니다.
+              </p>
+            </li>
+            <li class="flex   items-center    gap-2.5">
+              <i class="text-lg text-primary material-icons-round">check_circle</i>
+              <p class="text-lg font-medium text-text2">
+                한탄강지키기운동본부와 물환경지키기 연대활동을 합니다.
+              </p>
+            </li>
+            <li class="flex   items-center    gap-2.5">
+              <i class="text-lg text-primary material-icons-round">check_circle</i>
+              <p class="text-lg font-medium text-text2">
+                천연비누, 천연세제 등을 만들어 사용합니다.
+              </p>
+            </li>
+            <li class="flex   items-center    gap-2.5">
+              <i class="text-lg text-primary material-icons-round">check_circle</i>
+              <p class="text-lg font-medium text-text2">
+                제로웨이스트를 홍보하고 실천합니다.
+              </p>
+            </li>
+          </ul>
+          <button class="button_stroke">More View<span class="material-icons-round">chevron_right</span></button>
+        
+        </div>
+       
+      </div>
+    </section>
+
+  </div>
+ 
+</main>
+
+<footer id="ft" class="pt-4" class="bg-[#04A164]">
+  <div class="container flex flex-col self-stretch justify-between text-white lg:flex-row pt-28" style="">
+    <a href="" class="w-[300px] mb-4"><img src="img/Logo_w.png"></a>
+    <div class="flex flex-col lg:flex-row gap-20 px-2.5">
+        <div class="flex flex-col gap-9">
+            <h5 class="">업무시간</h5>
+            <ul class="flex flex-col  text-[22px]  gap-6">
+              <li>평일 09:00-18:00</li>
+              <li>점심시간 12:00-13:00</li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-9">
+            <h5 class="">CONTACT</h5>
+            <ul class="flex flex-col  text-[22px] gap-6">
+              <li><strong>Adress </strong> 000시 00동 00로</li>
+              <li><strong>Tel </strong> 031-862-0615</li>
+              <li><strong>Email </strong> ddcnecoop@naver.com</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="container flex flex-col pt-4 text-white ft_wr pb-28 gap-9">
+      <div id="ft_company" class="border-b border-solid pb-9">
+          <!--
+          <a href="bbs/content.php?co_id=company">협동조합소개</a>
+          <a href="bbs/content.php?co_id=privacy">개인정보처리방침</a>
+          <a href="bbs/content.php?co_id=provision">서비스이용약관</a>
+          -->
+          <a href="#">협동조합소개</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">서비스이용약관</a>
+      </div>
+      <div id="ft_copy">Copyright © <b>동두천자연에너지협동조합</b> All rights reserved.</div>
+
+  </div>
+  <a href="#" type="button" id="top_btn" class=" top_btn material-icons-round">arrow_upward</a>
+
+</footer>
+</body>
+
+</html>

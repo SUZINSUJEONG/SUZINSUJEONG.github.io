@@ -30,8 +30,6 @@ body {
 /* 버튼 */
 .top_btn {@apply flex flex-col justify-center items-center fixed bottom-10 lg:right-[100px] right-5 gap-2.5 p-[25px] bg-white/50 border border-[#ddd] text-[23px] text-center text-[#666] rounded-full;}
 
-.main_btn{@apply flex flex-col justify-center items-center  absolute right-[10px] bottom-[10px] gap-2.5 px-3 py-2.5 bg-black/50 text-2xl text-center text-white rounded-lg;}
-
 .btn_circle{@apply relative w-[140px] h-[140px] flex justify-center items-center gap-1 text-sm font-medium text-center text-white bg-primary rounded-full border-[10px] border-solid border-[#BBE4D8] hover:shadow-button transition-all ;}
 
 .btn_circle div{@apply border-white rounded-full leading-[108px] after:hidden text-white left-[5%] top-[23%] w-[90%] h-[90%] !border border-solid ;}/*gap-1.5 flex items-center justify-center*/
@@ -69,6 +67,20 @@ body {
 }
 /* 공통 */
 .break-all br{@apply hidden sm:block;}
+/* 메인페이지 */
+.main_banner{@apply lg:h-[100vh] gap-2.5 w-full bg-blend-multiply break-all sm:break-keep;}
+.main_banner div.container{@apply  flex flex-col lg:flex-row justify-center py-[200px] h-full gap-10;}
+.main_banner div.container h1{@apply lg:flex flex-col justify-center 2xl:col-6 text-white leading-relaxed xl:text-[85px] xl:gap-6 hidden;}
+.main_banner div.container ul{@apply flex flex-col justify-center gap-6 2xl:col-6}
+.main_banner div.container ul .main_box{@apply  bg-blend-multiply shadow-md lg:p-10 p-[4.7vw] rounded-[20px] relative;}
+.main_banner div.container ul h5{@apply flex flex-col self-stretch flex-grow gap-2;}
+.main_banner div.container ul h5 span{@apply font-light text-[18px];}
+
+.main_btn{@apply flex flex-col justify-center items-center  absolute right-[10px] bottom-[10px] gap-2.5 px-3 py-2.5 bg-black/50 text-2xl text-center text-white rounded-lg;}
+
+.partner{@apply flex pb-[5.2vw] flex-wrap;}
+.partner >ul{@apply flex items-center justify-between w-full border-b;}
+
 /* 서브 배너 -공통 */
 .sub_banner{@apply h-[325px] w-full  pt-[85px] text-white h2 bg-[#FCFEFE];}
 .sub_banner > div{@apply  container flex flex-col items-center justify-center h-full gap-4 text-center;}
@@ -80,6 +92,7 @@ body {
 .select_wrap .select_ul{@apply absolute top-[65px] left-0 hidden w-full bg-white text-text2;}
 .select_wrap .select_ul li a{@apply bg-white text-text1 hover:bg-[#f4f4f4] hover:text-primary hover:font-bold transition-all;}
 .select_wrap.active .select_ul{@apply z-10 block shadow-lg;}
+
 /* 스와이퍼 커스텀 공통*/
 .mySwiper .swiper-slide {@apply transition-all scale-75;}
 .mySwiper .swiper-slide-active{@apply scale-100;}
@@ -93,14 +106,16 @@ body {
 .tab_btn{@apply sm:w-[270px] w-full p-4 rounded-full border-[3px] border-transparent hover:border-primary border-solid sm:text-[22px] text-lg text-center transition text-text2 hover:text-text1;}
 .tab_btn.on{@apply border-primary border-solid border-[3px] text-text1 font-bold bg-[url(../img/intro/tab_stroke.svg)] bg-no-repeat bg-[50%];}
 
-/* title h6*/
+/* title h6*/ 
 .title{@apply flex flex-col lg:flex-row justify-center items-center self-stretch  gap-[5.2vw] px-4 pb-[50px];}
 .title strong{@apply text-primary;}
 .title h6, h6.sub_title{@apply relative pb-4 text-primary w-fit bg-[url(../img/intro/sub_title_stroke.svg)] bg-no-repeat bg-[0_100%] bg-contain;}
+
 /* 서브 컨텐츠 -지역사회공헌 */
 i.tag1{@apply px-[15px] py-2 rounded-[100px] bg-primary2 text-base font-bold text-neutral-50 shadow-button flex;}
 .point1{@apply bg-[url('../img/intro/point1.svg')] bg-no-repeat bg-[10px] pl-[50px];}
+
 /* 서브 -재생에너지 */
-.point2{@apply bg-[url('../img/intro4/star.png')] bg-no-repeat bg-[10px] pl-[50px];}
-.point3{@apply bg-[url('../img/intro4/stroke.svg')] bg-no-repeat bg-[30px_100%];}
+.point2{@apply bg-[url('/img/intro4/star.png')] bg-no-repeat bg-[10px] pl-[50px];}
+.point3{@apply bg-[url('/img/intro4/stroke.svg')] bg-no-repeat bg-[30px_100%];}
 

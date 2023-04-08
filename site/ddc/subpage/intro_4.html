@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 폰트 -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link   href="./css/font.css" rel="stylesheet">
+<script src="./js/jquery.min.js"></script>
+<!-- 스와이퍼 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- tailwind css-->
+<link   href="./css/index.min.css" rel="stylesheet">
+<link   href="./css/output.css" rel="stylesheet">
+
+<!-- Custom -->
+<link   href="./css/common.css" rel="stylesheet">
+<link   href="./css/mobile.css" rel="stylesheet">
+
+<!-- tailwind js-->
+<script src="./js/index.min.js"></script>
+<!-- <script src="./js/tailwind.config.js"></script> -->
+
+<!-- common js -->
+<script src="./js/common.js"></script>
+</head>
+
+<body style="word-break: keep-all;">
+<header id="hd" class="top fixed w-full bg-transparent h-[85px]">
+  <button type="button" class="hd_menu_btn absolute right-0 top-0 h-full w-[85px]"><span class="menu-icon"></span></button>
+  <div class="container m-auto">
+    <h1 id="hd_h1">동두천 에너지 협동조합</h1>
+    <div id="hd_wrapper">
+      <div id="logo">
+          <a href="">
+            <img src="img/Logo_w.png" alt="동두천 에너지 협동조합" class="block logo_w "title="">
+            <img src="img/logo.png" alt="동두천 에너지 협동조합" class="hidden logo" title="">
+          </a>
+      </div>
+      <div id="hd_btn">
+        <button type="button" class="hd_sch_btn"><span class="search-icon"></span><span class="sound_only">검색열기</span></button>
+        <div class="float-left p-3 lg:p-6 ol"><a href="bbs/login.php" class="btn_b02 btn_s">로그인</a></div>
+      </div>
+      <div id="hd_sch">
+        <div class="sch_wr">
+            <h2 class="sound_only">사이트 내 전체검색</h2>
+            <form name="fsearchbox" action="bbs/search.php" onsubmit="return fsearchbox_submit(this);" method="get">
+            <input type="hidden" name="sfl" value="wr_subject||wr_content">
+            <input type="hidden" name="sop" value="and">
+            <input type="text" name="stx" id="sch_stx" placeholder="검색어(필수)" required="" maxlength="20">
+            <button type="submit" value="검색" id="sch_submit"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+            </form>
+            <button type="button" class="btn_close"><i class="fa fa-times-circle"></i></button>
+        </div>
+      </div>
+
+      <div id="gnb">
+        <ul id="gnb_1dul">
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합소개</a>
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">햇빛발전소</a>
+           
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합가입</a>
+            
+          </li>
+          <li class="gnb_1dli">
+            <a href="/sub/3030.php" target="_self" class="gnb_1da">에너지 이야기</a>
+          
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">커뮤니티</a>
+            
+          </li>
+          <li class="gnb_1dli">
+            <a href="#" target="_self" class="gnb_1da">조합원관리</a>
+         
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<div class="sub_banner"style="background: url(img/sub/banner.jpg)no-repeat 100% /cover">
+  <div class="">
+    <h2 class="">지역사회공헌</h2>
+    <span class="bg-white h-[5px] w-16 inline-block"></span>
+  </div>
+</div>
+
+<div class="sub_menu_bar clear font_default">
+  <div class="sm:container">
+    <ul class="float-left w-full h-full sm:w-fit">
+      <li><a href="#">HOME<i class="material-icons-round">home</i></a></li>
+      <li>
+        <div class=" select_wrap">
+          <ul class="default_option">
+            <li><a href="#">조합소개<i class="material-icons-round">expand_more</i></a></li>
+          </ul>
+          <ul class="select_ul">
+            <li><a href="#">걸어온 길</a></li>
+            <li><a href="#">지역사회공헌</a></li>
+            <li><a href="#">연대협력</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="relative">
+        <div class=" select_wrap">
+          <ul class="default_option">
+            <li><a href="#">지역사회공헌<i class="material-icons-round">expand_more</i></a></li>
+          </ul>
+          <ul class="select_ul">
+            <li><a href="#">걸어온 길</a></li>
+            <li><a href="#">지역사회공헌</a></li>
+            <li><a href="#">연대협력</a></li>
+          </ul>
+        </div>
+      </li>
+      <script>
+        $(".default_option").click(function(){
+            $(this).parent().toggleClass("active");
+          });
+
+          $(".select_ul li").click(function(){
+            var currentele = $(this).html();
+            $(".default_option li").html(currentele);
+            $(this).parents(".select_wrap").removeClass("active");
+          });
+      </script>
+    </ul>
+  </div>
+</div>
+
+<main class="pt-20 overflow-hidden">
+  <section class="self-stretch py-[30px] container">
+    <div class="flex flex-col self-stretch justify-center gap-8 sm:px-4 lg:flex-row">
+      <div class="xl:px-28 pt-[38px] relative xl:col-7">
+        <div class="animate-[moveforever_30s_linear_infinite] flex flex-col gap-5">
+          <img src="./img/intro4/intro4.png">
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 py-10">
+        <h2>신재생에너지란?</h2>
+        <div class="flex flex-col gap-9">
+          <p class="flex items-center gap-2 text-lg font-bold text-primary point3"><img src="./img/intro4/star.png">신재생에너지 = 신에너지 + 재생에너지</p>
+          <div class="flex flex-col gap-3 text-lg font-medium text-text2">
+            <p class="point1 "><strong class="text-primary">"신에너지"</strong> 란 기존의 화석연료를 변환시켜 이용하거나 <br class="hidden sm:block"> 수소, 산소 등의 화학 반응을 통하여 전기 또는 열을 이용하는 에너지</p>
+            <p class="point1"><strong class="text-primary">"재생에너지"</strong> 란 햇빛, 물, 지열, 강수, 생물유기체 등을 <br class="hidden sm:block"> 포함하는 재생 가능한 에너지를 변환시켜 이용하는 에너지</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex flex-col sm:flex-row container justify-center mb-[60px] intro_tab_btn gap-3">
+    <a href="#tab1" class="tab_btn on">동두천환경거버넌스</a>
+    <a href="#tab2" class="tab_btn">천사운동본부</a>
+  </div>
+  <script>
+    //탭 
+    $(".tab_box").eq(0).show();
+		  $(".intro_tab_btn a").click(function(e){
+			e.preventDefault();
+			  $(".intro_tab_btn a").removeClass("on");
+			  $(this).addClass("on");
+			  $(".tab_box").hide();
+			  let tapid=$(this).attr("href");
+			  $(tapid).show();
+		  });
+  </script>
+
+  <!-- 탭1 -->
+  <div id="tab1" class="py-20 tab_box" style="background: url(./img/intro/bg1.svg)no-repeat 50% 0%;">
+
+  </div>
+
+  <!-- 탭2 -->
+  <div id="tab2" class="hidden py-20 tab_box" style="background: url(./img/intro/bg1.svg)no-repeat 50% 0%;">
+   
+  </div>
+ 
+</main>
+
+<footer id="ft" class="pt-4" class="bg-[#04A164]">
+  <div class="container flex flex-col self-stretch justify-between text-white lg:flex-row pt-28" style="">
+    <a href="" class="w-[300px] mb-4"><img src="img/Logo_w.png"></a>
+    <div class="flex flex-col lg:flex-row gap-20 px-2.5">
+        <div class="flex flex-col gap-9">
+            <h5 class="">업무시간</h5>
+            <ul class="flex flex-col  text-[22px]  gap-6">
+              <li>평일 09:00-18:00</li>
+              <li>점심시간 12:00-13:00</li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-9">
+            <h5 class="">CONTACT</h5>
+            <ul class="flex flex-col  text-[22px] gap-6">
+              <li><strong>Adress </strong> 000시 00동 00로</li>
+              <li><strong>Tel </strong> 031-862-0615</li>
+              <li><strong>Email </strong> ddcnecoop@naver.com</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="container flex flex-col pt-4 text-white ft_wr pb-28 gap-9">
+      <div id="ft_company" class="border-b border-solid pb-9">
+          <!--
+          <a href="bbs/content.php?co_id=company">협동조합소개</a>
+          <a href="bbs/content.php?co_id=privacy">개인정보처리방침</a>
+          <a href="bbs/content.php?co_id=provision">서비스이용약관</a>
+          -->
+          <a href="#">협동조합소개</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">서비스이용약관</a>
+      </div>
+      <div id="ft_copy">Copyright © <b>동두천자연에너지협동조합</b> All rights reserved.</div>
+
+  </div>
+  <a href="#" type="button" id="top_btn" class=" top_btn material-icons-round">arrow_upward</a>
+
+</footer>
+</body>
+
+</html>

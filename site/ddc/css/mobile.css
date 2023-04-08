@@ -13,15 +13,15 @@ transition: 0.3s all ease-in-out;
 -webkit-transition: 0.3s all ease-in-out;
 -moz-transition: 0.3s all ease-in-out;
 -o-transition: 0.3s all ease-in-out;}
-#hd.on{background: #fff; color: inherit ; box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);}
+#hd.on{background: #fff; color: inherit ; box-shadow: 0px 3px 6px 3px rgba(0,0,0,0.06);height: 60px;}
 #hd.on .logo_w{display: none;}
 #hd.on .logo{display: block;}
 #hd:after {display:block;visibility:hidden;clear:both;content:""}
 /* #hd:before{content:'';position:absolute;bottom:0;left:0;background:#fff;background:rgba(255,255,255,0.5);width:100%;height:1px} */
 #hd_h1 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
-#hd_wrapper{margin:0 auto;/* max-width:1280px; */position:relative}
+#hd_wrapper{margin:0 auto;/* max-width:1280px; */position:relative; height: 100%;}
 
-#logo {position:absolute;top:0;left:0}
+#logo {position:absolute;top:0;left:0; z-index: 10;display: flex; justify-content: center; align-items: center; height: 100%;}
 #logo a{display:block;padding:25px;height:85px;
 
 transition: 0.3s all ease-in-out;
@@ -37,15 +37,15 @@ transition: 0.3s all ease-in-out;
 #hd.fixed{position:fixed;top:0;left:0}
 
 
-#gnb {display:inline-block;vertical-align:top;font-family: 'Pretendard';}
+#gnb {display:flex; justify-content: center; vertical-align:top;font-family: 'Pretendard';align-items: center; height: 100%;}
 #gnb:after {display:block;visibility:hidden;clear:both;content:""}
 .gnb_wr{max-width:1280px;padding-right:200px;margin:0 auto;position:relative;}
-#gnb a {display:block}
-.gnb_1dli{position:relative;float:left;line-height:40px;padding:0 15px; width: 130px; ;}
+/* #gnb a {display:block} */
+.gnb_1dli{position:relative;float:left;line-height:40px;padding:0 15px; min-width: 150px; display: flex; justify-content: center;}
 .gnb_1dli:after {display:block;visibility:hidden;clear:both;content:""}
-.gnb_1dli button{float:left;border:0;width:20px;height:85px;overflow:hidden;border:0;background:url(../img/mobile/gnb_bg2.png) no-repeat 50% 50%;background-size:10px ;text-indent:-9999px}
-.gnb_1da {position:relative;float:left;line-height:45px;margin:20px 0;font-size:1.154em; }
-.gnb_2dul {display:none;position:absolute;top:100px;left:calc(-50% + 32px);min-width:100%;z-index:99; text-align:left;min-width: 195px; white-space: nowrap;border-radius: 2px;background: #fff;
+.gnb_1dli button{float:left;border:0;width:20px;overflow:hidden;border:0;background:url(../img/mobile/gnb_bg2.png) no-repeat 50% 50%;background-size:10px ;text-indent:-9999px}
+.gnb_1da {position:relative;float:left;line-height:1;margin:20px 0;font-size:1.154em; }
+.gnb_2dul {display:none;position:absolute;top:100%;left:0;min-width:100%;z-index:99; text-align:left;min-width:100%; white-space: nowrap;border-radius: 2px;background: #fff;
 -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 transition: 0.3s all ease-in-out;
@@ -65,7 +65,15 @@ transition: 0.3s all ease-in-out;
 .gnb_2da:hover{color: #00BF96; background: #fafafa;}
 .gnb_2da:active { background: #eaecf7;color:#00BF96}
 
-#hd_btn{position:absolute;top:0;right:0;text-align:center;}
+#hd_btn{    position: absolute;
+   top: 0;
+   height: 100%;
+   right: 0;
+   display: flex;
+   text-align: center;
+   z-index: 10;
+   justify-content: center;
+   align-items: center;}
 #hd_btn button{;width:42px;border:0;background:transparent;height:85px;float:left}
 
 #hd_sch{z-index:10;display:none;position:absolute;top:0;left:0;background:#fff;width:100%;height:85px}
@@ -341,7 +349,8 @@ a.btn02:focus, .btn02:hover {text-decoration:none}
 button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f;background:#4b545e;color:#fff;text-decoration:none}
 .btn_confirm {text-align:center} /* 서식단계 진행 */
 .btn_submit {display:inline-block;border:1px solid transparent;background:#05CD82;color:#fff;text-decoration:none;vertical-align:middle;}
-.btn_submit:hover {background:#05B975}
+.mbskin .btn_submit {background: #00BF96;}
+.btn_submit:hover {background:#00AC87;}
 a.btn_cancel {display:inline-block;background:#ddd;color:#444;text-decoration:none;vertical-align:middle}
 button.btn_cancel {display:inline-block;;border:1px solid #ccc;background:#fafafa;color:#000;vertical-align:top;text-decoration:none}
 a.btn_frmline, button.btn_frmline {display:inline-block;padding:0 5px;;border:0;background:#333;color:#fff;letter-spacing:-0.1em;text-decoration:none;vertical-align:top} /* 우편번호검색버튼 등 */

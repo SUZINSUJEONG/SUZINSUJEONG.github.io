@@ -2,7 +2,7 @@
 // const plugin = require('tailwindcss/plugin')
 module.exports= {
   // important: true,
-  content: ["./*.html","*/*.js","./**/*.css"],// "./**/*.{css,js}" ,"*/*.{css,js}"
+  content: ["./*.html","./**/*.css"],// "./**/*.{css,js}" ,"*/*.{css,js}" "*/*.js","./**/*.css"
 
   corePlugins: {
     preflight: false,
