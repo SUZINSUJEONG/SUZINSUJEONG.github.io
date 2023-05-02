@@ -1,0 +1,40 @@
+
+section .process_bar:before{width:100%;}
+
+section > div{margin: 0 25%; }
+div > h2{margin-bottom:50px; line-height: 1.5;}
+section div > div {display:flex; justify-content: center; align-items: center;}
+div img{margin-right:20px; }
+div i{ line-height: 1.5; font-size:18px; font-weight:500;}
+strong{font-weight:500; }
+section  div p{text-align: initial;margin-top: 100px; line-height: 1.9; }
+
+section  div a{ margin-top: 50px;height: 50px;display: inline-block;line-height: 50px;width: 250px;background: #eee;transition: color .3s;outline: none;border: 0;font-family: 'Noto Sans KR', sans-serif;font-size: 15px;text-indent: 0;}
+section  div a:hover{background:#232323; color:#fff;}
+
+@media screen and (max-width: 1200px){
+	.all_check div{padding:0;}
+	
+}
+@media screen and (max-width: 1024px){
+	.all_check {
+    margin: 0 20%;}
+
+}
+
+@media screen and (max-width: 768px){
+	section > div {
+    margin: 0 18%;}
+	
+}
+
+@media screen and (max-width: 480px){
+	section > div {
+    margin: 0;}
+}
+
+@media screen and (max-width: 360px){
+	
+
+}
+

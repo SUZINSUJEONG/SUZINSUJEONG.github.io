@@ -1,0 +1,49 @@
+
+
+section .process_bar:before{width:60%;}
+div > h2{margin-bottom:50px; line-height: 1.5;}
+
+
+.all_check div {width: 100%;display: inline-block;padding: 0 4.42708333vw;}
+
+.all_check input, .all_check button{font-family: 'Noto Sans KR', sans-serif; height:50px;  border-radius: 0;outline: none;height: 50px; border: 0;}
+.all_check input{width:340px;  border:1px solid #232323; margin:5px 0; margin-right:10px; padding:0; text-indent:20px;}
+.all_check button{width:115px;}
+
+.click_bar{text-align:center;}
+.click_bar input{ margin-top: 50px;height: 50px;display: inline-block;line-height: 50px;width: 250px;background: #eee;transition: color .3s;outline: none;border: 0;font-family: 'Noto Sans KR', sans-serif;font-size: 15px;  text-indent:0;}
+.click_bar input:hover{background:#232323; color:#fff;}
+
+@media screen and (max-width: 1200px){
+	.all_check div{padding:0;}
+	
+}
+@media screen and (max-width: 1024px){
+	.all_check {
+    margin: 0 20%;}
+
+}
+
+@media screen and (max-width: 768px){
+	.all_check {
+    margin: 0 5%;}
+	
+}
+
+@media screen and (max-width: 480px){
+	.all_check {
+    margin: 0;}
+	.all_check input {
+    width: 65%;}
+	.all_check button {
+    width: 25%;}
+}
+
+@media screen and (max-width: 360px){
+	
+		.all_check input {
+    width: 60%;}
+	.all_check button {
+    width: 35%;}
+}
+

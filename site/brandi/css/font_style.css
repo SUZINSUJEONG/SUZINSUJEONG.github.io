@@ -1,0 +1,16 @@
+@charset"utf-8";
+
+/*
+	roboto mono 
+	font-family: 'Roboto Mono', monospace; 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+/* 나눔스퀘어라운드 */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

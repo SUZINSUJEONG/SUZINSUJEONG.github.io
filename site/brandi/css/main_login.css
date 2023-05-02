@@ -1,0 +1,99 @@
+/*
+	사용폰트
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-family: 'Inter', sans-serif;
+	font-family: 'AppleSDGothicNeoL00';
+	font-family: 'AppleSDGothicNeoM00';
+	font-family: 'AppleSDGothicNeoB00';
+	font-family: 'AppleSDGothicNeoEB00';
+	font-family: 'AppleSDGothicNeoH00';
+	
+	font-family: 'AppleSDGothicNeoR00';
+*/
+/*공통*/
+.contents {margin-top: 200px;}
+
+/* .contents{margin-top:140px;} */
+/*로그인 회원가입 이벤트*/
+.msg1, .msg2{display: none; font-size: 13px;padding-top: 5px;color: #979797; text-align: initial;}/*아이디 및 비번 작성 안 할 시 나오는 문구*/
+
+form{ text-align: center; 
+    width: 570px; border:1px solid #eee;
+    height: 370px;
+    margin: 0 auto;}
+
+.login_box{height:100%; width:100%;}
+.login_box h1{float:left; width:50%; height:100%;  padding: 90px 0;}
+.login_box h1 a{font-family: 'Inter', sans-serif; height:100%;
+    font-weight: 800;
+    font-size: 35px;
+    display: block;
+    line-height: 35px;}
+
+.login_box_inside{float:right; height:100%; background: #eee; width:50%; padding: 0px 20px;}
+.login_box_inside h2{padding-top: 40px; font-family: 'Inter', sans-serif;font-size: 25px; font-weight:800;text-align: left;}
+.c_box{margin:15px 0;}
+.login_box_inside .c_box input{left: 0;
+position: absolute;border: 0;line-height: 48px;outline: none;height: 48px;padding: 0;background: none;margin: 0;width: 80%;text-indent: 10px;}
+.c_box div{width:245px; height:50px; line-height:50px; border:1px solid #979797; position:relative; background: #fff;}
+
+.c_box div #id[type=text]::placeholder{font-family: "Font Awesome 5 Free"; }
+.c_box div #id:before[type=text]::placeholder{content:"f023"; }
+
+
+.c_box div i{font-size:24px; top: 25%;position: absolute;right: 10px;}
+.c_box div img{position:absolute; top:15px; left:10px;}
+.login{width:245px; height:50px;  color:#fff; background:#232323;font-family: 'Inter', sans-serif; font-size:16px;border-radius: 0; border: 0;}
+/*아이디 기억하기*/
+.remember_id{padding-bottom: 10px; text-align: left;font-family: 'Noto Sans KR', sans-serif;  }
+div input[ id="chk1"]{ /*width:25px; height:25px; */ display:none;}
+div input[ id="chk1"] + label em{ display:inline-block; width:20px; height:20px; margin-right: 5px; background:url(../img/sub/check_box.png)no-repeat 0 0 / cover; vertical-align:middle; border: 1px solid #eee;}
+div input[ id="chk1"]:checked + label em{background-position: 0 100%;}
+/*아디, 비번, 회원가입*/
+.find_info{display: flex; justify-content: center;padding-top: 10px;border-radius: 0; border: 0;}
+.find_info input{border:0; outline:none; position:relative;}
+.find_info input:after{width:3px; height:100%; background:#000; top:0; right:0; position:absolute; content:"";  display:inline-block;}
+/*언어선택*/
+.main-wrap{text-align: right;}
+.main-wrap .sel-lang-wrap .lang-select
+{width: 96px;height: 30px;color: var(--font-color);border: solid 1px var(--border-gray-color);outline: none;}
+/*sns 로그인*/
+.sns_login >a{margin: 50px 0;line-height: 50px;width: 100%;height: 50px; color: #fff;background: #ffc600;display: inline-block;}
+.sns_login h3{font-family: 'Noto Sans KR', sans-serif;  font-size:15px; border-top: 1px solid #eee;padding: 15px 0 30px;}
+.sns_login ul{text-align: center;width: 100%;display: flex;justify-content: center;}
+.sns_login ul li{padding: 0 5px;}
+/*푸터*/
+footer {margin-top: 300px;}
+
+
+
+@media screen and (max-width: 1200px){
+
+	
+}
+
+@media screen and (max-width: 1024px){
+	
+}
+@media screen and (max-width: 960px){
+
+}
+
+
+@media screen and (max-width: 768px){
+	.inner,form , .c_box ,.c_box div, .login  {width:100%;}
+	
+
+}
+@media screen and (max-width: 480px){
+	form{height:100%;}
+	.login_box_inside, .login_box h1{width:100%;}
+	.login_box_inside{padding:0 20px 20px;}
+}
+
+
+@media screen and (max-width: 360px){
+
+
+	
+}

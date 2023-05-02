@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'AppleSDGothicNeoB00';
+    src: url('AppleSDGothicNeoB00.eot');
+    src: url('AppleSDGothicNeoB00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoB00.woff2') format('woff2'),
+        url('AppleSDGothicNeoB00.woff') format('woff'),
+        url('AppleSDGothicNeoB00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'AppleSDGothicNeoEB00';
+    src: url('AppleSDGothicNeoEB00.eot');
+    src: url('AppleSDGothicNeoEB00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoEB00.woff2') format('woff2'),
+        url('AppleSDGothicNeoEB00.woff') format('woff'),
+        url('AppleSDGothicNeoEB00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'AppleSDGothicNeoL00';
+    src: url('AppleSDGothicNeoL00.eot');
+    src: url('AppleSDGothicNeoL00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoL00.woff2') format('woff2'),
+        url('AppleSDGothicNeoL00.woff') format('woff'),
+        url('AppleSDGothicNeoL00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'AppleSDGothicNeoH00';
+    src: url('AppleSDGothicNeoH00.eot');
+    src: url('AppleSDGothicNeoH00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoH00.woff2') format('woff2'),
+        url('AppleSDGothicNeoH00.woff') format('woff'),
+        url('AppleSDGothicNeoH00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'AppleSDGothicNeoM00';
+    src: url('AppleSDGothicNeoM00.eot');
+    src: url('AppleSDGothicNeoM00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoM00.woff2') format('woff2'),
+        url('AppleSDGothicNeoM00.woff') format('woff'),
+        url('AppleSDGothicNeoM00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeoR00';
+    src: url('AppleSDGothicNeoR00.eot');
+    src: url('AppleSDGothicNeoR00.eot?#iefix') format('embedded-opentype'),
+        url('AppleSDGothicNeoR00.woff2') format('woff2'),
+        url('AppleSDGothicNeoR00.woff') format('woff'),
+        url('AppleSDGothicNeoR00.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+

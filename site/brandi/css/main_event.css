@@ -1,0 +1,235 @@
+/*
+	사용폰트
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-family: 'Inter', sans-serif;
+	font-family: 'AppleSDGothicNeoL00';
+	font-family: 'AppleSDGothicNeoM00';
+	font-family: 'AppleSDGothicNeoB00';
+	font-family: 'AppleSDGothicNeoEB00';
+	font-family: 'AppleSDGothicNeoH00';
+	
+	font-family: 'AppleSDGothicNeoR00';
+*/
+
+
+.contents{ margin-top:140px;}
+
+/*mv*/
+.mv_event{background:url(../img/event/event_mv.jpg)no-repeat fixed; height:350px; margin-bottom:140px;}
+
+.event_title{background:rgba(35,35,35,.6); color:#fff;font-family: 'Inter', sans-serif; font-size:36px; padding:85px 45px; height:100%;}
+.event_title h2{font-size:72px; padding-bottom: 60px;}
+.event_title p{line-height:1.2;}
+.event_title i{color:#ff204b;}
+
+/*이벤트 내용*/
+.event_contents ul{display: flex; flex-wrap: wrap;}
+.event_contents ul li{width:33.3333%; padding: 0 10px 40px;}
+.event_contents a{display:block;}
+.event_contents a:hover{text-decoration:underline;}
+.event_bg{margin-bottom:20px;}
+.event_contents .event_bg img{width:100%;}
+.event_txt{font-family: 'Noto Sans KR', sans-serif; font-size:16px; font-weight:500; }
+.event_txt h3{font-size:20px;}
+.event_txt p{font-weight:400; padding:15px 0 10px; line-height:1.125;}
+/*쿠폰 존*/
+.coupon{background:#eee; margin-top:370px; font-family: 'Noto Sans KR', sans-serif;  }
+#tabs_wrap .coupon_link ul{position:relative;}
+.coupon_link{background:url(../img/event/coupon_bg.jpg)no-repeat center; text-align:center; height:250px;
+position:relative; font-size:18px;}
+
+
+.coupon_link a{color:#fff; display: block; height:100%;}
+.coupon_link ul li a h2{border-radius: 30px 30px 0px 0px;line-height: 75px;height: 75px; width: 50%;position: absolute;font-size: 24px;right: 0;display: block;top: -74px; background: #eee; color:#000; }
+.coupon_link ul li:first-child a h2{left:0; right:auto;}
+.coupon_link ul li:first-child .link_box{padding: 60px 0;}
+.link_box{height: 100%;  }
+.link_box h3{font-size:36px; padding: 10px 0 30px;}
+.link_box ul{font-size:36px; display: flex;height: 250px;align-items: center;justify-content: space-evenly; }
+.link_box ul li{position:relative; margin:0 45px; }
+.link_box ul li:last-child{margin:0;}
+.link_box ul li:after{left: -30px;content: "";width: 10px;height: 10px; background: #fff;position: absolute;top: 44%;border-radius: 10px; }
+
+/*쿠폰 박스*/ 
+.coupon_box{text-align:center; padding: 30px 0 50px; position:relative;   width: 100%;}
+.coupon_box ul.coupon_zone li:first-child{background:url(../img/event/coupon.png)no-repeat center / 300px 400px;}
+.coupon_box ul.coupon_zone li{background:url(../img/event/coupon1.png)no-repeat center / 300px 400px; }
+.coupon_box ul.coupon_zone li:last-child, .coupon_box ul.coupon_zone li:nth-child(4){background:url(../img/event/coupon.png)no-repeat center / 300px 400px;}
+.coupon_box ul li{color:#fff; width: 50%;height: 400px; margin-bottom: 55px; padding: 65px 0; font-weight:600; float: left;}
+.coupon_box ul li:first-child{width:100%;}
+.coupon_box ul li h2{font-size:24px;padding: 5px 0 15px;}
+
+.coupon_box ul li > div{background:#fff; width: 200px;background: #fff; margin: 10px auto; color:#000; height:135px; padding: 13px;}
+.coupon_box ul li > div >div{padding: 37px 0;border: 3px solid #eee;border-radius: 16px;}
+.coupon_box ul li > div p{color:#ababab;}
+
+.coupon_box ul li i{font-size:12px; line-height:1.5; font-weight:400; position:relative;}
+.coupon_box ul li i:before {left: -10px;content: "";width: 5px;height: 5px;background: #fff;position: absolute;top: 40%;border-radius: 10px;}
+/*쿠폰 상단 누를 시*/
+a.c-tabs-nav__link.is-active .link_box {display: block; }
+a.c-tabs-nav__link .link_box {display: none;}
+a.c-tabs-nav__link.is-active h2 {background: #2e2e2e; color: #fff;}
+.more_bt1{background: #232323;color: #fff;padding: 15px;width: fit-content;display: inline-block;border-radius: 50px;}
+/*쿠폰 상단 누를 시, 나오는 내용*/
+.c-tab{display:none;}
+.c-tab.is-active{display:block;}
+/*혜택존 박스*/
+.coupon_box > div:last-of-type ul{display:flex;}
+.coupon_box > div:last-of-type ul li{border-right: 1px solid #979797; float: none; width:100%;height: 100%;}
+.coupon_box > div:last-of-type ul li:last-child{border:0;}
+/*혜택존에 구매등급*/
+
+.coupon_box ul.benefit_zone li{padding: 0 10px; color: #000;}
+.coupon_box ul.benefit_zone h2{ background:#2e2e2e; padding: 20px 0;     margin-bottom: 20px;color: #fff;}
+.coupon_box ul.benefit_zone li:first-child h2 {background: #f53a41;}
+.coupon_box ul.benefit_zone li:last-child h2 {background: #979797;}
+.coupon_box ul.benefit_zone li > div{margin: 30px auto;}
+.benefit_zone strong{font-size:20px;}
+.coupon_box ul li > p{ color:#000;}
+.coupon_box ul li > p i{ font-size:15px;}
+.coupon_box ul li  > p i:before{background:#000;}
+/*알람 설정*/
+.alarm{margin-top:130px; font-family: 'Noto Sans KR', sans-serif; }
+
+.alarm_box{border:5px solid #ff204b; text-align:center; font-size:30px; padding:30px 0; line-height:1.85;}
+.alarm_box strong{font-weight:700; background:#232323; color:#fff;}
+.alarm_box strong:last-child{background:#ff204b;}
+
+.alarm_setting{margin:50px 0; font-family: 'Noto Sans KR', sans-serif; }
+.alarm_setting > ul > li{display:inline-flex; width: 100%; padding: 50px 0; justify-content: space-between;
+    align-items: center;}
+.alarm_setting > ul > li:last-child {border-top: 2px solid #969696;}
+.alarm_setting h3{font-size:30px; display: inline-block; line-height:1.2;width: 30%;}
+.alarm_setting h3 strong{color:#ff204b;}
+
+.description{float:right;}
+.description li{float:left; font-size:18px; text-align: center; font-weight:700;padding: 0 45px;width: 33.333%;}
+.description li img{width:100%;}
+.description p{padding-top:15px;}
+/*광고 배너*/
+.ab1 {font-size:30px; background:#eee;margin-bottom:50px; height:250px; position: relative; font-family: 'Noto Sans KR', sans-serif; line-height:1.2; padding-left: 50px; }
+.ab1 div{background:url(../img/event/ad11.png)no-repeat 100% 50% /300px; height:100%; position:absolute;width:100%;     top: 0; right: 0;}
+.ab1 i{ font-weight:700; background:#000; color:#fff;}
+.ab1 p{ font-size:24px; padding: 70px 0 15px; line-height: 1.5; display: inline-block; position: relative;width: 540px;min-width: 500px;}
+.ab1 strong{font-weight:800;}
+.ab1 p strong br{display:none;}
+
+.ab2 {background:#0050ff;  height:250px; font-family: 'Noto Sans KR', sans-serif;  font-weight:800;  color:#fff; position: relative; overflow: hidden; padding-left: 50px;}
+.ab2 div{background:url(../img/event/ad22.png)no-repeat 70% 0 /contain; position:absolute; top:0; height:100%; width:100%; }
+.ab2> p{ font-size:60px; padding:60px 0 50px; }
+.ab2> p br{display:none;}
+.ab2 span {font-size:30px; font-weight:500;}
+.ab2 div.toss {right: -5px;position: absolute;width: fit-content;display: inline-block;float: right;font-family: 'Inter', sans-serif;font-size: 100px;background: none;top: -15px;}
+
+.ab2 div.toss  p{line-height: 0.6; }
+.ab2 div.toss  p:nth-child(1) {opacity: .8; }
+.ab2 div.toss  p:nth-child(2) {opacity: .6; }
+.ab2 div.toss  p:nth-child(3) {opacity: .4; }
+.ab2 div.toss  p:nth-child(4) { opacity: .2;}
+.ab2 div.toss  p:nth-child(5) { opacity: .1; }
+
+
+/*큰 테블릿 혹은 작은 노트북 1200px  */
+@media screen and (max-width: 1200px){
+	.alarm_setting h3{font-size: 2.5vw;}
+	.description li{padding: 0 3.75vw;}
+	
+	.ab1 p{ font-size: 20px;}
+	.ab2> p{ font-size: 5vw; }
+	.ab2 span {font-size: 25px;}
+
+	
+	footer{margin-top: 10.98958vw;}
+}
+@media screen and (max-width: 1024px){
+	
+}
+
+@media screen and (max-width: 960px){
+	.coupon{margin-top: 38.54vw;}
+	.coupon_link ul li a h2,.coupon_box ul li h2{font-size:20px;}
+	.link_box ul li{font-size:24px;}
+	
+	.benefit_zone strong{font-size:16px;}
+	
+	
+	.ab1 p{padding: 7.2916vw 0 15px; min-width: 200px;}
+	.ab1 p strong br{display:block;}
+	.ab2 div {background: url(../img/event/ad22.png)no-repeat 90% 50% /contain;}
+}
+
+@media screen and (max-width: 768px){
+	.event_title{padding: 6.5104vw 5.859375vw;}
+	.mv_event{margin-bottom: 18.229166vw; height: 45.573vw;}
+	.event_title h2{font-size:9.375vw;padding-bottom: 7.8125vw;}
+	.event_contents ul li{width:50%;}
+	
+	.coupon{width: 100%;}
+	.coupon_link ul li:first-child .link_box{padding: 7.8125vw 5px;}
+	.coupon_link ul li a h2,.coupon_box ul li h2,.coupon_link{font-size:2.84375vw;}
+	.link_box h3{font-size: 4.6875vw;}
+	.coupon_link ul li a h2{line-height: 60px;height: 60px;top: -60px;}
+	.link_box h3{font-size:22px;}
+	.link_box ul,.coupon_link{height: 32.55208vw;}
+	.link_box ul{padding: 45px 0;}
+	.link_box ul li {margin: 0 5.85vw; font-size: 2.604166vw;}
+	.link_box ul li:after{left:-15px; top:6px;}
+	.coupon_box > div:last-of-type ul{display:block;}
+	.coupon_box > div:last-of-type ul li{border: 0;}
+	.coupon_box ul li{margin: 0 5px 55px;width: calc(50% - 10px);}
+	
+	.alarm_setting > ul > li{flex-direction: column;}
+	.alarm_setting h3{ width: 100%;font-size: 24px;padding-bottom: 20px;text-align: center;}
+	
+	.ab1 .ab2{width:100%;}
+	
+	.ab1{ display:flex;  height: 200px; align-content: center;
+    align-items: center; }
+	.ab1 p{  padding:0;}
+	.ab1 div { background: url(../img/event/ad11.png)no-repeat 100% 50% /contain; position: relative;}
+	
+	.ab2 div { top: -20%; }
+	.ab2> p{ font-size: 24px; }
+	.ab2 span {font-size: 20px;}
+}
+
+@media screen and (max-width: 480px){
+	.event_title {padding: 6.5104vw 20px;}
+	.event_title p{font-size:7.5vw;}
+	.event_contents ul li{width:100%;}
+	.event_txt{font-size:14px;}
+	.event_txt h3{font-size:18px;}
+	
+	.link_box ul, .coupon_link {height: 150px;}
+	.coupon_link ul li:first-child .link_box{padding: 2.8125vw 5px; line-height:1.25;}
+	.coupon_link ul li a h2{padding: 10px;line-height: 1.5;}
+	.coupon_link ul li a h2, .coupon_box ul li h2, .coupon_link, .link_box ul li {font-size: 17px;}
+	.coupon_box ul li {margin: 0 0 55px;width: 100%;}
+	
+	.alarm {margin-top: 16.927083vw;}
+	.alarm_box{font-size:6.25vw}
+	.description li{width:100%; padding: 20px;}
+	.description li img{width:50%;}
+	
+	.ab1, .ab2{width:100%; } 
+	.ab1 p {font-size: 16px;}
+	
+	.ab2 div {background: url(../img/event/ad22.png)no-repeat 70% 50% /52.0833vw;}
+	.ab2> p {font-size: 30px; line-height: 1.25; }
+	.ab2> p br{display:block;}
+}
+
+@media screen and (max-width: 360px){
+	.description li img {width: 80%;}
+	.coupon_link ul li a h2, .coupon_box ul li h2, .coupon_link, .link_box ul li{font-size: 15px;}
+	
+	.ab1 {flex-wrap: wrap; padding-left: 0; height: 100%;}
+	.ab1 p{ background: #eee; padding: 10px; }
+	.ab1 div{  background: url(../img/event/ad11.png)no-repeat 50% 50% /contain; height: 200px;  }
+	
+	.ab2{padding-left: 10.416vw;}
+	
+}
+
+
+

@@ -1,0 +1,80 @@
+/*
+	사용폰트
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-family: 'Inter', sans-serif;
+	font-family: 'AppleSDGothicNeoL00';
+	font-family: 'AppleSDGothicNeoM00';
+	font-family: 'AppleSDGothicNeoB00';
+	font-family: 'AppleSDGothicNeoEB00';
+	font-family: 'AppleSDGothicNeoH00';
+	
+	font-family: 'AppleSDGothicNeoR00';
+*/
+/*공통*/
+header{position:relative;}
+.contents {margin-top: 100px; font-family: 'Noto Sans KR', sans-serif; }
+
+section{text-align:center; font-family: 'Noto Sans KR', sans-serif; }
+section h1{font-size:36px; font-weight:800; }
+section .process_bar{width:100%; height:5px; background:#eee; text-indent: -99999px; position:relative; margin:20px 0 40px;}
+section .process_bar:before{content:""; width:20%; height:100%; top:0; left:0; display:inline-block; position:absolute;background: #232323;}
+section h2{font-size:20px;  font-weight:500; }
+section h3{font-size:18px;  font-weight:500; margin: 60px 0;  }
+/*체크박스 */
+input[ id^="chk"]{ display:none; }
+input[ id^="chk"] + label {margin-top: -5px; display:inline-block; width:25px; height:25px; margin-right: 5px; background:url(../img/sub/check_box.png) no-repeat 0 0 / cover; vertical-align:middle; border: 1px solid #eee;}
+input[ id^="chk"]:checked + label { background:url(../../img/sub/check_box.png) no-repeat 0 -23px / cover;  }
+
+.all_check{margin:0 25%; text-align:left;}
+.children{display:flex;flex-direction: column;}
+.children label{width:100%; line-height:2.33;}
+.children strong{color:#ff2c2c;}
+
+.check_wrap{height:25px; line-height: 25px; margin: 10px 0;}
+.check_wrap > a{float:right;}
+.check_wrap > a:hover{text-decoration:underline;}
+
+.check_wrap >a form{overflow: scroll;top: 100px; padding: 30px;left: calc(50% - 250px);background: #fff;position: absolute;width: 500px;height: 500px;border: 1pxsolid;z-index: 999;   display: none; }
+.check_wrap >a.on form{   display: block; }
+
+
+.check_wrap >a form h2{ padding-bottom: 30px;}
+.check_wrap >a span{right: 10px; top: 20px; left: auto; width:30px;position: absolute; background:#000; height:5px; text-indent:-999px; transform:rotate(45deg); }
+.check_wrap >a span:last-child{ transform:rotate(-45deg);}
+ .dim{position:absolute; width:100%; height:100%; background:rgba(0,0,0,.8); z-index:999; display:none; top:0;}
+
+
+section > a, .agree, .disagree{margin-top: 50px;height: 50px;display: inline-block;line-height: 50px;width: 250px;background: #eee; transition:color .3s; outline: none; border:0; font-family: 'Noto Sans KR', sans-serif; font-size: 15px;}
+section > a:hover, .agree:hover, .disagree:hover{background:#232323; color:#fff;}
+/*푸터*/
+footer {margin-top: 300px;}
+
+
+
+@media screen and (max-width: 1200px){
+
+	
+}
+
+@media screen and (max-width: 1024px){
+	
+}
+@media screen and (max-width: 960px){
+
+}
+
+
+@media screen and (max-width: 768px){
+
+
+}
+@media screen and (max-width: 480px){
+
+}
+
+
+@media screen and (max-width: 360px){
+
+
+	
+}

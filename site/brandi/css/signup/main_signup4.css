@@ -1,0 +1,66 @@
+
+
+section .process_bar:before{width:80%;}
+div > h2{margin-bottom:50px; line-height: 1.5;}
+
+
+.all_check div {width: 100%;display: inline-block;padding: 10px 4.42708333vw;}
+.all_check input, .all_check button{font-family: 'Noto Sans KR', sans-serif;  border-radius: 0;outline: none; border: 0; width:90%; height:50px; text-indent: 10px;}
+/*.all_check form div:first-child input{width: 50px;} */
+.email input{width: calc(45% - 17px);}
+.all_check input{  border:1px solid #232323; margin:10px 0; margin-right:10px; padding:0; }
+.all_check button{width:115px;}
+
+.gender input[ id^="chk"]{ display:none; }
+.gender input[ id^="chk"] + label {margin-top: -5px; display:inline-block; width:25px; height:25px; margin-right: 5px; background:url(../img/sub/check_box.png) no-repeat 0 0 / cover; vertical-align:middle; border: 1px solid #eee;}
+.gender input[ id^="chk"]:checked + label { background:url(../../img/sub/check_box.png) no-repeat 0 -23px / cover;}
+
+.click_bar{text-align:center;}
+.click_bar input{ margin-top: 50px;height: 50px;display: inline-block;line-height: 50px;width: 250px;background: #eee;transition: color .3s;outline: none;border: 0;font-family: 'Noto Sans KR', sans-serif;font-size: 15px;  text-indent:0;}
+.click_bar input:hover{background:#232323; color:#fff;}
+.all_check form select{ width: 90%; border: 1px solid #232323;margin: 5px 0;margin-right: 10px; padding: 0; height: 50px; text-indent: 20px; outline: none;}
+.all_check form select option{ width: 100%;}
+
+
+/*연습*/
+.text_ul_wrap{margin:0 auto; width:240px; margin-top: 30px; position: relative; border:1px solid #000; text-align: left;}
+.text_ul_wrap a{color:#000; line-height: 34px; display: block; padding: 0 20px 0 10px; text-decoration:none;}
+.select_icon{display: block; content: ''; clear: both; position:absolute; right:10px; top:12px; width: 100px; height:100px; border-left:6px solid transparent; border-right:6px solid transparent; border-top:12px solid #000; border-bottom:none;}
+.select_icon.active{border-bottom:12px solid #000; border-top:none;}
+.ul_select_style{position: absolute; width: 242px; left: -1px; }
+.ul_select_style.active{display: block;}
+.ul_select_style li{line-height: 34px; border: 1px solid #000; text-align: left; padding-left: 10px; cursor: pointer;}
+.ul_select_style li + li{border-top:none;}
+.ul_select_style li:hover{background: rgba(0,0,0,0.2);}
+
+@media screen and (max-width: 1200px){
+	.all_check div{padding:10px 0;}
+	
+}
+@media screen and (max-width: 1024px){
+	.all_check {
+    margin: 0 20%;}
+
+}
+
+@media screen and (max-width: 768px){
+	.all_check {
+    margin: 0 5%;}
+	
+}
+
+@media screen and (max-width: 480px){
+	.all_check {
+    margin: 0;}
+	.all_check input, .all_check form select{
+    width: 100%;}
+	.email input{ width: calc(50% - 15px); margin: 10px 0;}
+}
+
+@media screen and (max-width: 360px){
+	
+
+	.all_check button {
+    width: 35%;}
+}
+
