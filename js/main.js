@@ -312,3 +312,5 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+
+
