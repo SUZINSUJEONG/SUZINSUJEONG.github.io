@@ -171,7 +171,7 @@ html.fp-enabled,
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-#fp-nav ul li a.active span{ background: #091FEF;}
+#fp-nav ul li a.active span{ background: #00FFC8;}
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
     width: 10px;
@@ -232,9 +232,16 @@ html.fp-enabled,
 }
 
 /* Disabling vertical centering on scrollable elements */
-.fp-overflow{
+/* .fp-overflow{
     justify-content: flex-start;
     max-height: 100vh;
+} */
+@media (min-width: 900px){
+    .fp-overflow{
+        justify-content: flex-start;
+        max-height: 100vh;
+    }
+
 }
 
 /* No scrollable when using auto-height */
@@ -292,6 +299,7 @@ Not supports in Firefox and IE */
     z-index: 9999999;
     position: absolute;
     bottom: 0;
+    display: none;
 }
 .fp-warning,
 .fp-watermark a{

@@ -1,1 +1,0 @@
-# SUZINSUJEONG.github.io

@@ -152,14 +152,7 @@ $(document).ready(function(){
     $("html,body").addClass("not_scroll");
     $(".body_wrap").css({top: -poseY});
  });
-  $(".modal_close").click(function(e){
-    e.preventDefault();
-    $(".modal_content").fadeOut(300);
-    $(".modal_close").fadeOut(0);
-   // $(".main-character").show()
-    $("html,body").removeClass("not_scroll");
-    poseY = $(window).scrollTop(poseY);
-  });
+ 
 
  //section_2 모바일
  $(".tab_all_m").click(function (e) {
@@ -167,6 +160,8 @@ $(document).ready(function(){
     let modalid = $(this).attr("href");
     $(".tab_all_m").removeClass('on');
     $(this).addClass('on');
+    $("html,body").addClass("not_scroll");
+    $(".modal_close").fadeIn(300);
    // $(this).parent().siblings().children().removeClass('on');
     $(modalid).fadeIn(300);
     $(modalid).siblings().hide();
@@ -174,43 +169,58 @@ $(document).ready(function(){
  $(".modal_content_m").click(function(e){
     e.preventDefault();
     $(this).fadeOut(300);
-    //$(".modal_close,.close-back").fadeOut(0)
+    $(".modal_close").fadeOut(300);
+    // $(".modal_close,.close-back").fadeOut(300);
    // $(".main-character").show()
     $("html,body").removeClass("not_scroll");
    // poseY = $(window).scrollTop(poseY);
   });
+
+  $(".modal_close").click(function(e){
+    e.preventDefault();
+    $(".modal_content_m").fadeOut(300);
+    $(".modal_close").fadeOut(0);
+   // $(".main-character").show()
+    $("html,body").removeClass("not_scroll");
+    poseY = $(window).scrollTop(poseY);
+  });
   
 
   //파인아트스와이퍼 섹션 4
-  var swiper = new Swiper(".fineArt_Swiper", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    spaceBetween: 30,
+  var swiper = new Swiper(".mywork_Swiper", {
+    // slidesPerView: 1,
+    // centeredSlides: true,
+    // spaceBetween: 10,
     loop: true,
     grabCursor: true,
+    effect: "fade",
 
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      960: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
-      1600: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: true,
+    // },
+    // breakpoints: {
+    //   768: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 30,
+    //   },
+    //   960: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 50,
+    //   },
+    //   1600: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 50,
+    //   },
+    // },
   });
 
   //섹션 5
