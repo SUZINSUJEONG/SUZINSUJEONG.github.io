@@ -176,7 +176,7 @@ strong {
 }
 
 h1[class] strong {
-  color: ;
+  /* color: ; */
 }
 
 small {
@@ -1070,4 +1070,3 @@ pre code {
   text-transform: uppercase; 
   
 }*/
-.dropdown-toggle.on span{ transform: rotate(180deg) ;}

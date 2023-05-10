@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)C&G TECH</title>
+      <!-------------------------- 구글아이콘 -------------------------->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+      <!-- 폰트어썸 -->
+      <script src="https://kit.fontawesome.com/22cfb264ab.js" crossorigin="anonymous"></script>
+      <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css"> -->
+      <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+      <!-- 폰트 -->
+      <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../../css/font.css">
+    
+    
+      <!--swiper 스와이퍼 css & js-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+      <!--tailwind.css -->
+      <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+      <link rel="stylesheet" href="../../../css/index.min.css">
+    
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="../../../css/common.css">
+      <link rel="stylesheet" href="../../../css/output.css"><!-- 만약에 cdn으로만 할시 type="text/tailwindcss"를 꼭 추가해서 작업하기 -->
+      
+      <!-- Tailwind JS -->
+      <!-- <script src="../../js/tailwind.config.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+      <script type="text/javascript" src="../../../js/index.min.js"></script>
+    
+      <!-- 커스텀 scripts -->
+      <script type="text/javascript" src="../../../js/common.js"></script>
+      
+  </head>
+<body class="overflow-x-hidden" style="background: url(../../img/rental/bg.jpg)0 0 /cover fixed;">
+  <button type="button" id="top_btn" x-data="topBtn" @click="scrolltoTop" class="top_btn animate-bounce" style="display: inline-block;"><i class="material-icons-round sm:text-3xl">arrow_upward</i></button>
+  
+  <header class="">
+    <nav class="container flex items-center justify-between w-full h-full">
+      <a href="../Main.html"class="logo lg:px-[50px] h-[60px]">
+        <!-- <img src="/img/logo_d_e.svg" class="hidden h-full lg:block logo_d_e"> -->
+        <img src="../../../img/logo_l_e.svg" class="h-full !block logo_l_e">
+      </a>
+      <ol class="items-center self-stretch justify-center flex-grow hidden gap-20 lg:flex text-text1">
+        <li><a href="../SubPage/Sub-intro.html" class="">기업소개</a></li>
+        <li><a href="../SubPage/Sub-intro2.html" class="">제품소개</a></li>
+        <li><a href="../SubPage/Sub-intro3.html" class="">문의하기</a></li>
+      </ol>
+      <a href=""class=" button_bg lg:flex">문의 바로가기 <span class="material-icons-round">chevron_right</span></a>
+      <button type="button" class=" h-full w-[80px]  btn_menu_btn flex items-center justify-center lg:hidden"><span class="menu_icon"></span></button>
+    </nav>
+  </header>
+    <div class="hidden menu_close"></div>
+  
+    
+    <!-- <img class="lg:hidden block py-4" src="/img/main/Container.png"> -->
+    
+    <!-- 1 -->
+  
+    <section class="mt-20 py-20"  style="background: linear-gradient(0deg, white 60%,transparent);">
+      <div>
+        <div class="container flex justify-center lg:flex-row lg:px-0 flex-col">     
+          <div class="lg:col-6 after:block after:clear-both after:content-['']" style=" "><img id="Ci" src="../../../img/rental/1.jpg" class="m-auto lg:mb-[50px] mb-[-50px] lg:ml-[120px] lg:px-0 px-[25px]" style="/* width: 580px; */"></div>
+          <div class="flex flex-col lg:gap-10  gap-[2.5vw] lg:py-10 lg:p-8 p-6 bg-white/80 shadow-default-button rounded-md lg:col-6 col-12 lg:mt-[50px]" style="/* margin: 0 50px; */">
+            <h3 class="pb-[4.2vw]"><span class="w-fit" style="">C&amp;G테크 암롤박스 무료 렌탈 서비스</span></h3>
+            <h4 class=" font-medium">암롤박스 주문/제작 중 대기시간이 길어질 경우<br>무료 렌탈 서비스를 제공하고 있습니다.</h4>
+            <ul class="text-lg flex flex-col gap-4">
+              <li>📌 무료 렌탈은 신규 제작 암롤박스 금액 전부 입금 후 렌탈 가능합니다.</li>
+              <li>📌 제작 완료후 신제품 수거를 안할 경우 해당 날짜 부터 렌탈 제품 일별 금액 청구</li>
+              <li>📌 여유 제품이 있을 경우에만 렌탈이 가능합니다.</li>
+              <li>📌 유료 렌탈은 제품 크기에 따라 금액이 상이합니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- 2 -->
+  
+    <section class="py-20"style="background: linear-gradient(0deg, white 60%,transparent);">
+      <div >
+        <div class="container flex justify-center lg:flex-row lg:px-0 flex-col"> 
+          <div class="flex flex-col lg:gap-10  gap-[2.5vw] lg:py-10 lg:p-8 p-6 bg-white/80 shadow-default-button rounded-md lg:col-6 col-12 lg:mt-[50px]" style="/* margin: 0 50px; */">
+            <h3 class="pb-[4.2vw]"><span class="w-fit" style="">C&G테크 암롤박스 유료 렌탈 서비스</span></h3>
+            <h4 class=" font-medium">일별 렌탈료를 납부하여 중고제품에 대하여<br>유료 렌탈이 가능합니다.</h4>
+            <ul class="text-lg flex flex-col gap-4">
+              <li>📌 유료 렌탈은 제품 크기에 따라 금액이 상이합니다 </li>
+              <li>📌 렌탈료는 일별로 납부됩니다.</li>
+              <li>📌 파손 및 분실 금액 별도 청구됩니다.</li>
+            </ul>
+          </div>    
+          <div class="lg:col-6 after:block after:clear-both after:content-['']" style=""><img id="Ci" src="../../../img/rental/1.jpg" class="lg:mb-[50px] lg:mt-0 mt-[-50px] lg:ml-[-120px] lg:px-0 px-[25px]" style="/* width: 580px; */"></div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- 3 -->
+  
+    <section class="py-20">
+      <main class="container relative flex flex-col justify-center gap-20 overflow-hidden">
+        
+        <h2 class="">주의사항</h2>
+        <ol class="flex self-stretch flex-grow gap-20 flex-wrap font-medium">
+            <li class="flex self-stretch gap-4 flex-col h4 flex-grow">
+              <img src="../../../img/rental/notice.png" class="w-fit">
+        01.<i>암롤박스 전용 렌탈</i>      
+              
+              
+              
+  
+            </li>
+            
+            
+          <li class="flex self-stretch gap-4 flex-col h4 flex-grow">
+              <img src="../../../img/rental/notice.png" class="w-fit">
+        02.<i>기간 외 사용시 렌탈료 일별 금액 청구</i>      
+              
+              
+              
+  
+            </li><li class="flex self-stretch gap-4 flex-col h4 flex-grow">
+              <img src="../../../img/rental/notice.png" class="w-fit">
+        03.<i>직접 공장에 와서 수거 및 반납</i>      
+              
+              
+              
+  
+            </li><li class="flex self-stretch gap-4 flex-col h4 flex-grow">
+              <img src="../../../img/rental/notice.png" class="w-fit">
+        04.<i>운송업 이용시 운송비 별도</i>      
+              
+              
+              
+  
+            </li><li class="flex self-stretch gap-4 flex-col h4 flex-grow">
+              <img src="../../../img/rental/notice.png" class="w-fit">
+        05.<i>파손 및 분실 금액 별도 청구</i>      
+              
+              
+              
+  
+            </li></ol>
+      </main>
+    </section>
+    <!-- 4 -->
+    
+  
+    <footer class="w-full lg:py-[150px] py-12 border-t-[3px] border-primary border-solid bg-white ">
+      <div class="container flex justify-between lg:flex-row flex-col gap-10">
+        <a class="logo lg:h-[60px] h-14"><img src="../../../img/logo_l_e.svg" class="h-full"></a>
+        <ul class="flex justify-between lg:col-8 gap-4 flex-col lg:flex-row">
+          <li class="">
+            <h5>CONTACT</h5>
+            <ol class="flex flex-col gap-4 text-xl font-medium pt-6 text-text2">
+              <li class="flex lg:flex-col gap-2"><strong class="min-w-[100px] inline-block">Adress</strong>경기도 평택시 서탄면 서탄2로 226</li>
+              <li class="flex lg:flex-col gap-2"><strong class="min-w-[100px] inline-block">Tel</strong>031-668-8386</li>
+              <li class="flex lg:flex-col gap-2"><strong class="min-w-[100px] inline-block">Mob</strong>경기도 평택시 서탄면 서탄2로 226</li>
+              <li class="flex lg:flex-col gap-2"><strong class="min-w-[100px] inline-block">Email</strong>경기도 평택시 서탄면 서탄2로 226</li>
+            </ol>
+          </li>
+          <li class="lg:block hidden">
+            <h5>About</h5>
+            <ol class="flex flex-col gap-6 text-xl font-medium pt-6  text-text2">
+              <li><a href="">Home</a></li>
+              <li><a href="">기업소개</a></li>
+              <li><a href="">제품소개</a></li>
+              <li><a href="">견적문의</a></li>
+            </ol>
+          </li>
+          <li class="flex flex-col gap-4 text-xl font-medium">
+            <h5>Family Site</h5>
+            <div class="relative p-4 border border-text2 w-[180px]" style="">
+              <a class="flex justify-between h-full dropdown-toggle" href="#">Family Site <span class="transition-all material-icons-round">expand_more</span></a>
+              
+              <ul class="p-4 border border-text2 dropdown absolute hidden w-[180px] -left-px top-full" style="">
+                <li><a href="#!">크리샤 </a></li>
+              </ul>
+            </div>
+            <script>
+              $(function() { // Dropdown toggle
+                $('.dropdown-toggle').click(function(e) {
+                  event.preventDefault()
+                  $(this).next('.dropdown').slideToggle(200);
+                  $(this).toggleClass('on');
+                });
+    
+                $(document).click(function(e) { 
+                var target = e.target; 
+                  if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) 
+                  //{ $('.dropdown').hide(); }
+                    { $('.dropdown').slideUp(); }
+                });
+              });
+            </script>
+            <style>
+              .dropdown-toggle.on span{ transform: rotate(180deg) ;}
+            </style>
+          </li>
+        </ul>
+      
+    
+    
+      </div>
+      <div class="container pt-[60px]">
+        <ul class="flex border-b border-solid pb-9">
+          <li><a href="">개인정보처리방침 | </a></li>
+          <li><a href=""> 개인정보처리방침</a></li>
+        </ul>
+        <div class="flex justify-between pt-9 lg:flex-row flex-col gap-4">
+          <p>Copyright © 2022 C&amp;G tech. All Rights Reserved.</p>
+          <ul class="flex gap-4">
+            <li><a href=""><img src="../../../img/icon/Instagtam.svg"></a></li>
+            <li><a href=""><img src="../../../img/icon/Youtube.svg"></a></li>
+            <li><a href=""><img src="../../../img/icon/Naver.svg"></a></li>
+            <li><a href=""><img src="../../../img/icon/Facebook.svg"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  
+  <!-- Code injected by live-server -->
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    }
+    else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
+  
+  
+
+</body>
+</html>
