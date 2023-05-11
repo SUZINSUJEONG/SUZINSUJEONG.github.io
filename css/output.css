@@ -598,12 +598,12 @@ a.button_stroke.comma:hover:after {
 
 /* 섹션0 */
 
-.section_0 {
+#section_0 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
-.section_0 .swiper-slide {
+#section_0 .swiper-slide {
   display: flex;
   height: 100%;
   width: 300px;
@@ -619,7 +619,7 @@ a.button_stroke.comma:hover:after {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.section_0 .swiper-slide p {
+#section_0 .swiper-slide p {
   font-family: 'pretendard';
 }
 
