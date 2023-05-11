@@ -2875,16 +2875,6 @@ a.button_stroke.comma:hover:after {
   border-color: rgb(255 126 54 / var(--tw-border-opacity));
 }
 
-.bg-\[\#5E635F\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 99 95 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F1FCF8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 252 248 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#111\] {
   --tw-bg-opacity: 1;
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
@@ -3294,11 +3284,6 @@ a.button_stroke.comma:hover:after {
   padding: 5rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -3387,6 +3372,11 @@ a.button_stroke.comma:hover:after {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .py-12 {
